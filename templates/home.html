@@ -1,5 +1,5 @@
 {% extends 'layout.html' %}
-
+<!-- *************************************search******************************************** -->
 {% block heading %}
     <header id="top" class="masthead">
         <div class="container h-100">
@@ -36,6 +36,8 @@
 
 {% endblock %}
 
+<!-- *************************************results******************************************** -->
+
 {% block results %}
    
    {% if results_dict %}
@@ -64,6 +66,8 @@
                 
                 <div class="col-lg-4 col-sm-6" style="text-align: center; border:none; border-radius: 10px;">
                     <form id="send_url" action="#download" method="POST">
+                        <input type="hidden" name="thumbnail" value="{{ res_dict['img']}}">
+                        <input type="hidden" name="ctitle" value="{{ res_dict['name']}}">
                         <input type="hidden" name="url" value="{{ res_dict['link'] }}">
                         <button type="submit" style="border: none"class="btn btn-outline-primary">
                         
@@ -93,14 +97,15 @@
        
 
 {% endblock results%}
-
+<!-- *************************************download link******************************************** -->
 {% block download %}
     
     {% if video_title %}
         <section class="page-section bg-dark text-white">
             <div id="download" class="container text-center">
-                
-                <h2 class="mb-4">{{video_title}}</h2>
+                <img class="img-thumbnail" src="{{ img }}" alt="" >
+                <br>
+                <h2 class="mb-4">{{ ctitle }}</h2>
                 
                 {% if format=="mp4" %}
                     <a class="btn btn-light btn-xl" href="static/cache/video/{{ video_title.replace("\"","").replace(".","").replace("\'","") }}.mp4" download>Download</a>

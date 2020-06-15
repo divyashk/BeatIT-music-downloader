@@ -53,7 +53,8 @@ def home():
         if "url" in request.form:
             url = request.form["url"]
             video = YouTube(url)
-
+            ctitle=request.form["ctitle"]
+            img=request.form["thumbnail"]
 
             if "format" in request.form:
                 format = request.form["format"]
@@ -76,12 +77,12 @@ def home():
                 os.remove("static/cache/audio/"+video_title.replace("\"","").replace(".","").replace("\'","")+".mp4")
               
            
-            return render_template("home.html", title="Music Downloader",video_title=video_title, format=format)
+            return render_template("home.html", title="Music Downloader",video_title=video_title, ctitle=ctitle,img=img, format=format)
 
         
 
 
-    return render_template('home.html', title='Home')
+    return render_template('home.html', title='Music Downloader')
 
 atexit.register(lambda: sched.shutdown())
 
