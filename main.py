@@ -47,7 +47,7 @@ def home():
                 results_dict=findVideos(generateURL(search))
             
 
-            return render_template("home.html", title='Home', results_dict=results_dict, search=search)
+            return render_template("home.html", title='Music Downloader', results_dict=results_dict, search=search)
 
 
         if "url" in request.form:
@@ -76,7 +76,7 @@ def home():
                 os.remove("static/cache/audio/"+video_title.replace("\"","").replace(".","").replace("\'","")+".mp4")
               
            
-            return render_template("home.html", title="Home",video_title=video_title, format=format)
+            return render_template("home.html", title="Music Downloader",video_title=video_title, format=format)
 
         
 
