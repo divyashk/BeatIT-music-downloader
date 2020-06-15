@@ -45,7 +45,7 @@ def home():
                 if count > 5:
                     return redirect(url_for("home"))
                 results_dict=findVideos(generateURL(search))
-            session['dict']=results_dict
+            
 
             return render_template("home.html", title='Home', results_dict=results_dict, search=search)
 
@@ -53,26 +53,30 @@ def home():
         if "url" in request.form:
             url = request.form["url"]
             video = YouTube(url)
-           
-            video.streams.filter(progressive=True).first().download("static/cache/video")
-            video.streams.filter(only_audio=True).first().download("static/cache/audio")
-            tgt_folder = "static/cache/audio"
-            
-           
 
-            for file in [n for n in os.listdir(tgt_folder) if re.search('mp4',n)]:
-                full_path = os.path.join(tgt_folder, file)
+
+            if "format" in request.form:
+                format = request.form["format"]
+            else:
+                format = "mp4";
+
+            video_title = video.title
+
+
+            if format == "mp4":
+                video.streams.filter(progressive=True).first().download("static/cache/video")
+            else:
+                video.streams.filter(only_audio=True).first().download("static/cache/audio")
+                tgt_folder = "static/cache/audio"
+                for file in [n for n in os.listdir(tgt_folder) if re.search('mp4',n)]:
+                    full_path = os.path.join(tgt_folder, file)
                 output_path = os.path.join(tgt_folder, os.path.splitext(file)[0] + '.mp3')
                 clip = mp.AudioFileClip(full_path) # disable if do not want any clipping
                 clip.write_audiofile(output_path)
-            
-            
-            
-            video_title = video.title
-            os.remove("static/cache/audio/"+video_title.replace("\"","").replace(".","").replace("\'","")+".mp4")
-            results_dict=session['dict']
-            
-            return render_template("home.html", title="Home",results_dict=results_dict ,video_title=video_title)
+                os.remove("static/cache/audio/"+video_title.replace("\"","").replace(".","").replace("\'","")+".mp4")
+              
+           
+            return render_template("home.html", title="Home",video_title=video_title, format=format)
 
         
 
@@ -82,4 +86,4 @@ def home():
 atexit.register(lambda: sched.shutdown())
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)

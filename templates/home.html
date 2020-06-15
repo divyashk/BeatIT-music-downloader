@@ -13,9 +13,9 @@
                         <form action="#services" method="POST" id="form-search">
                             <input type="search" name="search" placeholder="Search" class="form-control form-control-sm"required>
                             <br>
-                            <div >
+                            <div align="center" >
                                 <label style="color:white" for="limit">Sort by:</label>
-                                <select name="sortby" id="nlimit" form="form-search" required >
+                                <select name="sortby" id="nlimit" form="form-search" class="align-content-center form-control form-control-sm " style="width: auto" required >
                                     <option value="Relevance" selected><p>relevance</p></option>
                                     <option value="Views">views</option>
                                     <option value="Upload date">upload Date</option>
@@ -45,6 +45,15 @@
             <hr class="divider my-4" />
             <h6>Time taken for conversion will depend on the size of the video, please wait accordingly.</h6>
             <br>
+                        
+        </div>
+        <div class="container"  align="center">
+            <label for="fdropdown">Select the format</label>
+            <select  style="width: auto" id="fdropdown" name="format" form="send_url" class="align-content-center form-control form-control-sm " >
+                <option value="mp3" >MP3   (audio)</option>
+                <option value="mp4" >MP4   (video)</option>
+            </select>
+            <br>
         </div>
       <div id="portfolio">
 
@@ -54,7 +63,7 @@
                 {% for res_dict in results_dict %}
                 
                 <div class="col-lg-4 col-sm-6" style="text-align: center; border:none; border-radius: 10px;">
-                    <form action="#download" method="POST">
+                    <form id="send_url" action="#download" method="POST">
                         <input type="hidden" name="url" value="{{ res_dict['link'] }}">
                         <button type="submit" style="border: none"class="btn btn-outline-primary">
                         
@@ -92,8 +101,15 @@
             <div id="download" class="container text-center">
                 
                 <h2 class="mb-4">{{video_title}}</h2>
-                <a class="btn btn-light btn-xl" href="static/cache/video/{{ video_title.replace("\"","").replace(".","").replace("\'","") }}.mp4" download>Download Video!</a>
-                <a class="btn btn-light btn-xl" href="static/cache/audio/{{ video_title.replace("\"","").replace(".","").replace("\'","")  }}.mp3" download>Download Audio!</a>
+                
+                {% if format=="mp4" %}
+                    <a class="btn btn-light btn-xl" href="static/cache/video/{{ video_title.replace("\"","").replace(".","").replace("\'","") }}.mp4" download>Download</a>
+                {% else %} 
+                    <a class="btn btn-light btn-xl" href="static/cache/audio/{{ video_title.replace("\"","").replace(".","").replace("\'","")  }}.mp3" download>Download</a>
+                {% endif %}
+                    
+                
+                
             </div>
             <div class="content" style="text-align: center;">
                 <br><br><br>
