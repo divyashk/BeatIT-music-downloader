@@ -63,18 +63,34 @@ def home():
 
             video_title = video.title
 
-
+            # shutil.rmtree("static/cache", ignore_errors=True)
+            
             if format == "mp4":
+                
                 video.streams.filter(progressive=True).first().download("static/cache/video")
             else:
                 video.streams.filter(only_audio=True).first().download("static/cache/audio")
+                
+                
+                #convert the downloader mp4 file to mp3
                 tgt_folder = "static/cache/audio"
                 for file in [n for n in os.listdir(tgt_folder) if re.search('mp4',n)]:
                     full_path = os.path.join(tgt_folder, file)
                 output_path = os.path.join(tgt_folder, os.path.splitext(file)[0] + '.mp3')
                 clip = mp.AudioFileClip(full_path) # disable if do not want any clipping
                 clip.write_audiofile(output_path)
-                os.remove("static/cache/audio/"+video_title.replace("\"","").replace(".","").replace("\'","")+".mp4")
+                
+                
+                #remove all the mp4 files after conversion 
+                directory = "static/cache/audio"
+                files_in_directory = os.listdir(directory)
+                filtered_files = [file for file in files_in_directory if file.endswith(".mp4")]
+                for file in filtered_files:
+                    path_to_file = os.path.join(directory, file)
+                    os.remove(path_to_file)
+
+
+                # os.remove("static/cache/audio/"+video_title.replace("\"","").replace(".","").replace("\'","")+".mp4")
               
            
             return render_template("home.html", title="Music Downloader",video_title=video_title, ctitle=ctitle,img=img, format=format)
