@@ -1,0 +1,110 @@
+{% extends 'layout.html' %}
+
+{% block heading %}
+    <header id="top" class="masthead">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-10 align-self-end">
+                    <h1 class="text-uppercase text-white font-weight-bold">The Best Downloader for your favourite songs!</h1>
+                    <hr class="divider my-4" />
+                </div>
+                <div class="col-lg-8 align-self-baseline">
+                    <p class="text-white-75 font-weight-light mb-5">
+                        <form action="#services" method="POST" id="form-search">
+                            <input type="search" name="search" placeholder="Search" class="form-control form-control-sm"required>
+                            <br>
+                            <div >
+                                <label style="color:white" for="limit">Sort by:</label>
+                                <select name="sortby" id="nlimit" form="form-search" required >
+                                    <option value="Relevance" selected><p>relevance</p></option>
+                                    <option value="Views">views</option>
+                                    <option value="Upload date">upload Date</option>
+                                    <option value="Rating">ratings</option>
+                                  </select>
+                            </div>
+                              <br>
+                             
+                            <button type="submit" class="btn btn-primary btn-xl js-scroll-trigger">FIND</button>
+                        </form>
+                    </p>
+                    <hr class="divider my-4" />
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+{% endblock %}
+
+{% block results %}
+   
+   {% if results_dict %}
+   <section class="page-section" id="services">
+        <div class="container" style="text-align: center;">
+            <h2 class="text-center mt-0">Results</h2>
+            <hr class="divider my-4" />
+            <h6>Time taken for conversion will depend on the size of the video, please wait accordingly.</h6>
+            <br>
+        </div>
+      <div id="portfolio">
+
+
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+                {% for res_dict in results_dict %}
+                
+                <div class="col-lg-4 col-sm-6" style="text-align: center; border:none; border-radius: 10px;">
+                    <form action="#download" method="POST">
+                        <input type="hidden" name="url" value="{{ res_dict['link'] }}">
+                        <button type="submit" style="border: none"class="btn btn-outline-primary">
+                        
+                                <img class="img-thumbnail" src="{{ res_dict['img']}}" alt="" >
+                                
+                                <div class="portfolio-box-caption">
+                                    
+                                    <div class="project-category text-white-50">{{ res_dict['views']}}</div>
+                                    <div class="project-name">{{ res_dict['name']}}</div>
+                                </div>
+                     
+                       
+                    </div>
+                
+                    
+                    
+                </form>
+
+                {% endfor %}
+                                
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+   {% endif %}
+       
+
+{% endblock results%}
+
+{% block download %}
+    
+    {% if video_title %}
+        <section class="page-section bg-dark text-white">
+            <div id="download" class="container text-center">
+                
+                <h2 class="mb-4">{{video_title}}</h2>
+                <a class="btn btn-light btn-xl" href="static/cache/video/{{ video_title.replace("\"","").replace(".","").replace("\'","") }}.mp4" download>Download Video!</a>
+                <a class="btn btn-light btn-xl" href="static/cache/audio/{{ video_title.replace("\"","").replace(".","").replace("\'","")  }}.mp3" download>Download Audio!</a>
+            </div>
+            <div class="content" style="text-align: center;">
+                <br><br><br>
+                <button class="btn btn-outline-secondary">
+                    <a href="#page-top">
+
+                        Start again!
+                    </a>
+                </button>
+            </div>
+        </section>  
+    {% endif %}
+        
+{% endblock %}
