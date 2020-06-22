@@ -1,4 +1,4 @@
-from flask import Flask, flash
+pip from flask import Flask, flash
 from flask import render_template, url_for, redirect, request, session, send_from_directory
 from scraping import generateURL, findVideos
 from pytube import YouTube
@@ -59,14 +59,13 @@ def home():
             if "format" in request.form:
                 format = request.form["format"]
             else:
-                format = "mp4";
+                format = "mp3";
 
             video_title = video.title
 
             # shutil.rmtree("static/cache", ignore_errors=True)
             
-            if format == "mp4":
-                
+            if format == "mp4":                
                 video.streams.filter(progressive=True).first().download("static/cache/video")
             else:
                 video.streams.filter(only_audio=True).first().download("static/cache/audio")
