@@ -1,4 +1,4 @@
-pip from flask import Flask, flash
+from flask import Flask, flash
 from flask import render_template, url_for, redirect, request, session, send_from_directory
 from scraping import generateURL, findVideos
 from pytube import YouTube
