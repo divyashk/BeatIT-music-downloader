@@ -42,6 +42,7 @@
    
    {% if results_dict %}
    <section class="page-section" id="services">
+       1
         <div class="container" style="text-align: center;">
             <h2 class="text-center mt-0">Results</h2>
             <hr class="divider my-4" />
@@ -49,46 +50,46 @@
             <br>
                         
         </div>
-        <div class="container"  align="center">
+
+        <div align="center">
             <label for="fdropdown">Select the format</label>
-            <select  style="width: auto" id="fdropdown" name="format" form="send_url" class="align-content-center form-control form-control-sm " >
-                <option value="mp3" >MP3   (audio)</option>
-                <option value="mp4" >MP4   (video)</option>
+            <select form="send_url" style="width:auto" id="fdropdown" name="format" class="form-control"  >
+                <option value="mp3">MP3   (audio)</option>
+                <option value="mp4">MP4   (video)</option>
             </select>
             <br>
         </div>
-      <div id="portfolio">
+
+        <div id="portfolio">
 
 
-        <div class="container-fluid p-0">
-            <div class="row no-gutters">
-                {% for res_dict in results_dict %}
-                
-                <div class="col-lg-4 col-sm-6" style="text-align: center; border:none; border-radius: 10px;">
-                    <form id="send_url" action="#download" method="POST">
-                        <input type="hidden" name="thumbnail" value="{{ res_dict['img']}}">
-                        <input type="hidden" name="ctitle" value="{{ res_dict['name']}}">
-                        <input type="hidden" name="url" value="{{ res_dict['link'] }}">
-                        <button type="submit" style="border: none"class="btn btn-outline-primary">
-                        
+            <div class="container-fluid p-0">
+                <div class="row no-gutters">
+                    {% for res_dict in results_dict %}
+                    
+                        <div class="col-lg-4 col-sm-6" style="text-align: center; border:none; border-radius: 10px;">
+                            
+                            
+                            <form id="send_url" action="#download" method="POST">
+                                <input type="hidden" name="thumbnail" value="{{ res_dict['img']}}">
+                                <input type="hidden" name="ctitle" value="{{ res_dict['name']}}">
+                                <input type="hidden" name="url" value="{{ res_dict['link'] }}">
+                                <button type="submit" style="border:none" class="btn btn-outline-primary">
                                 <img class="img-thumbnail" src="{{ res_dict['img']}}" alt="" >
                                 
                                 <div class="portfolio-box-caption">
-                                    
+                                        
                                     <div class="project-category text-white-50">{{ res_dict['views']}}</div>
                                     <div class="project-name">{{ res_dict['name']}}</div>
                                 </div>
-                     
-                       
-                    </div>
-                
+                                        
+                            
+                            
+                            </form>
+                        
                     
-                    
-                </form>
-
-                {% endfor %}
-                                
-                    
+                        </div>
+                    {% endfor %}  
                 </div>
             </div>
         </div>

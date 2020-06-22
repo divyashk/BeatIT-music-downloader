@@ -62,7 +62,7 @@ def home():
                 format = "mp3";
 
             video_title = video.title
-
+            # wont be using this for now
             # shutil.rmtree("static/cache", ignore_errors=True)
             
             if format == "mp4":                
