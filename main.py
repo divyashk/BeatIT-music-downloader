@@ -1,7 +1,7 @@
 from flask import Flask, flash
 from flask import render_template, url_for, redirect, request, session, send_from_directory
 from scraping import generateURL, findVideos
-from pytube import YouTube
+from pytube import YouTube,Stream
 from datetime import datetime
 import time
 import os
@@ -10,7 +10,7 @@ import atexit
 from apscheduler.schedulers.background import BackgroundScheduler
 import moviepy.editor as mp
 import re
-
+from slugify import slugify
 SECRET_KEY = os.urandom(32)
 
 app = Flask(__name__)
@@ -53,7 +53,14 @@ def home():
         if "url" in request.form:
             url = request.form["url"]
             video = YouTube(url)
+            
+            #here ctitle is the name of the video that is independent of the pytube lib and has been scraped along with the url of the video.
             ctitle=request.form["ctitle"]
+            stitle = slugify(ctitle)      #turned the name into file-valid name
+    
+            #here ytitle is the name of the video according to the pytube library
+            ytitle=video.streams.first().default_filename
+
             img=request.form["thumbnail"]
 
             if "format" in request.form:
@@ -61,38 +68,25 @@ def home():
             else:
                 format = "mp3";
 
-            video_title = video.title
             # wont be using this for now
             # shutil.rmtree("static/cache", ignore_errors=True)
             
             if format == "mp4":                
-                video.streams.filter(progressive=True).first().download("static/cache/video")
+                video.streams.filter(progressive=True).first().download("static/cache/video",stitle)
+                
             else:
-                video.streams.filter(only_audio=True).first().download("static/cache/audio")
+               
+                video.streams.filter(only_audio=True).first().download("static/cache/audio",stitle)
                 
-                
-                #convert the downloader mp4 file to mp3
-                tgt_folder = "static/cache/audio"
-                for file in [n for n in os.listdir(tgt_folder) if re.search('mp4',n)]:
-                    full_path = os.path.join(tgt_folder, file)
-                output_path = os.path.join(tgt_folder, os.path.splitext(file)[0] + '.mp3')
-                clip = mp.AudioFileClip(full_path) # disable if do not want any clipping
-                clip.write_audiofile(output_path)
-                
-                
-                #remove all the mp4 files after conversion 
-                directory = "static/cache/audio"
-                files_in_directory = os.listdir(directory)
-                filtered_files = [file for file in files_in_directory if file.endswith(".mp4")]
-                for file in filtered_files:
-                    path_to_file = os.path.join(directory, file)
-                    os.remove(path_to_file)
-
-
-                # os.remove("static/cache/audio/"+video_title.replace("\"","").replace(".","").replace("\'","")+".mp4")
+                #convert all the downloaded mp4 files to mp3
+               
+                old = "static/cache/audio/"+stitle+".mp4"
+                new = "static/cache/audio/"+stitle+".mp3"
+                os.rename(old, new)
+                                         
               
            
-            return render_template("home.html", title="Music Downloader",video_title=video_title, ctitle=ctitle,img=img, format=format)
+            return render_template("home.html", title="Music Downloader",stitle=stitle,ctitle=ctitle,img=img, format=format)
 
         
 

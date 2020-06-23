@@ -42,7 +42,7 @@
    
    {% if results_dict %}
    <section class="page-section" id="services">
-       1
+       
         <div class="container" style="text-align: center;">
             <h2 class="text-center mt-0">Results</h2>
             <hr class="divider my-4" />
@@ -101,7 +101,7 @@
 <!-- *************************************download link******************************************** -->
 {% block download %}
     
-    {% if video_title %}
+    {% if ctitle %}
         <section class="page-section bg-dark text-white">
             <div id="download" class="container text-center">
                 <img class="img-thumbnail" src="{{ img }}" alt="" >
@@ -109,9 +109,9 @@
                 <h2 class="mb-4">{{ ctitle }}</h2>
                 
                 {% if format=="mp4" %}
-                    <a class="btn btn-light btn-xl" href="static/cache/video/{{ video_title.replace("\"","").replace(".","").replace("\'","") }}.mp4" download>Download</a>
+                    <a class="btn btn-light btn-xl" href="static/cache/video/{{ stitle }}.mp4" download>Download</a>
                 {% else %} 
-                    <a class="btn btn-light btn-xl" href="static/cache/audio/{{ video_title.replace("\"","").replace(".","").replace("\'","")  }}.mp3" download>Download</a>
+                    <a class="btn btn-light btn-xl" href="static/cache/audio/{{ stitle }}.mp3" download>Download</a>
                 {% endif %}
                     
                 
