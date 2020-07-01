@@ -39,12 +39,13 @@ def findVideos(url,limit=5):
     sCode = ""
     while sCode == "":
         try:
-            sCode = requests.get(url)
+            user_agent = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36'
+            headers = {'User-Agent': user_agent}
+            sCode = requests.get(url, headers=headers)
             break
         except:
             time.sleep(5)
 
-    # sCode = requests.get(url)
     page = sCode.text
 
     
@@ -54,7 +55,7 @@ def findVideos(url,limit=5):
     results = soup.select("#results ol li:nth-child(2) ol>li")
 
     #used for understanding the stru#page-topcture of the parsed html
-    #open('parsed.html','w',encoding="utf8").write(page)
+    open('parsed.html','w',encoding="utf8").write(page)
 
 
     home = "https://www.youtube.com"
@@ -121,5 +122,12 @@ def findVideos(url,limit=5):
     return allVideos
 
 
+# for testing the scraping file
 
 
+# search = "hello";
+# url = generateURL(search)
+
+# video = findVideos(url);
+
+# print(video)

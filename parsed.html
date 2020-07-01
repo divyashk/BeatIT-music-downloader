@@ -1,0 +1,1414 @@
+  <!DOCTYPE html><html lang="en-GB" data-cast-api-enabled="true"><head><style name="www-roboto" >@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'),local('Roboto-Medium'),url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc-.woff)format('woff');}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto Regular'),local('Roboto-Regular'),url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxM.woff)format('woff');}@font-face{font-family:'Roboto';font-style:italic;font-weight:500;src:local('Roboto Medium Italic'),local('Roboto-MediumItalic'),url(//fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51S7ACc6CsI.woff)format('woff');}@font-face{font-family:'Roboto';font-style:italic;font-weight:400;src:local('Roboto Italic'),local('Roboto-Italic'),url(//fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1Mu51xIIzQ.woff)format('woff');}</style><script name="www-roboto" >if (document.fonts && document.fonts.load) {document.fonts.load("400 10pt Roboto", "E");document.fonts.load("500 10pt Roboto", "E");}</script><script >var ytcsi = {gt: function(n) {n = (n || '') + 'data_';return ytcsi[n] || (ytcsi[n] = {tick: {},info: {}});},now: (window.performance && window.performance.timing &&window.performance.now && window.performance.timing.navigationStart) ?function() {return window.performance.timing.navigationStart +window.performance.now();} :function() {return (new Date()).getTime();},tick: function(l, t, n) {ticks = ytcsi.gt(n).tick;var v = t || ytcsi.now();if (ticks[l]) {ticks['_' + l] = (ticks['_' + l] || [ticks[l]]);ticks['_' + l].push(v);}ticks[l] = v;},info: function(k, v, n) {ytcsi.gt(n).info[k] = v;},setStart: function(s, t, n) {ytcsi.info('yt_sts', s, n);ytcsi.tick('_start', t, n);}};(function(w, d) {ytcsi.setStart('dhs', w.performance ? w.performance.timing.responseStart : null);var isPrerender = (d.visibilityState || d.webkitVisibilityState) == 'prerender';var vName = (!d.visibilityState && d.webkitVisibilityState)? 'webkitvisibilitychange' : 'visibilitychange';if (isPrerender) {ytcsi.info('prerender', 1);var startTick = function() {ytcsi.setStart('dhs');d.removeEventListener(vName, startTick);};d.addEventListener(vName, startTick, false);}if (d.addEventListener) {d.addEventListener(vName, function() {ytcsi.tick('vc');}, false);}function isGecko() {if (!w.navigator || !w.navigator.userAgent) {return false;}var ua = w.navigator.userAgent;return ua.indexOf('Gecko') > 0 &&ua.toLowerCase().indexOf('webkit') < 0 &&ua.indexOf('Edge') < 0 &&ua.indexOf('Trident') < 0 &&ua.indexOf('MSIE') < 0;}if (isGecko()) {var isHidden = (d.visibilityState || d.webkitVisibilityState) == 'hidden';if (isHidden) {ytcsi.tick('vc');}}var slt = function(el, t) {setTimeout(function() {var n = ytcsi.now();el.loadTime = n;if (el.slt) {el.slt();}}, t);};w.__ytRIL = function(el) {if (!el.getAttribute('data-thumb')) {if (w.requestAnimationFrame) {w.requestAnimationFrame(function() {slt(el, 0);});} else {slt(el, 16);}}};})(window, document);</script><script >var ytcfg = {d: function() {return (window.yt && yt.config_) || ytcfg.data_ || (ytcfg.data_ = {});},get: function(k, o) {return (k in ytcfg.d()) ? ytcfg.d()[k] : o;},set: function() {var a = arguments;if (a.length > 1) {ytcfg.d()[a[0]] = a[1];} else {for (var k in a[0]) {ytcfg.d()[k] = a[0][k];}}}};</script>  <script>ytcfg.set("ROOT_VE_TYPE", 4724);ytcfg.set("EVENT_ID", "bur8XouYH7zB3LUPtvqUkAg");</script>
+  
+<script >window.yterr = window.yterr || true;</script>  
+
+
+
+
+  <script >
+        (function(){/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+var a={a:"content-snap-width-1",b:"content-snap-width-2",f:"content-snap-width-3"};function f(){var c=[],b;for(b in a)c.push(a[b]);return c}
+function h(c){var b=f().concat(["guide-pinned","show-guide"]),d=b.length,g=[];c.replace(/\S+/g,function(e){for(var k=0;k<d;k++)if(e==b[k])return;g.push(e)});
+return g}
+;function l(c,b,d){var g=document.getElementsByTagName("html")[0],e=h(g.className);c&&1251<=(window.innerWidth||document.documentElement.clientWidth)&&(e.push("guide-pinned"),b&&e.push("show-guide"));d&&(d=(window.innerWidth||document.documentElement.clientWidth)-21-50,1251<=(window.innerWidth||document.documentElement.clientWidth)&&c&&b&&(d-=230),e.push(1262<=d?"content-snap-width-3":1056<=d?"content-snap-width-2":"content-snap-width-1"));g.className=e.join(" ")}
+var m=["yt","www","masthead","sizing","runBeforeBodyIsReady"],n=this||self;m[0]in n||"undefined"==typeof n.execScript||n.execScript("var "+m[0]);for(var p;m.length&&(p=m.shift());)m.length||void 0===l?n[p]&&n[p]!==Object.prototype[p]?n=n[p]:n=n[p]={}:n[p]=l;}).call(this);
+
+      try {window.ytbuffer = {};ytbuffer.handleClick = function(e) {var element = e.target || e.srcElement;while (element.parentElement) {if (/(^| )yt-can-buffer( |$)/.test(element.className)) {window.ytbuffer = {bufferedClick: e};element.className += ' yt-is-buffered';break;}element = element.parentElement;}};if (document.addEventListener) {document.addEventListener('click', ytbuffer.handleClick);} else {document.attachEvent('onclick', ytbuffer.handleClick);}} catch(e) {}
+
+    yt.www.masthead.sizing.runBeforeBodyIsReady(true,true,false);
+  </script>
+
+      <script src="/yts/jsbin/scheduler-vfl2IdAM8/scheduler.js" type="text/javascript" name="scheduler/scheduler" ></script>
+
+
+  
+  <link rel="stylesheet" href="/yts/cssbin/www-core-webp-vflywcVYf.css" name="www-core">
+      <link rel="stylesheet" href="/s/player/02c092a5/www-player-webp.css" name="player/www-player">
+
+  <link rel="stylesheet" href="/yts/cssbin/www-pageframe-webp-vflNhyrzR.css" name="www-pageframe">
+  <link rel="stylesheet" href="/yts/cssbin/www-guide-webp-vflU5ro0c.css" name="www-guide">
+
+    
+<title>Power is Power - YouTube</title><link rel="alternate" media="handheld" href="https://m.youtube.com/results?search_query=Power+is+Power"><link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.youtube.com/results?search_query=Power+is+Power"><meta name="description" content="Enjoy the videos and music you love, upload original content and share it all with friends, family and the world on YouTube."><meta name="keywords" content="video, sharing, camera phone, video phone, free, upload"><link rel="manifest" href="/manifest.json"><link rel="search" type="application/opensearchdescription+xml" href="https://www.youtube.com/opensearch?locale=en_GB" title="YouTube Video Search"><link rel="shortcut icon" href="https://s.ytimg.com/yts/img/favicon-vfl8qSV2F.ico" type="image/x-icon">     <link rel="icon" href="/yts/img/favicon_32-vflOogEID.png" sizes="32x32"><link rel="icon" href="/yts/img/favicon_48-vflVjB_Qk.png" sizes="48x48"><link rel="icon" href="/yts/img/favicon_96-vflW9Ec0w.png" sizes="96x96"><link rel="icon" href="/yts/img/favicon_144-vfliLAfaB.png" sizes="144x144"><meta name="theme-color" content="#ff0000">    <link rel="stylesheet" href="/yts/cssbin/www-results-webp-vflT9D42D.css" name="www-results">
+
+    <link rel="stylesheet" href="/yts/cssbin/www-home-c4-webp-vfls3PsJQ.css" name="www-home-c4">
+
+<style>.exp-invert-logo .hats-logo {background: no-repeat url(/yts/img/ringo/hitchhiker/logo_mini_gray-vflfanGkh.png);width: 65px;height: 15px;}.exp-invert-logo #header:before,.exp-invert-logo .ypc-join-family-header .logo,.exp-invert-logo #footer-logo .footer-logo-icon,.exp-invert-logo #yt-masthead #logo-container .logo,.exp-invert-logo #masthead #logo-container,.exp-invert-logo .admin-masthead-logo a,.exp-invert-logo #yt-sidebar-styleguide-logo #logo {background: no-repeat url(/yts/img/ringo/hitchhiker/logo_small-vflHpzGZm.png);width: 100px;height: 30px;}.exp-invert-logo.inverted-hdpi #header:before,.exp-invert-logo.inverted-hdpi .ypc-join-family-header .logo,.exp-invert-logo.inverted-hdpi #footer-logo .footer-logo-icon,.exp-invert-logo.inverted-hdpi #yt-masthead #logo-container .logo,.exp-invert-logo.inverted-hdpi #masthead #logo-container,.exp-invert-logo.inverted-hdpi .admin-masthead-logo a,.exp-invert-logo.inverted-hdpi #yt-sidebar-styleguide-logo #logo {background: no-repeat url(/yts/img/ringo/hitchhiker/logo_small_2x-vfl4_cFqn.png);background-size: 100px 30px;width: 100px;height: 30px;}.exp-invert-logo.exp-fusion-nav-redesign .masthead-logo-renderer-logo {background: no-repeat url(/yts/img/ringo/hitchhiker/yt_play_logo-vflLfk4yD.png);width: 40px;height: 28px;}.exp-invert-logo.inverted-hdpi.exp-fusion-nav-redesign .masthead-logo-renderer-logo {background: no-repeat url(/yts/img/ringo/hitchhiker/yt_play_logo_2x-vflXx5Pg3.png);width: 40px;height: 28px;}@media screen and (max-width: 656px) {.exp-invert-logo #yt-masthead #logo-container .logo {background: no-repeat url(/yts/img/ringo/hitchhiker/yt_play_logo-vflLfk4yD.png);width: 40px;height: 28px;}.exp-invert-logo.inverted-hdpi #yt-masthead #logo-container .logo {background: no-repeat url(/yts/img/ringo/hitchhiker/yt_play_logo_2x-vflXx5Pg3.png);background-size: 40px 28px;width: 40px;height: 28px;}}@media only screen and (min-width: 0px) and (max-width: 498px),only screen and (min-width: 499px) and (max-width: 704px) {.exp-invert-logo.exp-responsive #yt-masthead #logo-container {background: no-repeat url(/yts/img/ringo/hitchhiker/yt_play_logo-vflLfk4yD.png);width: 40px;height: 28px;}.exp-invert-logo.inverted-hdpi.exp-responsive #yt-masthead #logo-container {background: no-repeat url(/yts/img/ringo/hitchhiker/yt_play_logo_2x-vflXx5Pg3.png);background-size: 40px 28px;width: 40px;height: 28px;}}.exp-invert-logo #yt-masthead #logo-container .logo-red {background: no-repeat url(/yts/img/ringo/hitchhiker/logo_youtube_red-vflZxcSR1.png);width: 132px;height: 30px;}.exp-invert-logo.inverted-hdpi #yt-masthead #logo-container .logo-red {background: no-repeat url(/yts/img/ringo/hitchhiker/logo_youtube_red_2x-vflOSHA_n.png);background-size: 132px 30px;width: 132px;height: 30px;}.exp-invert-logo #yt-masthead #logo-container .logo-premium {background: no-repeat url(/yts/img/ringo/hitchhiker/logo_youtube_premium-vfltrvziB.png);width: 108px;height: 30px;}.exp-invert-logo.inverted-hdpi #yt-masthead #logo-container .logo-premium {background: no-repeat url(/yts/img/ringo/hitchhiker/logo_youtube_premium_2x-vflxcbz_g.png);background-size: 108px 30px;width: 108px;height: 30px;}.exp-invert-logo .guide-item .guide-video-youtube-red-icon {background: no-repeat url(/yts/img/ringo/hitchhiker/video_youtube_red-vflovGTdz.png);width: 20px;height: 20px;}.exp-invert-logo.inverted-hdpi .guide-item .guide-video-youtube-red-icon {background: no-repeat url(/yts/img/ringo/hitchhiker/video_youtube_red_2x-vflqMdgEM.png);background-size: 20px 20px;width: 20px;height: 20px;}.exp-invert-logo .guide-item:hover .guide-video-youtube-red-icon,.exp-invert-logo .guide-item.guide-item-selected .guide-video-youtube-red-icon {background: no-repeat url(/yts/img/ringo/hitchhiker/video_youtube_red_hover-vflgV4Gv0.png);width: 20px;height: 20px;}.exp-invert-logo.inverted-hdpi .guide-item:hover .guide-video-youtube-red-icon,.exp-invert-logo.inverted-hdpi .guide-item.guide-item-selected .guide-video-youtube-red-icon {background: no-repeat url(/yts/img/ringo/hitchhiker/video_youtube_red_hover_2x-vflYjZHvf.png);background-size: 20px 20px;width: 20px;height: 20px;}.exp-invert-logo li.guide-section h3,.exp-invert-logo li.guide-section h3 a {color: #f00;}.exp-invert-logo a.yt-uix-button-epic-nav-item:hover,.exp-invert-logo a.yt-uix-button-epic-nav-item.selected,.exp-invert-logo a.yt-uix-button-epic-nav-item.yt-uix-button-toggled,.exp-invert-logo a.yt-uix-button-epic-nav-item.partially-selected,.exp-invert-logo a.yt-uix-button-epic-nav-item.partially-selected:hover,.exp-invert-logo button.yt-uix-button-epic-nav-item:hover,.exp-invert-logo button.yt-uix-button-epic-nav-item.selected,.exp-invert-logo button.yt-uix-button-epic-nav-item.yt-uix-button-toggled,.exp-invert-logo .epic-nav-item:hover,.exp-invert-logo .epic-nav-item.selected,.exp-invert-logo .epic-nav-item.yt-uix-button-toggled,.exp-invert-logo .epic-nav-item-heading,.exp-invert-logo .yt-gb-shelf-item-thumbtab.yt-gb-selected-shelf-tab::before {border-color: #f00;}.exp-invert-logo .resume-playback-progress-bar,.exp-invert-logo .yt-uix-button-subscribe-branded,.exp-invert-logo .yt-uix-button-subscribe-branded[disabled],.exp-invert-logo .yt-uix-button-subscribe-branded[disabled]:hover,.exp-invert-logo .yt-uix-button-subscribe-branded[disabled]:active,.exp-invert-logo .yt-uix-button-subscribe-branded[disabled]:focus,.exp-invert-logo .sb-notif-on .yt-uix-button-content,.exp-invert-logo .guide-item.guide-item-selected,.exp-invert-logo .guide-item.guide-item-selected:hover,.exp-invert-logo .guide-item.guide-item-selected .yt-deemphasized-text,.exp-invert-logo .guide-item.guide-item-selected:hover .yt-deemphasized-text {background-color: #f00;}.exp-invert-logo .yt-uix-button-subscribe-branded:hover {background-color: #d90a17;}.exp-invert-logo .yt-uix-button-subscribe-branded.yt-is-buffered,.exp-invert-logo .yt-uix-button-subscribe-branded:active,.exp-invert-logo .yt-uix-button-subscribe-branded.yt-uix-button-toggled,.exp-invert-logo .yt-uix-button-subscribe-branded.yt-uix-button-active,.exp-invert-logo .yt-uix-button-subscribed-branded.external,.exp-invert-logo .yt-uix-button-subscribed-branded.external[disabled],.exp-invert-logo .yt-uix-button-subscribed-branded.external:active,.exp-invert-logo .yt-uix-button-subscribed-branded.external.yt-uix-button-toggled,.exp-invert-logo .yt-uix-button-subscribed-branded.external.yt-uix-button-active {background-color: #a60812;}</style><style>.exp-invert-logo #header:before, .exp-invert-logo .ypc-join-family-header .logo, .exp-invert-logo #footer-logo .footer-logo-icon, .exp-invert-logo #yt-masthead #logo-container .logo, .exp-invert-logo #masthead #logo-container, .exp-invert-logo .admin-masthead-logo a, .exp-invert-logo #yt-sidebar-styleguide-logo #logo { background: no-repeat url(/yts/img/ringo/hitchhiker/logo_small_2x-vfl4_cFqn.png); background-size: 100px 30px; } .exp-invert-logo #yt-masthead #logo-container .logo-red { background: no-repeat url(/yts/img/ringo/hitchhiker/logo_youtube_red_2x-vflOSHA_n.png); background-size: 132px 30px; } @media only screen and (min-width: 0px) and (max-width: 498px), only screen and (min-width: 499px) and (max-width: 704px) { .exp-invert-logo.exp-responsive #yt-masthead #logo-container { background: no-repeat url(/yts/img/ringo/hitchhiker/yt_play_logo_2x-vflXx5Pg3.png); background-size: 40px 28px; } } .guide-sort-container {display: none}</style></head>
+    <body dir="ltr" id="body" class="  visibility-logging-enabled  ltr  webkit webkit-537  exp-invert-logo exp-kevlar-settings exp-mouseover-img exp-responsive exp-search-big-thumbs   site-center-aligned site-as-giant-card guide-pinning-enabled appbar-hidden   not-nirvana-dogfood    delayed-frame-styles-not-in  " data-spf-name="other">
+
+  <div id="early-body"></div>
+  <div id="body-container"><div id="a11y-announcements-container" role="alert"><div id="a11y-announcements-message"></div></div><form name="logoutForm" method="POST" action="/logout"><input type="hidden" name="action_logout" value="1"></form><div id="masthead-positioner">  <div id="ticker-content">
+        
+
+  </div>
+  <div id="yt-masthead-container" class="clearfix yt-base-gutter">  <button id="a11y-skip-nav" class="skip-nav" data-target-id="main" tabindex="3">
+Skip navigation
+  </button>
+<div id="yt-masthead"><div class="yt-masthead-logo-container ">  <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-text yt-uix-button-empty yt-uix-button-has-icon appbar-guide-toggle appbar-guide-clickable-ancestor" type="button" onclick=";return false;" id="appbar-guide-button" aria-controls="appbar-guide-menu" aria-label="Guide"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-appbar-guide yt-sprite"></span></span></button>
+  <div id="appbar-main-guide-notification-container"></div>
+<span id="yt-masthead-logo-fragment"><a href="/" class="masthead-logo-renderer yt-uix-sessionlink      spf-link " data-sessionlink="itct=CAMQsV4iEwjNlZSB66zqAhV6E7cAHebrB9M"  id="logo-container" title="YouTube Home">  <span title="YouTube Home" class="logo masthead-logo-renderer-logo yt-sprite"></span>
+<span class="content-region">IN</span></a></span></div><div id="yt-masthead-signin">    <a  href="//www.youtube.com/upload" class="yt-uix-button   yt-uix-sessionlink yt-uix-button-opacity yt-uix-button-size-default yt-uix-button-has-icon yt-uix-tooltip yt-uix-button-empty" data-sessionlink="ei=bur8XouYH7zB3LUPtvqUkAg&amp;feature=mhsb" id="upload-btn" title="Upload"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-material-upload yt-sprite"></span></span></a>
+<div class="signin-container "><button class="yt-uix-button yt-uix-button-size-default yt-uix-button-primary" type="button" onclick=";window.location.href=this.getAttribute(&#39;href&#39;);return false;" href="https://accounts.google.com/ServiceLogin?service=youtube&amp;uilel=3&amp;passive=true&amp;hl=en-GB&amp;continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26hl%3Den-GB%26next%3D%252Fresults%253Fsearch_query%253DPower%252Bis%252BPower%26app%3Ddesktop%26feature%3Dsign_in_button" role="link"><span class="yt-uix-button-content">Sign in</span></button>  <iframe id="signin-passive" src="https://accounts.google.com/ServiceLogin?service=youtube&amp;uilel=3&amp;passive=true&amp;hl=en-GB&amp;continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26hl%3Den-GB%26next%3D%252Fsignin_passive%26app%3Ddesktop%26feature%3Dpassive"></iframe>
+</div></div><div id="yt-masthead-content"><form id="masthead-search" class="  search-form consolidated-form  vve-check" action="/results" onsubmit="if (document.getElementById(&#39;masthead-search-term&#39;).value == &#39;&#39;) return false;" data-clicktracking="CAEQ7VAiEwiLh5OB66zqAhW8ILcAHTY9BYIo9CQ" data-visibility-tracking="CAEQ7VAiEwiLh5OB66zqAhW8ILcAHTY9BYIo9CQ"><button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default search-btn-component search-button" type="submit" onclick="if (document.getElementById(&#39;masthead-search-term&#39;).value == &#39;&#39;) return false; document.getElementById(&#39;masthead-search&#39;).submit(); return false;;return true;" id="search-btn" tabindex="2" dir="ltr"><span class="yt-uix-button-content">Search</span></button><div id="masthead-search-terms" class="masthead-search-terms-border" dir="ltr"><input id="masthead-search-term" autocomplete="off"  onkeydown="if (!this.value &amp;&amp; (event.keyCode == 40 || event.keyCode == 32 || event.keyCode == 34)) {this.onkeydown = null; this.blur();}" class="search-term masthead-search-renderer-input yt-uix-form-input-bidi" name="search_query" value="Power is Power" type="text" tabindex="1" placeholder="Search" title="Search" aria-label="Search"></div></form></div></div></div>
+    <div id="masthead-appbar-container" class="clearfix"><div id="masthead-appbar"><div id="appbar-content" class=""></div></div></div>
+
+</div><div id="masthead-positioner-height-offset"></div><div id="page-container"><div id="page" class="  search  branded-page-v2-secondary-column-wide  no-flex clearfix"><div id="guide" class="yt-scrollbar">      <div id="appbar-guide-menu" class="appbar-menu appbar-guide-menu-layout appbar-guide-clickable-ancestor yt-uix-scroller yt-uix-tdl" role="navigation">
+    <div id="guide-container">
+        <div class="guide-module-content yt-scrollbar">
+    <ul class="guide-toplevel">
+            <li class="guide-section vve-check"
+    data-visibility-tracking="CA4Q5isYACITCLmklIHrrOoCFTbRcwEdGjcNJg==">
+    <div class="guide-item-container personal-item">
+      
+      <ul class="guide-user-links yt-uix-tdl yt-box" role="menu">
+            
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item " id="what_to_watch-guide-item" 
+ data-visibility-tracking="CBIQtSwYACITCLmklIHrrOoCFTbRcwEdGjcNJg==" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-link    "
+    href="/"
+    title="Home"
+    data-serialized-endpoint="0qDduQEREg9GRXdoYXRfdG9fd2F0Y2g%3D" data-external-id="what_to_watch" data-visibility-tracking="CBIQtSwYACITCLmklIHrrOoCFTbRcwEdGjcNJg==" data-sessionlink="ei=bur8XouYH7zB3LUPtvqUkAg&amp;feature=g-system&amp;ved=CAUQtSwYACITCIuHk4HrrOoCFbwgtwAdNj0Fgij0JA"
+  >
+    <span class="yt-valign-container">
+        <span class="thumb guide-what-to-watch-icon yt-sprite"></span>
+        <span class="display-name  no-count">
+          <span>
+            Home
+          </span>
+        </span>
+    </span>
+  </a>
+
+  </li>
+
+            
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item " id="trending-guide-item" 
+ data-visibility-tracking="CBEQtSwYASITCLmklIHrrOoCFTbRcwEdGjcNJg==" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-link    "
+    href="/feed/trending"
+    title="Trending"
+    data-serialized-endpoint="0qDduQEMEgpGRXRyZW5kaW5n" data-external-id="trending" data-visibility-tracking="CBEQtSwYASITCLmklIHrrOoCFTbRcwEdGjcNJg==" data-sessionlink="ei=bur8XouYH7zB3LUPtvqUkAg&amp;feature=g-trending&amp;ved=CAYQtSwYASITCIuHk4HrrOoCFbwgtwAdNj0Fgij0JA"
+  >
+    <span class="yt-valign-container">
+        <span class="thumb guide-trending-icon yt-sprite"></span>
+        <span class="display-name  no-count">
+          <span>
+            Trending
+          </span>
+        </span>
+    </span>
+  </a>
+
+  </li>
+
+            
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item " id="history-guide-item" 
+ data-visibility-tracking="CBAQtSwYAiITCLmklIHrrOoCFTbRcwEdGjcNJg==" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-link    "
+    href="/feed/history"
+    title="History"
+    data-serialized-endpoint="0qDduQELEglGRWhpc3Rvcnk%3D" data-external-id="history" data-visibility-tracking="CBAQtSwYAiITCLmklIHrrOoCFTbRcwEdGjcNJg==" data-sessionlink="ei=bur8XouYH7zB3LUPtvqUkAg&amp;feature=g-personal&amp;ved=CAcQtSwYAiITCIuHk4HrrOoCFbwgtwAdNj0Fgij0JA"
+  >
+    <span class="yt-valign-container">
+        <span class="thumb guide-history-icon yt-sprite"></span>
+        <span class="display-name  no-count">
+          <span>
+            History
+          </span>
+        </span>
+    </span>
+  </a>
+
+  </li>
+
+            
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item " id="unlimited-guide-item" 
+ data-visibility-tracking="CA8QmbcBGAMiEwi5pJSB66zqAhU20XMBHRo3DSY=" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-link    "
+    href="/premium"
+    title="Get YouTube Premium"
+    data-serialized-endpoint="0qDduQENEgtTUHVubGltaXRlZA%3D%3D" data-external-id="unlimited" data-visibility-tracking="CA8QmbcBGAMiEwi5pJSB66zqAhU20XMBHRo3DSY=" data-sessionlink="ei=bur8XouYH7zB3LUPtvqUkAg&amp;ved=CAgQtSwYAyITCIuHk4HrrOoCFbwgtwAdNj0Fgij0JA"
+  >
+    <span class="yt-valign-container">
+        <span class="thumb guide-video-youtube-red-icon yt-sprite"></span>
+        <span class="display-name  no-count">
+          <span>
+            Get YouTube Premium
+          </span>
+        </span>
+    </span>
+  </a>
+
+  </li>
+
+      </ul>
+    </div>
+      <hr class="guide-section-separator">
+  </li>
+
+            <li class="guide-section vve-check"
+    data-visibility-tracking="CAMQ5isYASITCLmklIHrrOoCFTbRcwEdGjcNJg==">
+    <div class="guide-item-container personal-item">
+          <h3>
+      Best of YouTube
+    </h3>
+
+      <ul class="guide-user-links yt-uix-tdl yt-box" role="menu">
+            
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item " id="UC-9-kyTW8ZkZNDHQJ6FgpwQ-guide-item" 
+ data-visibility-tracking="CA0QtSwYACITCLmklIHrrOoCFTbRcwEdGjcNJg==" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-link    "
+    href="/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ"
+    title="Music"
+    data-serialized-endpoint="0qDduQEaEhhVQy05LWt5VFc4WmtaTkRIUUo2Rmdwd1E%3D" data-external-id="UC-9-kyTW8ZkZNDHQJ6FgpwQ" data-visibility-tracking="CA0QtSwYACITCLmklIHrrOoCFTbRcwEdGjcNJg==" data-sessionlink="ei=bur8XouYH7zB3LUPtvqUkAg&amp;feature=g-channel&amp;ved=CAoQtSwYACITCIuHk4HrrOoCFbwgtwAdNj0Fgij0JA"
+  >
+    <span class="yt-valign-container">
+        <span class="thumb">  <span class="video-thumb  yt-thumb yt-thumb-20"
+    >
+    <span class="yt-thumb-square">
+      <span class="yt-thumb-clip">
+        
+  <img alt="" aria-hidden="true" data-thumb="//yt3.ggpht.com/nfsB_exWkQD6ZFwY9B_d0nu5O-hyEU5n3V8IStIS588oM1FpFLF7EcdOyXK8Xc0DxqFoSN-rhG8=s20-c-k-c0xffffffff-no-nd-rj" src="/yts/img/pixel-vfl3z5WfW.gif" height="20" width="20" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+
+        <span class="vertical-align"></span>
+      </span>
+    </span>
+  </span>
+</span>
+        <span class="display-name  no-count">
+          <span>
+            Music
+          </span>
+        </span>
+    </span>
+  </a>
+
+  </li>
+
+            
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item " id="UCEgdi0XIXXZ-qJOFPf4JSKw-guide-item" 
+ data-visibility-tracking="CAwQtSwYASITCLmklIHrrOoCFTbRcwEdGjcNJg==" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-link    "
+    href="/channel/UCEgdi0XIXXZ-qJOFPf4JSKw"
+    title="Sports"
+    data-serialized-endpoint="0qDduQEaEhhVQ0VnZGkwWElYWFotcUpPRlBmNEpTS3c%3D" data-external-id="UCEgdi0XIXXZ-qJOFPf4JSKw" data-visibility-tracking="CAwQtSwYASITCLmklIHrrOoCFTbRcwEdGjcNJg==" data-sessionlink="ei=bur8XouYH7zB3LUPtvqUkAg&amp;feature=g-channel&amp;ved=CAsQtSwYASITCIuHk4HrrOoCFbwgtwAdNj0Fgij0JA"
+  >
+    <span class="yt-valign-container">
+        <span class="thumb">  <span class="video-thumb  yt-thumb yt-thumb-20"
+    >
+    <span class="yt-thumb-square">
+      <span class="yt-thumb-clip">
+        
+  <img alt="" aria-hidden="true" data-thumb="//yt3.ggpht.com/-ay4xJTPWmPSAj40k-OxETbnBF1oo3efQWPgoVOThxW_Zgap1PmBRD6Nn-9f8xus4Du5RPFL6sU=s20-c-k-c0xffffffff-no-nd-rj" src="/yts/img/pixel-vfl3z5WfW.gif" height="20" width="20" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+
+        <span class="vertical-align"></span>
+      </span>
+    </span>
+  </span>
+</span>
+        <span class="display-name  no-count">
+          <span>
+            Sports
+          </span>
+        </span>
+    </span>
+  </a>
+
+  </li>
+
+            
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item " id="UCOpNcN46UbXVtpKMrmU4Abg-guide-item" 
+ data-visibility-tracking="CAsQtSwYAiITCLmklIHrrOoCFTbRcwEdGjcNJg==" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-link    "
+    href="/gaming"
+    title="Gaming"
+    data-serialized-endpoint="0qDduQEaEhhVQ09wTmNONDZVYlhWdHBLTXJtVTRBYmc%3D" data-external-id="UCOpNcN46UbXVtpKMrmU4Abg" data-visibility-tracking="CAsQtSwYAiITCLmklIHrrOoCFTbRcwEdGjcNJg==" data-sessionlink="ei=bur8XouYH7zB3LUPtvqUkAg&amp;feature=g-channel&amp;ved=CAwQtSwYAiITCIuHk4HrrOoCFbwgtwAdNj0Fgij0JA"
+  >
+    <span class="yt-valign-container">
+        <span class="thumb">  <span class="video-thumb  yt-thumb yt-thumb-20"
+    >
+    <span class="yt-thumb-square">
+      <span class="yt-thumb-clip">
+        
+  <img alt="" aria-hidden="true" data-thumb="//yt3.ggpht.com/sqsqG2GJeTZFWXGEkECBP5pTh0en8y0Ot_bP4kG6x68ivqZfURjzVBxLFZv4zRDOdlTXfWiBKRk=s20-c-k-c0xffffffff-no-nd-rj" src="/yts/img/pixel-vfl3z5WfW.gif" height="20" width="20" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+
+        <span class="vertical-align"></span>
+      </span>
+    </span>
+  </span>
+</span>
+        <span class="display-name  no-count">
+          <span>
+            Gaming
+          </span>
+        </span>
+    </span>
+  </a>
+
+  </li>
+
+            
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item " id="UClgRkhTL3_hImCAmdLfDE4g-guide-item" 
+ data-visibility-tracking="CAoQtSwYAyITCLmklIHrrOoCFTbRcwEdGjcNJg==" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-link    "
+    href="/channel/UClgRkhTL3_hImCAmdLfDE4g"
+    title="Films"
+    data-serialized-endpoint="0qDduQEaEhhVQ2xnUmtoVEwzX2hJbUNBbWRMZkRFNGc%3D" data-external-id="UClgRkhTL3_hImCAmdLfDE4g" data-visibility-tracking="CAoQtSwYAyITCLmklIHrrOoCFTbRcwEdGjcNJg==" data-sessionlink="ei=bur8XouYH7zB3LUPtvqUkAg&amp;feature=g-channel&amp;ved=CA0QtSwYAyITCIuHk4HrrOoCFbwgtwAdNj0Fgij0JA"
+  >
+    <span class="yt-valign-container">
+        <span class="thumb">  <span class="video-thumb  yt-thumb yt-thumb-20"
+    >
+    <span class="yt-thumb-square">
+      <span class="yt-thumb-clip">
+        
+  <img alt="" aria-hidden="true" data-thumb="//yt3.ggpht.com/6lo97rUTO7xhIBXZqLiaW2kA_eMBIEmqc27EqlKLyE4nAY-yzcKBG0Hs0YdUka3gJ629HcwgyzQ=s20-c-k-c0xffffffff-no-nd-rj" src="/yts/img/pixel-vfl3z5WfW.gif" height="20" width="20" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+
+        <span class="vertical-align"></span>
+      </span>
+    </span>
+  </span>
+</span>
+        <span class="display-name  no-count">
+          <span>
+            Films
+          </span>
+        </span>
+    </span>
+  </a>
+
+  </li>
+
+            
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item " id="UCYfdidRxbB8Qhf0Nx7ioOYw-guide-item" 
+ data-visibility-tracking="CAkQtSwYBCITCLmklIHrrOoCFTbRcwEdGjcNJg==" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-link    "
+    href="/channel/UCYfdidRxbB8Qhf0Nx7ioOYw"
+    title="News"
+    data-serialized-endpoint="0qDduQEaEhhVQ1lmZGlkUnhiQjhRaGYwTng3aW9PWXc%3D" data-external-id="UCYfdidRxbB8Qhf0Nx7ioOYw" data-visibility-tracking="CAkQtSwYBCITCLmklIHrrOoCFTbRcwEdGjcNJg==" data-sessionlink="ei=bur8XouYH7zB3LUPtvqUkAg&amp;feature=g-channel&amp;ved=CA4QtSwYBCITCIuHk4HrrOoCFbwgtwAdNj0Fgij0JA"
+  >
+    <span class="yt-valign-container">
+        <span class="thumb">  <span class="video-thumb  yt-thumb yt-thumb-20"
+    >
+    <span class="yt-thumb-square">
+      <span class="yt-thumb-clip">
+        
+  <img alt="" aria-hidden="true" data-thumb="//yt3.ggpht.com/dTAqfxkze5GTKk8lB87XFli6GBppuoOiCZ49MaucV76-TSFE8m2I4bY8IbHshkdR1ioRdJ4S=s20-c-k-c0xffffffff-no-nd-rj" src="/yts/img/pixel-vfl3z5WfW.gif" height="20" width="20" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+
+        <span class="vertical-align"></span>
+      </span>
+    </span>
+  </span>
+</span>
+        <span class="display-name  no-count">
+          <span>
+            News
+          </span>
+        </span>
+    </span>
+  </a>
+
+  </li>
+
+            
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item " id="UC4R8DWoMoI7CAwX8_LjQHig-guide-item" 
+ data-visibility-tracking="CAgQtSwYBSITCLmklIHrrOoCFTbRcwEdGjcNJg==" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-link    "
+    href="/channel/UC4R8DWoMoI7CAwX8_LjQHig"
+    title="Live"
+    data-serialized-endpoint="0qDduQEaEhhVQzRSOERXb01vSTdDQXdYOF9MalFIaWc%3D" data-external-id="UC4R8DWoMoI7CAwX8_LjQHig" data-visibility-tracking="CAgQtSwYBSITCLmklIHrrOoCFTbRcwEdGjcNJg==" data-sessionlink="ei=bur8XouYH7zB3LUPtvqUkAg&amp;feature=g-channel&amp;ved=CA8QtSwYBSITCIuHk4HrrOoCFbwgtwAdNj0Fgij0JA"
+  >
+    <span class="yt-valign-container">
+        <span class="thumb">  <span class="video-thumb  yt-thumb yt-thumb-20"
+    >
+    <span class="yt-thumb-square">
+      <span class="yt-thumb-clip">
+        
+  <img alt="" aria-hidden="true" data-thumb="//yt3.ggpht.com/5HkUAx2SOolanKFGX7Au5O84m4XbzvjpxXowcw2EYjbZmUObb_MzjZiiSDfy3z9ImpC0PCuZIB_dlPnEqQ=s20-c-k-c0xffffffff-no-nd-rj" src="/yts/img/pixel-vfl3z5WfW.gif" height="20" width="20" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+
+        <span class="vertical-align"></span>
+      </span>
+    </span>
+  </span>
+</span>
+        <span class="display-name  no-count">
+          <span>
+            Live
+          </span>
+        </span>
+    </span>
+  </a>
+
+  </li>
+
+            
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item " id="UCrpQ4p1Ql_hG8rKXIKM1MOQ-guide-item" 
+ data-visibility-tracking="CAcQtSwYBiITCLmklIHrrOoCFTbRcwEdGjcNJg==" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-link    "
+    href="/channel/UCrpQ4p1Ql_hG8rKXIKM1MOQ"
+    title="Fashion"
+    data-serialized-endpoint="0qDduQEaEhhVQ3JwUTRwMVFsX2hHOHJLWElLTTFNT1E%3D" data-external-id="UCrpQ4p1Ql_hG8rKXIKM1MOQ" data-visibility-tracking="CAcQtSwYBiITCLmklIHrrOoCFTbRcwEdGjcNJg==" data-sessionlink="ei=bur8XouYH7zB3LUPtvqUkAg&amp;feature=g-channel&amp;ved=CBAQtSwYBiITCIuHk4HrrOoCFbwgtwAdNj0Fgij0JA"
+  >
+    <span class="yt-valign-container">
+        <span class="thumb">  <span class="video-thumb  yt-thumb yt-thumb-20"
+    >
+    <span class="yt-thumb-square">
+      <span class="yt-thumb-clip">
+        
+  <img alt="" aria-hidden="true" data-thumb="//yt3.ggpht.com/iR7WznhvNoO2VA3AxrDeLbShx4AUQtmkGXeFBhhM6SZ3g73MXtwhykliinWVhGslqnPxQBvFNw=s20-c-k-c0xffffffff-no-nd-rj" src="/yts/img/pixel-vfl3z5WfW.gif" height="20" width="20" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+
+        <span class="vertical-align"></span>
+      </span>
+    </span>
+  </span>
+</span>
+        <span class="display-name  no-count">
+          <span>
+            Fashion
+          </span>
+        </span>
+    </span>
+  </a>
+
+  </li>
+
+            
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item " id="UCtFRv9O2AHqOZjjynzrv-xg-guide-item" 
+ data-visibility-tracking="CAYQtSwYByITCLmklIHrrOoCFTbRcwEdGjcNJg==" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-link    "
+    href="/channel/UCtFRv9O2AHqOZjjynzrv-xg"
+    title="Learning"
+    data-serialized-endpoint="0qDduQEaEhhVQ3RGUnY5TzJBSHFPWmpqeW56cnYteGc%3D" data-external-id="UCtFRv9O2AHqOZjjynzrv-xg" data-visibility-tracking="CAYQtSwYByITCLmklIHrrOoCFTbRcwEdGjcNJg==" data-sessionlink="ei=bur8XouYH7zB3LUPtvqUkAg&amp;feature=g-channel&amp;ved=CBEQtSwYByITCIuHk4HrrOoCFbwgtwAdNj0Fgij0JA"
+  >
+    <span class="yt-valign-container">
+        <span class="thumb">  <span class="video-thumb  yt-thumb yt-thumb-20"
+    >
+    <span class="yt-thumb-square">
+      <span class="yt-thumb-clip">
+        
+  <img alt="" aria-hidden="true" data-thumb="//yt3.ggpht.com/tbFAIBC69Tnj8EbaaESiBkN5jDeAAeMrND6CAPOxzEDHjrMCQqTKsBlZTVSjkW5Z27wn3vxB7w=s20-c-k-c0xffffffff-no-nd-rj" src="/yts/img/pixel-vfl3z5WfW.gif" height="20" width="20" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+
+        <span class="vertical-align"></span>
+      </span>
+    </span>
+  </span>
+</span>
+        <span class="display-name  no-count">
+          <span>
+            Learning
+          </span>
+        </span>
+    </span>
+  </a>
+
+  </li>
+
+            
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item " id="UCvScgo6mAvbMEjszK4sSj6g-guide-item" 
+ data-visibility-tracking="CAUQtSwYCCITCLmklIHrrOoCFTbRcwEdGjcNJg==" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-link    "
+    href="/channel/UCvScgo6mAvbMEjszK4sSj6g"
+    title="Spotlight"
+    data-serialized-endpoint="0qDduQEaEhhVQ3ZTY2dvNm1BdmJNRWpzeks0c1NqNmc%3D" data-external-id="UCvScgo6mAvbMEjszK4sSj6g" data-visibility-tracking="CAUQtSwYCCITCLmklIHrrOoCFTbRcwEdGjcNJg==" data-sessionlink="ei=bur8XouYH7zB3LUPtvqUkAg&amp;feature=g-channel&amp;ved=CBIQtSwYCCITCIuHk4HrrOoCFbwgtwAdNj0Fgij0JA"
+  >
+    <span class="yt-valign-container">
+        <span class="thumb">  <span class="video-thumb  yt-thumb yt-thumb-20"
+    >
+    <span class="yt-thumb-square">
+      <span class="yt-thumb-clip">
+        
+  <img alt="" aria-hidden="true" data-thumb="https://yt3.ggpht.com/a/AATXAJwVd66juJOdxaJIf71LC__faoigg3dq4ItjWF_3nJA=s20-c-k-c0xffffffff-no-rj-mo" src="/yts/img/pixel-vfl3z5WfW.gif" height="20" width="20" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+
+        <span class="vertical-align"></span>
+      </span>
+    </span>
+  </span>
+</span>
+        <span class="display-name  no-count">
+          <span>
+            Spotlight
+          </span>
+        </span>
+    </span>
+  </a>
+
+  </li>
+
+            
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item " id="UCzuqhhs6NWbgTzMuM09WKDQ-guide-item" 
+ data-visibility-tracking="CAQQtSwYCSITCLmklIHrrOoCFTbRcwEdGjcNJg==" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-link    "
+    href="/channel/UCzuqhhs6NWbgTzMuM09WKDQ"
+    title="360° Video"
+    data-serialized-endpoint="0qDduQEaEhhVQ3p1cWhoczZOV2JnVHpNdU0wOVdLRFE%3D" data-external-id="UCzuqhhs6NWbgTzMuM09WKDQ" data-visibility-tracking="CAQQtSwYCSITCLmklIHrrOoCFTbRcwEdGjcNJg==" data-sessionlink="ei=bur8XouYH7zB3LUPtvqUkAg&amp;feature=g-channel&amp;ved=CBMQtSwYCSITCIuHk4HrrOoCFbwgtwAdNj0Fgij0JA"
+  >
+    <span class="yt-valign-container">
+        <span class="thumb">  <span class="video-thumb  yt-thumb yt-thumb-20"
+    >
+    <span class="yt-thumb-square">
+      <span class="yt-thumb-clip">
+        
+  <img alt="" aria-hidden="true" data-thumb="//yt3.ggpht.com/y6WfcCCXua8y1Yplm-aJUBt7ztLkN9mOdzVa7YSIGe1VzM0D5mQh1-AKq_jupbVcLn84TARoUo4=s20-c-k-c0xffffffff-no-nd-rj" src="/yts/img/pixel-vfl3z5WfW.gif" height="20" width="20" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+
+        <span class="vertical-align"></span>
+      </span>
+    </span>
+  </span>
+</span>
+        <span class="display-name  no-count">
+          <span>
+            360° Video
+          </span>
+        </span>
+    </span>
+  </a>
+
+  </li>
+
+      </ul>
+    </div>
+      <hr class="guide-section-separator">
+  </li>
+
+            <li class="guide-section vve-check"
+    data-visibility-tracking="CAEQ5isYAiITCLmklIHrrOoCFTbRcwEdGjcNJg==">
+    <div class="guide-item-container personal-item">
+      
+      <ul class="guide-user-links yt-uix-tdl yt-box" role="menu">
+            
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item " id="guide_builder-guide-item" 
+ data-visibility-tracking="CAIQtSwYACITCLmklIHrrOoCFTbRcwEdGjcNJg==" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-link    "
+    href="/feed/guide_builder"
+    title="Browse channels"
+    data-serialized-endpoint="0qDduQEREg9GRWd1aWRlX2J1aWxkZXI%3D" data-external-id="guide_builder" data-visibility-tracking="CAIQtSwYACITCLmklIHrrOoCFTbRcwEdGjcNJg==" data-sessionlink="ei=bur8XouYH7zB3LUPtvqUkAg&amp;feature=g-manage&amp;ved=CBUQtSwYACITCIuHk4HrrOoCFbwgtwAdNj0Fgij0JA"
+  >
+    <span class="yt-valign-container">
+        <span class="thumb guide-builder-icon yt-sprite"></span>
+        <span class="display-name  no-count">
+          <span>
+            Browse channels
+          </span>
+        </span>
+    </span>
+  </a>
+
+  </li>
+
+      </ul>
+    </div>
+      <hr class="guide-section-separator">
+  </li>
+
+            <li class="guide-section guide-header signup-promo">
+    <p>
+      Sign in to like videos, comment and subscribe.
+    </p>
+    <div id="guide-builder-promo-buttons" class="signed-out clearfix">
+      <a  href="https://accounts.google.com/ServiceLogin?service=youtube&amp;uilel=3&amp;passive=true&amp;hl=en-GB&amp;continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26hl%3Den-GB%26next%3D%252Fresults%253Fsearch_query%253DPower%252Bis%252BPower%26app%3Ddesktop%26feature%3Dsign_in_promo" class="yt-uix-button   yt-uix-sessionlink yt-uix-button-primary yt-uix-button-size-default" data-sessionlink="ei=bur8XouYH7zB3LUPtvqUkAg"><span class="yt-uix-button-content">Sign in</span></a>
+    </div>
+  </li>
+
+    </ul>
+  </div>
+
+    </div>
+  </div>
+  <div id="appbar-guide-notifications" class="hid">
+        <div id="appbar-guide-notification-watch-later-video-added">
+    <!--
+    <div class="appbar-guide-notification " role="alert"><span class="appbar-guide-notification-content-wrapper yt-valign"><span class="appbar-guide-notification-icon yt-sprite"></span><span class="appbar-guide-notification-text-content" >Added to Watch Later</span></span></div>
+    -->
+  </div>
+
+
+    <div id="appbar-guide-notification-watch-later-video-removed">
+    <!--
+    <div class="appbar-guide-notification " role="alert"><span class="appbar-guide-notification-content-wrapper yt-valign"><span class="appbar-guide-notification-icon yt-sprite"></span><span class="appbar-guide-notification-text-content" >Removed from Watch Later</span></span></div>
+    -->
+  </div>
+
+
+    <div id="appbar-guide-notification-subscription">
+    <!--
+    <div class="appbar-guide-notification " role="alert"><span class="appbar-guide-notification-content-wrapper yt-valign"><span class="appbar-guide-notification-icon yt-sprite"></span><span class="appbar-guide-notification-text-content" >Subscription added</span></span></div>
+    -->
+  </div>
+
+
+    <div id="appbar-guide-notification-unsubscription">
+    <!--
+    <div class="appbar-guide-notification " role="alert"><span class="appbar-guide-notification-content-wrapper yt-valign"><span class="appbar-guide-notification-icon yt-sprite"></span><span class="appbar-guide-notification-text-content" >Subscription removed</span></span></div>
+    -->
+  </div>
+
+
+    <div id="appbar-guide-notification-playlist-like">
+    <!--
+    <div class="appbar-guide-notification " role="alert"><span class="appbar-guide-notification-content-wrapper yt-valign"><span class="appbar-guide-notification-icon yt-sprite"></span><span class="appbar-guide-notification-text-content" >Saved to Playlists</span></span></div>
+    -->
+  </div>
+
+
+    <div id="appbar-guide-notification-playlist-unlike">
+    <!--
+    <div class="appbar-guide-notification " role="alert"><span class="appbar-guide-notification-content-wrapper yt-valign"><span class="appbar-guide-notification-icon yt-sprite"></span><span class="appbar-guide-notification-text-content" >Removed from Playlists</span></span></div>
+    -->
+  </div>
+
+
+    <div id="appbar-guide-notification-playlist-video-added">
+    <!--
+    <div class="appbar-guide-notification " role="alert"><span class="appbar-guide-notification-content-wrapper yt-valign"><span class="appbar-guide-notification-icon yt-sprite"></span><span class="appbar-guide-notification-text-content" >Added to playlist</span></span></div>
+    -->
+  </div>
+
+
+    <div id="appbar-guide-notification-playlist-video-removed">
+    <!--
+    <div class="appbar-guide-notification " role="alert"><span class="appbar-guide-notification-content-wrapper yt-valign"><span class="appbar-guide-notification-icon yt-sprite"></span><span class="appbar-guide-notification-text-content" >Removed from playlist</span></span></div>
+    -->
+  </div>
+
+
+    <div id="appbar-guide-notification-video-like">
+    <!--
+    <div class="appbar-guide-notification " role="alert"><span class="appbar-guide-notification-content-wrapper yt-valign"><span class="appbar-guide-notification-icon yt-sprite"></span><span class="appbar-guide-notification-text-content" >Added to Liked videos</span></span></div>
+    -->
+  </div>
+
+
+    <div id="appbar-guide-notification-video-unlike">
+    <!--
+    <div class="appbar-guide-notification " role="alert"><span class="appbar-guide-notification-content-wrapper yt-valign"><span class="appbar-guide-notification-icon yt-sprite"></span><span class="appbar-guide-notification-text-content" >Removed from Liked videos</span></span></div>
+    -->
+  </div>
+
+
+    <div id="appbar-guide-notification-event-reminder-set">
+    <!--
+    <div class="appbar-guide-notification " role="alert"><span class="appbar-guide-notification-content-wrapper yt-valign"><span class="appbar-guide-notification-icon yt-sprite"></span><span class="appbar-guide-notification-text-content" >You&#39;ll be reminded about this event</span></span></div>
+    -->
+  </div>
+
+
+    <div id="appbar-guide-notification-event-reminder-removed">
+    <!--
+    <div class="appbar-guide-notification " role="alert"><span class="appbar-guide-notification-content-wrapper yt-valign"><span class="appbar-guide-notification-icon yt-sprite"></span><span class="appbar-guide-notification-text-content" >Event reminder removed</span></span></div>
+    -->
+  </div>
+
+
+  </div>
+  <div id="appbar-guide-item-templates" class="hid">
+        <div id="appbar-guide-item-template-playlist">
+      <!--
+        
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item show-insertion-notification " id="__ID__-guide-item" 
+ data-visibility-tracking="" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-nolink    "
+    href="__URL__"
+    title="__TITLE__"
+    data-serialized-endpoint="" data-external-id="__ID__" data-visibility-tracking="" data-sessionlink="ei=bur8XouYH7zB3LUPtvqUkAg&amp;feature=g-playlists"
+  >
+    <span class="yt-valign-container">
+        <span class="thumb guide-playlists-icon yt-sprite"></span>
+        <span class="display-name  no-count">
+          <span>
+            __TITLE__
+          </span>
+        </span>
+    </span>
+  </a>
+
+      <div class="appbar-guide-notification guide-item-insertion-notification" role="alert"><span class="appbar-guide-notification-content-wrapper yt-valign"><span class="appbar-guide-notification-icon yt-sprite"></span><span class="appbar-guide-notification-text-content" aria-label="Saved to Playlists">__NOTIFICATION_OVERLAY_MESSAGE__</span></span></div>
+  </li>
+
+      -->
+    </div>
+    <div id="appbar-guide-item-template-mix">
+      <!--
+        
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item show-insertion-notification " id="__ID__-guide-item" 
+ data-visibility-tracking="" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-nolink    "
+    href="__URL__"
+    title="__TITLE__"
+    data-serialized-endpoint="" data-external-id="__ID__" data-visibility-tracking="" data-sessionlink="ei=bur8XouYH7zB3LUPtvqUkAg&amp;feature=g-playlists"
+  >
+    <span class="yt-valign-container">
+        <span class="thumb guide-mix-icon yt-sprite"></span>
+        <span class="display-name  no-count">
+          <span>
+            __TITLE__
+          </span>
+        </span>
+    </span>
+  </a>
+
+      <div class="appbar-guide-notification guide-item-insertion-notification" role="alert"><span class="appbar-guide-notification-content-wrapper yt-valign"><span class="appbar-guide-notification-icon yt-sprite"></span><span class="appbar-guide-notification-text-content" aria-label="Saved to Playlists">__NOTIFICATION_OVERLAY_MESSAGE__</span></span></div>
+  </li>
+
+      -->
+    </div>
+    <div id="appbar-guide-item-template-channel">
+      <!--
+        
+  <li class="vve-check guide-channel guide-notification-item overflowable-list-item show-insertion-notification " id="__ID__-guide-item" 
+ data-visibility-tracking="" role="menuitem">
+      
+  <a class="guide-item yt-uix-sessionlink yt-valign spf-nolink    "
+    href="__URL__"
+    title="__TITLE__"
+    data-serialized-endpoint="" data-external-id="__ID__" data-visibility-tracking="" data-sessionlink="ei=bur8XouYH7zB3LUPtvqUkAg&amp;feature=g-channel"
+  >
+    <span class="yt-valign-container">
+        <span class="thumb">  <span class="video-thumb  yt-thumb yt-thumb-20"
+    >
+    <span class="yt-thumb-square">
+      <span class="yt-thumb-clip">
+        
+  <img alt="" aria-hidden="true" src="__THUMBNAIL_URL__" height="20" width="20" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+
+        <span class="vertical-align"></span>
+      </span>
+    </span>
+  </span>
+</span>
+        <span class="display-name  no-count">
+          <span>
+            __TITLE__
+          </span>
+        </span>
+    </span>
+  </a>
+
+      <div class="appbar-guide-notification guide-item-insertion-notification" role="alert"><span class="appbar-guide-notification-content-wrapper yt-valign"><span class="appbar-guide-notification-icon yt-sprite"></span><span class="appbar-guide-notification-text-content" aria-label="Subscription added">__NOTIFICATION_OVERLAY_MESSAGE__</span></span></div>
+  </li>
+
+      -->
+    </div>
+
+  </div>
+
+</div><div class="alerts-wrapper"><div id="alerts" class="content-alignment">    <div class="yt-alert yt-alert-default yt-alert-warn  " id="old-browser-alert">  <div class="yt-alert-icon">
+    <span class="icon master-sprite yt-sprite"></span>
+  </div>
+<div class="yt-alert-content" role="alert">    <div class="yt-alert-message" tabindex="0">
+            We&#39;ll stop supporting this browser soon. For the best experience, please <a href="/supported_browsers">update your browser</a>.
+
+    </div>
+</div><div class="yt-alert-buttons"></div></div>
+
+</div></div><div id="header">  
+</div><div id="player" class="  off-screen  " role="complementary"><div id="theater-background" class="player-height"></div>  <div id="player-mole-container">
+    <div id="player-unavailable" class="  hid  ">
+      
+    </div>
+
+    <div id="player-api" class="player-width player-height off-screen-target player-api" tabIndex="-1"></div>
+        <script >if (window.ytcsi) {window.ytcsi.tick("cfg", null, '');}</script>
+    <script >var ytplayer = ytplayer || {};ytplayer.config = {"args":{"enablejsapi":"1","cr":"IN","host_language":"en-GB","hl":"en_GB","fexp":"23744176,23804281,23837040,23839597,23856950,23857950,23859802,23860859,23861739,23868319,23876458,23880619,23882503,23884386,23886825,23895671,23901016,23903889,23906928,23907595,23909160,23910095,23913084,23913084,23914188,23914871,23916148,23917633,23917799,24590160,9449243","fflags":"forced_brand_precap_duration_ms=2000\u0026html5_store_xhr_headers_readable=true\u0026self_podding_highlight_non_default_button=true\u0026web_gel_debounce_ms=10000\u0026html5_media_fullscreen=true\u0026html5_manifestless_vp9=true\u0026use_button_command_field_for_web_survey_interstitial=true\u0026html5_ignore_target_time=true\u0026html5_video_tbd_min_kb=0\u0026midroll_notify_time_seconds=5\u0026html5_fludd_suspend=true\u0026polymer_verifiy_app_state=true\u0026autoplay_time=8000\u0026html5_ad_timeout_ms=0\u0026html5_av1_thresh_hcc=1080\u0026html5_hdcp_probing_stream_url=\u0026disable_thumbnail_preloading=true\u0026html5_health_to_gel=true\u0026html5_request_size_padding_secs=3.0\u0026hoffle_max_video_duration_secs=0\u0026disable_legacy_desktop_remote_queue=true\u0026external_fullscreen_with_edu=true\u0026html5_subsegment_readahead_min_load_speed=1.5\u0026html5_gapless_seek_tolerance_secs=3.0\u0026html5_in_buffer_ptl_timeout_ms=0\u0026html5_seek_timeout_delay_ms=20000\u0026desktop_sparkles_light_cta_button=true\u0026html5_no_placeholder_rollbacks=true\u0026csi_on_gel=true\u0026html5_emsg_crypto_period_index=true\u0026html5_enable_ac3=true\u0026html5_gapless_ad_byterate_multiplier=1.6\u0026web_player_no_endscreen_crop=true\u0026desktop_action_companion_wta_support=true\u0026html5_peak_shave=true\u0026player_allow_autonav_after_playlist=true\u0026html5_allowable_liveness_drift_chunks=2\u0026html5_background_cap_idle_secs=60\u0026ignore_empty_xhr=true\u0026html5_live_abr_head_miss_fraction=0.0\u0026web_player_music_visualizer_treatment=fake\u0026html5_hls_min_video_height=0\u0026debug_dapper_trace_id=\u0026web_network_combined_catch=true\u0026mdx_enable_privacy_disclosure_ui=true\u0026html5_restrict_streaming_xhr_on_sqless_requests=true\u0026html5_manifestless_interpolate=true\u0026html5_disable_non_contiguous=true\u0026html5_max_headm_for_streaming_xhr=0\u0026set_interstitial_advertisers_question_text=true\u0026html5_df_downgrade_thresh=0.2\u0026kevlar_autonav_miniplayer_fix=true\u0026log_window_onerror_fraction=0.1\u0026enable_eviction_protection_for_bulleit=true\u0026botguard_async_snapshot_timeout_ms=3000\u0026html5_autonav_quality_cap=0\u0026html5_pause_on_nonforeground_platform_errors=true\u0026enable_client_deferred_full_screen_filtering_for_mweb_phones=true\u0026html5_vp9_mime_full_range_flag=true\u0026delay_gel_until_config_ready=true\u0026html5_streaming_xhr_buffer_mdat=true\u0026html5_experiment_id_label=0\u0026html5_log_timestamp_offset=true\u0026enable_overlays_wta=true\u0026unplugged_tvhtml5_botguard_attestation=true\u0026web_deprecate_service_ajax_map_dependency=true\u0026self_podding_midroll_choice_string_template=self_podding_midroll_choice\u0026html5_hfr_quality_cap=0\u0026html5_probe_secondary_during_timeout_miss_count=2\u0026html5_gapless_max_played_ranges=12\u0026hfr_dropped_framerate_fallback_threshold=0\u0026use_sonic_js_library_for_v4_support=true\u0026kevlar_frontend_video_list_actions=true\u0026html5_autoplay_default_quality_cap=0\u0026network_polling_interval=30000\u0026html5_min_upgrade_health=0\u0026log_js_error_clusters=1.0\u0026live_fresca_scheduled_persistent=true\u0026html5_optimized_polling=true\u0026desktop_shopping_companion_wta_support=true\u0026html5_shrink_live_timestamps=true\u0026suppress_sparkles_for_whitelisted_instream_on_desktop=true\u0026mweb_muted_autoplay_animation=shrink\u0026html5_gapless_no_requests_after_lock=true\u0026html5_bandwidth_window_size=0\u0026web_player_ios_mweb_resizing=true\u0026web_player_include_innertube_commands=true\u0026html5_min_readbehind_cap_secs=60\u0026self_podding_highlighted_button_blue=true\u0026web_yt_config_context=true\u0026html5_streaming_xhr_try_webm=true\u0026allow_live_autoplay=true\u0026embeds_enable_embed_module=true\u0026web_use_beacon_api_for_ad_click_server_pings=true\u0026html5_av1_thresh_arm=240\u0026html5_enable_extra_sync_killswitch=true\u0026self_podding_header_string_template=self_podding_interstitial_message\u0026html5_prefer_server_bwe3=true\u0026dash_manifest_version=5\u0026html5_probe_primary_delay_base_ms=0\u0026html5_firefox_ambisonic_opus=true\u0026html5_use_current_media_time_for_glrem_gllat=true\u0026web_screen_manager_use_default_client=true\u0026enable_live_premiere_web_player_indicator=true\u0026mweb_native_control_in_faux_fullscreen_shared=true\u0026html5_static_abr_resolution_shelf=0\u0026html5_seek_jiggle_cmt_disable_gapless=true\u0026player_enable_playback_playlist_change=true\u0026html5_expanded_max_vss_pings=true\u0026custom_csi_timeline_use_gel=true\u0026html5_unify_sqless_flow=true\u0026enable_mixed_direction_formatted_strings=true\u0026html5_av1_thresh=1080\u0026html5_jumbo_ull_subsegment_readahead_target=1.3\u0026html5_qoe_length=96000\u0026tvhtml5_audio_enable_botguard=true\u0026disable_legacy_pyv_for_web=true\u0026desktop_videowall_companion_wta_support=true\u0026html5_new_elem_on_hidden=true\u0026kevlar_miniplayer_play_pause_on_scrim=true\u0026html5_player_autonav_logging=true\u0026html5_jumbo_ull_nonstreaming_mffa_ms=4000\u0026html5_hdr_separate_keys_support=true\u0026html5_aspect_from_adaptive_format=true\u0026html5_unrewrite_timestamps=true\u0026html5_manifestless_live_segment_index_new_logic=true\u0026html5_deadzone_multiplier=1.0\u0026html5_quality_cap_min_age_secs=0\u0026html5_enable_eac3=true\u0026html5_ignore_background_dfd=true\u0026html5_accurate_seeking_redux=true\u0026html5_manifestless_vp9_otf=true\u0026html5_time_based_consolidation_ms=10\u0026web_player_disable_ima_uvr=true\u0026web_op_continuation_type_blacklist=()\u0026html5_ignore_bad_bitrates=true\u0026debug_sherlog_username=\u0026tvhtml5_disable_live_prefetch=true\u0026html5_live_ultra_low_latency_bandwidth_window=0.0\u0026player_destroy_old_version=true\u0026desktop_player_button_tooltip_with_shortcut=true\u0026html5_background_quality_cap=360\u0026html5_inline_video_quality_survey=true\u0026html5_adaptation_fix=true\u0026html5_max_drift_per_track_secs=0.0\u0026web_player_watch_next_response_parsing=true\u0026html5_live_low_latency_bandwidth_window=0.0\u0026hide_preskip=true\u0026enable_midroll_prefetch_for_html5_unplugged=true\u0026html5_default_quality_cap=720\u0026allow_skip_annotations_invideo=true\u0026web_player_api_logging_fraction=0.01\u0026html5_disable_manifestless_sqless_sync=true\u0026enable_svg_mode_on_embed_mobile=true\u0026web_player_live_monitor_env=true\u0026html5_not_vp9_supported_quality_cap=0\u0026polymer_bad_build_labels=true\u0026html5_subsegment_readahead_load_speed_check_interval=0.5\u0026enable_ad_pod_specific_ui=true\u0026sdk_ad_prefetch_time_seconds=-1\u0026html5_dai_assume_unordered_cuepoints=true\u0026html5_qoe_user_intent_match_health=true\u0026bulleit_use_touch_events_for_skip=true\u0026hoffle_cache_size_secs=0\u0026set_interstitial_start_button=true\u0026bulleit_get_midroll_info_timeout_ms=8000\u0026html5_gapless_preloading=true\u0026html5_live_normal_latency_bandwidth_window=0.0\u0026variable_buffer_timeout_ms=0\u0026enable_device_forwarding_from_xhr_client=true\u0026html5_ios_force_seek_to_zero_on_stop=true\u0026html5_incremental_parser_buffer_extra_bytes=16384\u0026html5_subsegment_readahead_target_buffer_health_secs=0.5\u0026html5_player_dynamic_bottom_gradient=true\u0026html5_manifestless_max_segment_history=0\u0026html5_source_buffer_attach_delay_time=15000\u0026web_player_icons=true\u0026html5_playback_timeline_register_disposable=true\u0026kevlar_queue_use_update_api=true\u0026web_macro_markers_snapping_threshold=4\u0026web_api_url=true\u0026html5_gl_fps_threshold=0\u0026enable_device_forwarding_from_polymer_network_manager=true\u0026html5_release_on_error=true\u0026tvhtml5_unplugged_preload_cache_size=5\u0026html5_av1_thresh_lcc=360\u0026html5_delay_initial_loading=true\u0026kevlar_miniplayer_expand_top=true\u0026use_forced_linebreak_preskip_text=true\u0026info_cards_renderer_on_desktop_ads=true\u0026visibility_error_html_dump_sample_rate=0.01\u0026html5_disable_move_pssh_to_moov=true\u0026html5_log_non_fatal=true\u0026html5_seek_new_elem_delay_ms=12000\u0026kevlar_miniplayer=true\u0026html5_hls_initial_bitrate=0\u0026allow_poltergust_autoplay=true\u0026unplugged_tvhtml5_video_preload_on_focus_delay_ms=0\u0026use_touch_events_for_bulleit_mweb=true\u0026html5_log_live_discontinuity=true\u0026enable_ve_tracker_key=true\u0026desktop_image_companion_wta_support=true\u0026networkless_throttle_timeout=100\u0026kevlar_playback_associated_queue=true\u0026html5_reload_element_long_rebuffer_delay_ms=20000\u0026web_player_response_playback_tracking_parsing=true\u0026html5_hack_gapless_init=true\u0026html5_max_live_dvr_window_plus_margin_secs=46800.0\u0026html5_incremental_parser_buffer_duration_secs=1.5\u0026html5_probe_primary_failure_factor=4\u0026max_resolution_for_white_noise=360\u0026html5_sticky_duration_cap_secs=0\u0026html5_streaming_xhr_try_cobalt=true\u0026html5_enable_embedded_player_visibility_signals=true\u0026endscreen_renderer_on_desktop_ads=true\u0026html5_qoe_intercept=\u0026html5_manifestless_media_source_duration=25200\u0026html5_seek_jiggle_cmt_delay_ms=8000\u0026html5_decoder_freeze_timeout_delay_ms=0\u0026html5_qoe_reports_ctt=true\u0026html5_live_quality_cap=0\u0026html5_maximum_readahead_seconds=0.0\u0026ensure_vis_persists_in_full_screen_for_mweb=true\u0026player_ads_set_adformat_on_client=true\u0026html5_restore_perf_cap_redux=true\u0026html5_enable_json_subtitle=true\u0026simply_enable_botguard=true\u0026web_client_counter_random_seed=true\u0026html5_manifestless_synchronized=true\u0026disable_new_pause_state3=true\u0026html5_new_mediastream=true\u0026web_op_endpoint_blacklist=()\u0026release_player_on_abandon_for_bulleit_lr_ads_frontend=true\u0026html5_request_sizing_multiplier=0.8\u0026html5_random_playback_cap=0\u0026html5_autonav_cap_idle_secs=0\u0026html5_sticky_reduces_discount_by=0.0\u0026player_doubletap_to_seek=true\u0026html5_readahead_ratelimit=3000\u0026html5_minimum_readahead_seconds=0.0\u0026html5_sync_seeking_state=true\u0026html5_set_exception_to_nonfatal=true\u0026html5_post_interrupt_readahead=20\u0026html5_ios7_force_play_on_stall=true\u0026use_typescript_transport=true\u0026html5_max_readahead_bandwidth_cap=0\u0026html5_enable_4k_hq_enc=true\u0026kevlar_queue_use_dedicated_list_type=true\u0026html5_subsegment_readahead_timeout_secs=2.0\u0026html5_probe_live_using_range=true\u0026player_bootstrap_method=true\u0026live_fresca_v2=true\u0026html5_default_ad_gain=0.5\u0026live_chunk_readahead=3\u0026ad_pod_disable_companion_persist_ads_quality=true\u0026html5_workaround_delay_trigger=true\u0026www_for_videostats=true\u0026variable_load_timeout_ms=0\u0026info_cards_renderer_on_desktop=true\u0026html5_encrypted_vp9_firefox=true\u0026preskip_button_style_ads_backend=countdown_next_to_thumbnail\u0026html5_desktop_vr180_allow_panning=true\u0026enable_survey_termination_on_resize=true\u0026delay_ads_gvi_call_on_bulleit_living_room_ms=0\u0026overwrite_polyfill_on_logging_lib_loaded=true\u0026survey_bypass_if_whitelisted=true\u0026web_player_show_music_in_this_video_graphic=video_thumbnail\u0026html5_ads_preroll_lock_timeout_delay_ms=0\u0026mweb_cougar_big_controls=true\u0026html5_subsegment_readahead_min_buffer_health_secs_on_timeout=0.1\u0026html5_platform_minimum_readahead_seconds=0.0\u0026mweb_enable_custom_control_shared=true\u0026web_player_inline_botguard=true\u0026tvhtml5_min_readbehind_secs=20\u0026web_player_watch_next_response=true\u0026html5_encourage_array_coalescing=true\u0026html5_subsegment_readahead_min_buffer_health_secs=0.25\u0026html5_gllat=true\u0026html5_log_rebuffer_events=5\u0026disable_simple_mixed_direction_formatted_strings=true\u0026self_podding_pod_choice_string_template=self_podding_pod_choice\u0026ensure_only_one_resolved_midroll_response_on_web=true\u0026html5_gapless_audio=true\u0026web_screen_associated_all_layers=true\u0026web_wn_macro_markers=true\u0026enforce_cuerange_priority_on_web=true\u0026html5_set_ended_in_pfx_live=true\u0026skip_ad_button_with_thumbnail=true\u0026html5_error_cooldown_in_ms=30000\u0026web_player_sentinel_is_uniplayer=true\u0026kevlar_allow_multistep_video_init=true\u0026use_survey_skip_in_0s=true\u0026html5_allow_video_keyframe_without_audio=true\u0026networkless_request_age_limit=30\u0026html5_rewrite_manifestless_for_continuity=true\u0026mark_encrypted_webm_supporting_widevine=true\u0026playready_first_play_expiration=-1\u0026html5_stop_video_in_cancel_playback=true\u0026html5_log_experiment_id_from_player_response_to_ctmp=\u0026html5_performance_cap_floor=360\u0026html5_decode_to_texture_cap=true\u0026html5_source_buffer_attach_retry_limit=0\u0026html5_seek_set_cmt_delay_ms=2000\u0026mweb_enable_skippables_on_jio_phone=true\u0026networkless_retry_attempts=1\u0026enable_kevlar_action_companion_cleanup=true\u0026enable_ypc_clickwrap_on_living_room=true\u0026html5_gapless_ended_transition_buffer_ms=200\u0026use_sonic_library_for_v4_support=true\u0026endscreen_renderer_on_desktop=true\u0026html5_seek_over_discontinuities=true\u0026html5_max_av_sync_drift=50\u0026html5_min_readbehind_secs=0\u0026html5_player_min_build_cl=-1\u0026web_logging_max_batch=150\u0026html5_crypto_period_secs_from_emsg=true\u0026html5_vp9_new_mime=true\u0026align_ad_to_video_player_lifecycle_for_bulleit=true\u0026should_clear_video_data_on_player_cued_unstarted=true\u0026web_op_signal_type_blacklist=()\u0026html5_live_abr_repredict_fraction=0.0\u0026html5_disable_continuous_timeline_for_duration=true\u0026html5_continue_probing_on_missing_drminfo=true\u0026html5_subsegment_readahead_seek_latency_fudge=0.5\u0026html5_jumbo_mobile_subsegment_readahead_target=3.0\u0026html5_ios4_seek_above_zero=true\u0026fast_autonav_in_background=true\u0026pass_biscotti_id_in_header_ajax=true\u0026html5_long_rebuffer_threshold_ms=30000\u0026suppress_gen_204=true\u0026render_enhanced_overlays_as_ctas_for_desktop_style=unset\u0026html5_safari_desktop_eme_min_version=0\u0026web_post_search=true\u0026web_gel_timeout_cap=true\u0026html5_suspend_loader=true\u0026html5_license_constraint_delay=5000\u0026log_js_exceptions_fraction=1.0\u0026html5_buffer_health_to_defer_slice_processing=0.0\u0026web_player_ipp_canary_type_for_logging=\u0026html5_av1_tv_killswitch=true\u0026html5_disable_aac_ac3=true\u0026html5_disable_extra_update_resource=true\u0026html5_disable_preserve_reference=true\u0026html5_disable_subscribe_new_vis=true\u0026html5_gapless_error_check_killswitch=true\u0026html5_ignore_start_seconds_for_ads_killswitch=true\u0026html5_log_playback_rate_change_killswitch=true\u0026html5_remove_pause=false\u0026html5_restore_perf_cap=false\u0026web_player_live_monitor_env_killswitch=true\u0026web_player_live_monitor_env_killswitch2=true\u0026web_player_response_fairplay_config_killswitch=true\u0026web_player_response_overlay_parsing=false","gapi_hint_params":"m;\/_\/scs\/abc-static\/_\/js\/k=gapi.gapi.en.yyhByYeMTAc.O\/am=AAY\/d=1\/ct=zgms\/rs=AHpOoo-O470EQdZ-4tpWpppyTQmeOEUv-g\/m=__features__","innertube_api_key":"AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8","innertube_api_version":"v1","innertube_context_client_version":"1.20200627.05.01","c":"WEB","cver":"1.20200627.05.01","cbr":"Chrome","cbrver":"36.0.1985.143","cos":"X11","is_html5_mobile_device":false,"autoplay":"0"},"attrs":{"id":"movie_player"},"assets":{"css":"\/s\/player\/02c092a5\/www-player-webp.css","js":"\/s\/player\/02c092a5\/player_ias.vflset\/en_GB\/base.js"}};ytplayer.load = function() {yt.player.Application.create("player-api", ytplayer.config, ytplayer.web_player_context_config);ytplayer.config.loaded = true;};</script>
+
+
+    <div id="watch-queue-mole" class="video-mole mole-collapsed hid"><div id="watch-queue" class="watch-playlist player-height"><div class="main-content"><div class="watch-queue-header"><div class="watch-queue-info"><div class="watch-queue-info-icon"><span class="tv-queue-list-icon yt-sprite"></span></div><h3 class="watch-queue-title">Watch Queue</h3><h3 class="tv-queue-title">Queue</h3><span class="tv-queue-details"></span></div><div class="watch-queue-control-bar control-bar-button"><div class="watch-queue-mole-info"><div class="watch-queue-control-bar-icon"><span class="watch-queue-icon yt-sprite"></span></div><div class="watch-queue-title-container"><span class="watch-queue-count"></span><span class="watch-queue-title">Watch Queue</span><span class="tv-queue-title">Queue</span></div></div>  <span class="dark-overflow-action-menu">
+    
+    
+    <button class="flip control-bar-button yt-uix-button yt-uix-button-dark-overflow-action-menu yt-uix-button-size-default yt-uix-button-has-icon no-icon-markup yt-uix-button-empty" type="button" onclick=";return false;" aria-expanded="false" aria-haspopup="true" aria-label="Actions for the queue" ><span class="yt-uix-button-arrow yt-sprite"></span><ul class="watch-queue-menu yt-uix-button-menu yt-uix-button-menu-dark-overflow-action-menu hid" role="menu" aria-haspopup="true"><li role="menuitem"><span class="watch-queue-menu-choice overflow-menu-choice yt-uix-button-menu-item" data-action="remove-all" onclick=";return false;" >Remove all</span></li><li role="menuitem"><span class="watch-queue-menu-choice overflow-menu-choice yt-uix-button-menu-item" data-action="disconnect" onclick=";return false;" >Disconnect</span></li></ul></button>
+  </span>
+  <div class="watch-queue-controls">
+    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-empty yt-uix-button-has-icon control-bar-button prev-watch-queue-button yt-uix-button-opacity yt-uix-tooltip yt-uix-tooltip" type="button" onclick=";return false;" title="Previous video"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-watch-queue-prev yt-sprite"></span></span></button>
+
+    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-empty yt-uix-button-has-icon control-bar-button play-watch-queue-button yt-uix-button-opacity yt-uix-tooltip yt-uix-tooltip" type="button" onclick=";return false;" title="Play"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-watch-queue-play yt-sprite"></span></span></button>
+
+    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-empty yt-uix-button-has-icon control-bar-button pause-watch-queue-button yt-uix-button-opacity yt-uix-tooltip hid yt-uix-tooltip" type="button" onclick=";return false;" title="Pause"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-watch-queue-pause yt-sprite"></span></span></button>
+
+    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-empty yt-uix-button-has-icon control-bar-button next-watch-queue-button yt-uix-button-opacity yt-uix-tooltip yt-uix-tooltip" type="button" onclick=";return false;" title="Next video"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-watch-queue-next yt-sprite"></span></span></button>
+  </div>
+</div><div class="autoplay-dismiss-bar fade-out"><span class="autoplay-dismiss-title-label">The next video is starting</span><span><button class="yt-uix-button yt-uix-button-size-default autoplay-dismiss-button yt-uix-tooltip" type="button" onclick=";return false;" title="stop"><span class="yt-uix-button-content">stop</span></button></span></div></div><div class="watch-queue-items-container yt-scrollbar-dark yt-scrollbar"><div class="yt-uix-scroller playlist-videos-list"><ol class="watch-queue-items-list" data-scroll-action="yt.www.watchqueue.loadThumbnails">  <p class="yt-spinner ">
+        <span title="Loading icon" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+Loading...
+    </span>
+  </p>
+</ol><div class="autoplay-control-container yt-uix-scroller-scroll-unit hid">  <div class="autoplay-control-bar">
+    <label class="autoplay-label" for=autoplay-toggle-id></label>
+    <label class="yt-uix-form-input-checkbox-container yt-uix-form-input-container yt-uix-form-input-paper-toggle-container  "><input class="yt-uix-form-input-checkbox" type="checkbox" id="autoplay-toggle-id"/><div class="yt-uix-form-input-paper-toggle-bg yt-uix-form-input-paper-toggle-bar"></div><div class="yt-uix-form-input-paper-toggle-bg yt-uix-form-input-paper-toggle-button"></div></label>
+  </div>
+</div><div class="up-next-item-container hid"></div></div></div></div>  <div class="hid">
+    <div id="watch-queue-title-msg">
+Watch Queue
+    </div>
+
+    <div id="tv-queue-title-msg">Queue</div>
+
+    <div id="watch-queue-count-msg">
+__count__/__total__
+    </div>
+
+    <div id="watch-queue-loading-template">
+      <!--
+          <p class="yt-spinner ">
+        <span title="Loading icon" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+Loading...
+    </span>
+  </p>
+
+      -->
+    </div>
+  </div>
+</div></div>
+
+    <div id="player-playlist" class="  hid  ">
+      
+    </div>
+
+  </div>
+
+  <div class="clear"></div>
+</div><div id="content" class="  content-alignment" role="main">
+
+
+  <div class="branded-page-v2-container branded-page-base-bold-titles branded-page-v2-container-flex-width" >
+
+    <div class="branded-page-v2-col-container">
+      <div class="branded-page-v2-col-container-inner">
+        <div class="branded-page-v2-primary-col">
+          <div class="   yt-card  clearfix">
+                <div class="branded-page-v2-primary-col-header-container branded-page-v2-primary-column-content">
+      
+    </div>
+  <div class="branded-page-v2-body branded-page-v2-primary-column-content" id="">
+        
+        <noscript>
+      <div class="yt-alert yt-alert-default yt-alert-error  ">  <div class="yt-alert-icon">
+    <span class="icon master-sprite yt-sprite"></span>
+  </div>
+<div class="yt-alert-content" role="alert">    <div class="yt-alert-message" tabindex="0">
+            Hello, you seem to have JavaScript turned off. Please enable it to see search results properly.
+    </div>
+</div><div class="yt-alert-buttons"><button class="yt-uix-button yt-uix-button-size-default yt-uix-button-close close yt-uix-close" type="button" onclick=";return false;" aria-label="Close" data-close-parent-class="yt-alert"><span class="yt-uix-button-content">Close</span></button></div></div>
+
+  </noscript>
+
+
+  <div id="results">
+    
+
+      
+<ol id="section-list-500000" class="section-list">
+<li class="branded-page-v2-subnav-container branded-page-gutter-padding"><div class="search-header yt-uix-expander yt-uix-expander-collapsed"><div class="filter-top"><div class="filter-bar-container"><div class="filter-button-container"><button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default filter-button yt-uix-expander-head" type="button" onclick=";return false;" aria-label="Search filters" data-button-action="" data-button-menu-id="some-nonexistent-menu" data-button-toggle="true"><span class="yt-uix-button-content">Filters</span><span class="yt-uix-button-arrow yt-sprite"></span></button></div><div class="filter-crumb-spacer"></div></div></div><div id="filter-dropdown" class="yt-uix-expander-body"><div class="filter-col"><h4 class="filter-col-title">Upload date</h4><ul><li><a href="/results?search_query=Power+is+Power&amp;sp=EgIIAQ%253D%253D" class="filter yt-uix-sessionlink      spf-link " data-sessionlink="itct=CC4Qk3UYACITCM2VlIHrrOoCFXoTtwAd5usH0w"  title="Search for Last hour" aria-label="Search for Last hour"><span class="filter-text filter-ghost">Last hour</span></a></li><li><a href="/results?search_query=Power+is+Power&amp;sp=EgIIAg%253D%253D" class="filter yt-uix-sessionlink      spf-link " data-sessionlink="itct=CC0Qk3UYASITCM2VlIHrrOoCFXoTtwAd5usH0w"  title="Search for Today" aria-label="Search for Today"><span class="filter-text filter-ghost">Today</span></a></li><li><a href="/results?search_query=Power+is+Power&amp;sp=EgIIAw%253D%253D" class="filter yt-uix-sessionlink      spf-link " data-sessionlink="itct=CCwQk3UYAiITCM2VlIHrrOoCFXoTtwAd5usH0w"  title="Search for This week" aria-label="Search for This week"><span class="filter-text filter-ghost">This week</span></a></li><li><a href="/results?search_query=Power+is+Power&amp;sp=EgIIBA%253D%253D" class="filter yt-uix-sessionlink      spf-link " data-sessionlink="itct=CCsQk3UYAyITCM2VlIHrrOoCFXoTtwAd5usH0w"  title="Search for This month" aria-label="Search for This month"><span class="filter-text filter-ghost">This month</span></a></li><li><a href="/results?search_query=Power+is+Power&amp;sp=EgIIBQ%253D%253D" class="filter yt-uix-sessionlink      spf-link " data-sessionlink="itct=CCoQk3UYBCITCM2VlIHrrOoCFXoTtwAd5usH0w"  title="Search for This year" aria-label="Search for This year"><span class="filter-text filter-ghost">This year</span></a></li></ul></div><div class="filter-col"><h4 class="filter-col-title">Type</h4><ul><li><a href="/results?search_query=Power+is+Power&amp;sp=EgIQAQ%253D%253D" class="filter yt-uix-sessionlink      spf-link " data-sessionlink="itct=CCgQk3UYACITCM2VlIHrrOoCFXoTtwAd5usH0w"  title="Search for Video" aria-label="Search for Video"><span class="filter-text filter-ghost">Video</span></a></li><li><a href="/results?search_query=Power+is+Power&amp;sp=EgIQAg%253D%253D" class="filter yt-uix-sessionlink      spf-link " data-sessionlink="itct=CCcQk3UYASITCM2VlIHrrOoCFXoTtwAd5usH0w"  title="Search for Channel" aria-label="Search for Channel"><span class="filter-text filter-ghost">Channel</span></a></li><li><a href="/results?search_query=Power+is+Power&amp;sp=EgIQAw%253D%253D" class="filter yt-uix-sessionlink      spf-link " data-sessionlink="itct=CCYQk3UYAiITCM2VlIHrrOoCFXoTtwAd5usH0w"  title="Search for Playlist" aria-label="Search for Playlist"><span class="filter-text filter-ghost">Playlist</span></a></li><li><a href="/results?search_query=Power+is+Power&amp;sp=EgIQBA%253D%253D" class="filter yt-uix-sessionlink      spf-link " data-sessionlink="itct=CCUQk3UYAyITCM2VlIHrrOoCFXoTtwAd5usH0w"  title="Search for Film" aria-label="Search for Film"><span class="filter-text filter-ghost">Film</span></a></li><li><a href="/results?search_query=Power+is+Power&amp;sp=EgIQBQ%253D%253D" class="filter yt-uix-sessionlink      spf-link " data-sessionlink="itct=CCQQk3UYBCITCM2VlIHrrOoCFXoTtwAd5usH0w"  title="Search for Programme" aria-label="Search for Programme"><span class="filter-text filter-ghost">Programme</span></a></li></ul></div><div class="filter-col"><h4 class="filter-col-title">Duration</h4><ul><li><a href="/results?search_query=Power+is+Power&amp;sp=EgIYAQ%253D%253D" class="filter yt-uix-sessionlink      spf-link " data-sessionlink="itct=CCIQk3UYACITCM2VlIHrrOoCFXoTtwAd5usH0w"  title="Search for Short (&lt; 4 minutes)" aria-label="Search for Short (&lt; 4 minutes)"><span class="filter-text filter-ghost">Short (&lt; 4 minutes)</span></a></li><li><a href="/results?search_query=Power+is+Power&amp;sp=EgIYAg%253D%253D" class="filter yt-uix-sessionlink      spf-link " data-sessionlink="itct=CCEQk3UYASITCM2VlIHrrOoCFXoTtwAd5usH0w"  title="Search for Long (&gt; 20 minutes)" aria-label="Search for Long (&gt; 20 minutes)"><span class="filter-text filter-ghost">Long (&gt; 20 minutes)</span></a></li></ul></div><div class="filter-col"><h4 class="filter-col-title">Features</h4><ul><li><a href="/results?search_query=Power+is+Power&amp;sp=EgJAAQ%253D%253D" class="filter yt-uix-sessionlink      spf-link " data-sessionlink="itct=CB8Qk3UYACITCM2VlIHrrOoCFXoTtwAd5usH0w"  title="Search for Live" aria-label="Search for Live"><span class="filter-text filter-ghost">Live</span></a></li><li><a href="/results?search_query=Power+is+Power&amp;sp=EgJwAQ%253D%253D" class="filter yt-uix-sessionlink      spf-link " data-sessionlink="itct=CB4Qk3UYASITCM2VlIHrrOoCFXoTtwAd5usH0w"  title="Search for 4K" aria-label="Search for 4K"><span class="filter-text filter-ghost">4K</span></a></li><li><a href="/results?search_query=Power+is+Power&amp;sp=EgIgAQ%253D%253D" class="filter yt-uix-sessionlink      spf-link " data-sessionlink="itct=CB0Qk3UYAiITCM2VlIHrrOoCFXoTtwAd5usH0w"  title="Search for HD" aria-label="Search for HD"><span class="filter-text filter-ghost">HD</span></a></li><li><a href="/results?search_query=Power+is+Power&amp;sp=EgIoAQ%253D%253D" class="filter yt-uix-sessionlink      spf-link " data-sessionlink="itct=CBwQk3UYAyITCM2VlIHrrOoCFXoTtwAd5usH0w"  title="Search for Subtitles/CC" aria-label="Search for Subtitles/CC"><span class="filter-text filter-ghost">Subtitles/CC</span></a></li><li><a href="/results?search_query=Power+is+Power&amp;sp=EgIwAQ%253D%253D" class="filter yt-uix-sessionlink      spf-link " data-sessionlink="itct=CBsQk3UYBCITCM2VlIHrrOoCFXoTtwAd5usH0w"  title="Search for Creative Commons" aria-label="Search for Creative Commons"><span class="filter-text filter-ghost">Creative Commons</span></a></li><li><a href="/results?search_query=Power+is+Power&amp;sp=EgJ4AQ%253D%253D" class="filter yt-uix-sessionlink      spf-link " data-sessionlink="itct=CBoQk3UYBSITCM2VlIHrrOoCFXoTtwAd5usH0w"  title="Search for 360°" aria-label="Search for 360°"><span class="filter-text filter-ghost">360°</span></a></li><li><a href="/results?search_query=Power+is+Power&amp;sp=EgPQAQE%253D" class="filter yt-uix-sessionlink      spf-link " data-sessionlink="itct=CBkQk3UYBiITCM2VlIHrrOoCFXoTtwAd5usH0w"  title="Search for VR180" aria-label="Search for VR180"><span class="filter-text filter-ghost">VR180</span></a></li><li><a href="/results?search_query=Power+is+Power&amp;sp=EgI4AQ%253D%253D" class="filter yt-uix-sessionlink      spf-link " data-sessionlink="itct=CBgQk3UYByITCM2VlIHrrOoCFXoTtwAd5usH0w"  title="Search for 3D" aria-label="Search for 3D"><span class="filter-text filter-ghost">3D</span></a></li><li><a href="/results?search_query=Power+is+Power&amp;sp=EgPIAQE%253D" class="filter yt-uix-sessionlink      spf-link " data-sessionlink="itct=CBcQk3UYCCITCM2VlIHrrOoCFXoTtwAd5usH0w"  title="Search for HDR" aria-label="Search for HDR"><span class="filter-text filter-ghost">HDR</span></a></li><li><a href="/results?search_query=Power+is+Power&amp;sp=EgO4AQE%253D" class="filter yt-uix-sessionlink      spf-link " data-sessionlink="itct=CBYQk3UYCSITCM2VlIHrrOoCFXoTtwAd5usH0w"  title="Search for Location" aria-label="Search for Location"><span class="filter-text filter-ghost">Location</span></a></li><li><a href="/results?search_query=Power+is+Power&amp;sp=EgJIAQ%253D%253D" class="filter yt-uix-sessionlink      spf-link " data-sessionlink="itct=CBUQk3UYCiITCM2VlIHrrOoCFXoTtwAd5usH0w"  title="Search for Purchased" aria-label="Search for Purchased"><span class="filter-text filter-ghost">Purchased</span></a></li></ul></div><div class="filter-col"><h4 class="filter-col-title">Sort by</h4><ul><li><span class="filter filter-selected filter-sort"  title="Sort by relevance"><span class="filter-text"  aria-label="Sort by relevance">Relevance</span></span></li><li><a href="/results?search_query=Power+is+Power&amp;sp=CAI%253D" class="filter yt-uix-sessionlink      spf-link " data-sessionlink="itct=CBIQk3UYASITCM2VlIHrrOoCFXoTtwAd5usH0w"  title="Sort by upload date" aria-label="Sort by upload date"><span class="filter-text filter-ghost">Upload date</span></a></li><li><a href="/results?search_query=Power+is+Power&amp;sp=CAM%253D" class="filter yt-uix-sessionlink      spf-link " data-sessionlink="itct=CBEQk3UYAiITCM2VlIHrrOoCFXoTtwAd5usH0w"  title="Sort by view count" aria-label="Sort by view count"><span class="filter-text filter-ghost">View count</span></a></li><li><a href="/results?search_query=Power+is+Power&amp;sp=CAE%253D" class="filter yt-uix-sessionlink      spf-link " data-sessionlink="itct=CBAQk3UYAyITCM2VlIHrrOoCFXoTtwAd5usH0w"  title="Sort by rating" aria-label="Sort by rating"><span class="filter-text filter-ghost">Rating</span></a></li></ul></div></div></div></li>
+<li>
+<ol id="item-section-448512" class="item-section">
+<li><div class="yt-lockup yt-lockup-tile yt-lockup-video vve-check clearfix" data-context-item-id="IfCuarZqJzM" data-visibility-tracking="CFwQ3DAYACITCM2VlIHrrOoCFXoTtwAd5usH00Czzqizq82r-CE="><div class="yt-lockup-dismissable yt-uix-tile"><div class="yt-lockup-thumbnail contains-addto"><a aria-hidden="true"  href="/watch?v=IfCuarZqJzM" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CFwQ3DAYACITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA" ><div class="yt-thumb video-thumb yt-uix-mouseover-img-wrap"><span class="yt-thumb-simple">
+  <img alt="" data-mouseover-src="https://i.ytimg.com/an_webp/IfCuarZqJzM/mqdefault_6s.webp?du=3000&amp;sqp=CMvB8_cF&amp;rs=AOn4CLC5dNKkms9P0dJF2mnRheFkz4jtfA" src="https://i.ytimg.com/vi/IfCuarZqJzM/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLCa_Ppd2fxLgcyaK7X14m2339U6Qw" width="246" height="138" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+<span class="video-time" aria-hidden="true">3:32</span></span></div></a>  <span class="thumb-menu dark-overflow-action-menu video-actions">
+  </span>
+
+
+  <button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-tooltip" type="button" onclick=";return false;" role="button" title="Watch later" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="IfCuarZqJzM"><span class="yt-uix-button-arrow yt-sprite"></span></button>
+</div><div class="yt-lockup-content"><h3 class="yt-lockup-title "><a href="/watch?v=IfCuarZqJzM" class="yt-uix-tile-link yt-ui-ellipsis yt-ui-ellipsis-2 yt-uix-sessionlink      spf-link " data-sessionlink="itct=CFwQ3DAYACITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA"  title="SZA, The Weeknd, Travis Scott - Power Is Power (Official Video)" rel="spf-prefetch" aria-describedby="description-id-812192" dir="ltr">SZA, The Weeknd, Travis Scott - Power Is Power (Official Video)</a><span class="accessible-description" id="description-id-812192"> - Duration: 3:32.</span></h3><div class="yt-lockup-byline "><a href="/channel/UC0WP5P-ufpRfjbNrmOWwLBQ" class="yt-uix-sessionlink       spf-link " data-sessionlink="itct=CFwQ3DAYACITCM2VlIHrrOoCFXoTtwAd5usH0w" >The Weeknd</a>&nbsp;<span title="Verified" class="yt-uix-tooltip yt-channel-title-icon-verified yt-sprite"></span></div><div class="yt-lockup-meta "><ul class="yt-lockup-meta-info"><li>1 year ago</li><li>27,196,657 views</li></ul></div><div class="yt-lockup-description yt-ui-ellipsis yt-ui-ellipsis-2" dir="ltr">Listen to “<b>Power Is Power</b>” by SZA, The Weeknd, Travis Scott off &#39;For The Throne&#39; everywhere: <a href="http://smarturl.it/forthethronealbum" target="_blank" title="http://smarturl.it/forthethronealbum" rel="nofollow" dir="ltr" class="yt-uix-redirect-link">http://smarturl.it/forthethronealbum</a> ...</div></div></div></div></li>
+
+<li><div class="yt-lockup yt-lockup-tile yt-lockup-video vve-check clearfix" data-context-item-id="eTkxsPBTrnk" data-visibility-tracking="CFsQ3DAYASITCM2VlIHrrOoCFXoTtwAd5usH00D53M6Cj7bMnHk="><div class="yt-lockup-dismissable yt-uix-tile"><div class="yt-lockup-thumbnail contains-addto"><a aria-hidden="true"  href="/watch?v=eTkxsPBTrnk" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CFsQ3DAYASITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA" ><div class="yt-thumb video-thumb yt-uix-mouseover-img-wrap"><span class="yt-thumb-simple">
+  <img alt="" data-mouseover-src="https://i.ytimg.com/an_webp/eTkxsPBTrnk/mqdefault_6s.webp?du=3000&amp;sqp=CPbE8_cF&amp;rs=AOn4CLDKAVAI-Xpopa_GbCeEMtggQAlbFw" src="https://i.ytimg.com/vi/eTkxsPBTrnk/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLBO1H0SE0bpLQFnkJn6A5wZir3j0g" width="246" height="138" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+<span class="video-time" aria-hidden="true">3:44</span></span></div></a>  <span class="thumb-menu dark-overflow-action-menu video-actions">
+  </span>
+
+
+  <button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-tooltip" type="button" onclick=";return false;" role="button" title="Watch later" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="eTkxsPBTrnk"><span class="yt-uix-button-arrow yt-sprite"></span></button>
+</div><div class="yt-lockup-content"><h3 class="yt-lockup-title "><a href="/watch?v=eTkxsPBTrnk" class="yt-uix-tile-link yt-ui-ellipsis yt-ui-ellipsis-2 yt-uix-sessionlink      spf-link " data-sessionlink="itct=CFsQ3DAYASITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA"  title="SZA, The Weeknd, Travis Scott - “Power Is Power” Lyric Video| Game Of Thrones (HBO)" rel="spf-prefetch" aria-describedby="description-id-252413" dir="ltr">SZA, The Weeknd, Travis Scott - “Power Is Power” Lyric Video| Game Of Thrones (HBO)</a><span class="accessible-description" id="description-id-252413"> - Duration: 3:44.</span></h3><div class="yt-lockup-byline "><a href="/user/GameofThrones" class="yt-uix-sessionlink       spf-link " data-sessionlink="itct=CFsQ3DAYASITCM2VlIHrrOoCFXoTtwAd5usH0w" >GameofThrones</a>&nbsp;<span title="Verified" class="yt-uix-tooltip yt-channel-title-icon-verified yt-sprite"></span></div><div class="yt-lockup-meta "><ul class="yt-lockup-meta-info"><li>1 year ago</li><li>6,471,193 views</li></ul></div><div class="yt-lockup-description yt-ui-ellipsis yt-ui-ellipsis-2" dir="ltr">Stream “<b>Power is Power</b>” from SZA, The Weeknd and Travis Scott: <a href="http://smarturl.it/forthethronealbum" target="_blank" title="http://smarturl.it/forthethronealbum" rel="nofollow" dir="ltr" class="yt-uix-redirect-link">http://smarturl.it/forthethronealbum</a> The final season of ...</div></div></div></div></li>
+
+<li><div class="yt-lockup yt-lockup-tile yt-lockup-video vve-check clearfix" data-context-item-id="BjtVsqAyjS8" data-visibility-tracking="CFoQ3DAYAiITCM2VlIHrrOoCFXoTtwAd5usH00CvmsqBqrbVnQY="><div class="yt-lockup-dismissable yt-uix-tile"><div class="yt-lockup-thumbnail contains-addto"><a aria-hidden="true"  href="/watch?v=BjtVsqAyjS8" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CFoQ3DAYAiITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA" ><div class="yt-thumb video-thumb yt-uix-mouseover-img-wrap"><span class="yt-thumb-simple">
+  <img alt="" data-mouseover-src="https://i.ytimg.com/an_webp/BjtVsqAyjS8/mqdefault_6s.webp?du=3000&amp;sqp=CL2s8_cF&amp;rs=AOn4CLA2apPB4JeClJ9toSTZBngMBnQ8kA" src="https://i.ytimg.com/vi/BjtVsqAyjS8/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLDgSELFZUWfc54fq8YNn6f20uVj-Q" width="246" height="138" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+<span class="video-time" aria-hidden="true">3:32</span></span></div></a>  <span class="thumb-menu dark-overflow-action-menu video-actions">
+  </span>
+
+
+  <button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-tooltip" type="button" onclick=";return false;" role="button" title="Watch later" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="BjtVsqAyjS8"><span class="yt-uix-button-arrow yt-sprite"></span></button>
+</div><div class="yt-lockup-content"><h3 class="yt-lockup-title "><a href="/watch?v=BjtVsqAyjS8" class="yt-uix-tile-link yt-ui-ellipsis yt-ui-ellipsis-2 yt-uix-sessionlink      spf-link " data-sessionlink="itct=CFoQ3DAYAiITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA"  title="SZA, The Weeknd, Travis Scott - Power Is Power (Lyrics)" rel="spf-prefetch" aria-describedby="description-id-640721" dir="ltr">SZA, The Weeknd, Travis Scott - Power Is Power (Lyrics)</a><span class="accessible-description" id="description-id-640721"> - Duration: 3:32.</span></h3><div class="yt-lockup-byline "><a href="/channel/UCTwct4oAsyuyGxOtva0FcUg" class="yt-uix-sessionlink       spf-link " data-sessionlink="itct=CFoQ3DAYAiITCM2VlIHrrOoCFXoTtwAd5usH0w" >FutureHype</a>&nbsp;<span title="Verified" class="yt-uix-tooltip yt-channel-title-icon-verified yt-sprite"></span></div><div class="yt-lockup-meta "><ul class="yt-lockup-meta-info"><li>1 year ago</li><li>2,710,891 views</li></ul></div><div class="yt-lockup-description yt-ui-ellipsis yt-ui-ellipsis-2" dir="ltr">Stream SZA, The Weeknd, Travis Scott - <b>Power Is Power</b> (Lyrics): ...</div></div></div></div></li>
+
+<li><div class="yt-lockup yt-lockup-tile yt-lockup-video vve-check clearfix" data-context-item-id="ab6GyR_5N6c" data-visibility-tracking="CFkQ3DAYAyITCM2VlIHrrOoCFXoTtwAd5usH00Cn7-T_kdmh32k="><div class="yt-lockup-dismissable yt-uix-tile"><div class="yt-lockup-thumbnail contains-addto"><a aria-hidden="true"  href="/watch?v=ab6GyR_5N6c" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CFkQ3DAYAyITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA" ><div class="yt-thumb video-thumb yt-uix-mouseover-img-wrap"><span class="yt-thumb-simple">
+  <img alt="" data-mouseover-src="https://i.ytimg.com/an_webp/ab6GyR_5N6c/mqdefault_6s.webp?du=3000&amp;sqp=CMjB8_cF&amp;rs=AOn4CLCsDws7eqDaG6mQ92Po6S_oqOoxow" src="https://i.ytimg.com/vi/ab6GyR_5N6c/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLATNiwnwERXgTiVGz0iu-QQgqW_yw" width="246" height="138" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+<span class="video-time" aria-hidden="true">1:58</span></span></div></a>  <span class="thumb-menu dark-overflow-action-menu video-actions">
+  </span>
+
+
+  <button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-tooltip" type="button" onclick=";return false;" role="button" title="Watch later" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="ab6GyR_5N6c"><span class="yt-uix-button-arrow yt-sprite"></span></button>
+</div><div class="yt-lockup-content"><h3 class="yt-lockup-title "><a href="/watch?v=ab6GyR_5N6c" class="yt-uix-tile-link yt-ui-ellipsis yt-ui-ellipsis-2 yt-uix-sessionlink      spf-link " data-sessionlink="itct=CFkQ3DAYAyITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA"  title="Game of Thrones - Power is Power" rel="spf-prefetch" aria-describedby="description-id-87358" dir="ltr">Game of Thrones - Power is Power</a><span class="accessible-description" id="description-id-87358"> - Duration: 1:58.</span></h3><div class="yt-lockup-byline "><a href="/user/theclipmaster101" class="yt-uix-sessionlink       spf-link " data-sessionlink="itct=CFkQ3DAYAyITCM2VlIHrrOoCFXoTtwAd5usH0w" >theclipmaster101</a></div><div class="yt-lockup-meta "><ul class="yt-lockup-meta-info"><li>8 years ago</li><li>281,001 views</li></ul></div><div class="yt-lockup-description yt-ui-ellipsis yt-ui-ellipsis-2" dir="ltr"><b>Power is Power</b> Cersei Lannister vs Petyr Baelish Remember Varys: Power resides where men believe it resides. No more no ...</div></div></div></div></li>
+
+<li><div class="yt-lockup yt-lockup-tile yt-lockup-video vve-check clearfix" data-context-item-id="GJfDSStHozg" data-visibility-tracking="CFgQ3DAYBCITCM2VlIHrrOoCFXoTtwAd5usH00C4xp7akunwyxg="><div class="yt-lockup-dismissable yt-uix-tile"><div class="yt-lockup-thumbnail contains-addto"><a aria-hidden="true"  href="/watch?v=GJfDSStHozg" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CFgQ3DAYBCITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA" ><div class="yt-thumb video-thumb yt-uix-mouseover-img-wrap"><span class="yt-thumb-simple">
+  <img alt="" data-mouseover-src="https://i.ytimg.com/an_webp/GJfDSStHozg/mqdefault_6s.webp?du=3000&amp;sqp=CPiQ8_cF&amp;rs=AOn4CLDnIHNbbt3zoKcIoIIDpYEEpF0WCw" src="https://i.ytimg.com/vi/GJfDSStHozg/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLBf2hvK3aQVday7F5GDMRm0oHLfRw" width="246" height="138" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+<span class="video-time" aria-hidden="true">3:32</span></span></div></a>  <span class="thumb-menu dark-overflow-action-menu video-actions">
+  </span>
+
+
+  <button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-tooltip" type="button" onclick=";return false;" role="button" title="Watch later" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="GJfDSStHozg"><span class="yt-uix-button-arrow yt-sprite"></span></button>
+</div><div class="yt-lockup-content"><h3 class="yt-lockup-title "><a href="/watch?v=GJfDSStHozg" class="yt-uix-tile-link yt-ui-ellipsis yt-ui-ellipsis-2 yt-uix-sessionlink      spf-link " data-sessionlink="itct=CFgQ3DAYBCITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA"  title="Game Of Thrones - Power Is Power (The Weeknd, SZA, Travis Scott)" rel="spf-prefetch" aria-describedby="description-id-169772" dir="ltr">Game Of Thrones - Power Is Power (The Weeknd, SZA, Travis Scott)</a><span class="accessible-description" id="description-id-169772"> - Duration: 3:32.</span></h3><div class="yt-lockup-byline "><a href="/channel/UCcatm03vJI7Y9U_tmiUPzsQ" class="yt-uix-sessionlink       spf-link " data-sessionlink="itct=CFgQ3DAYBCITCM2VlIHrrOoCFXoTtwAd5usH0w" >MipMapp</a></div><div class="yt-lockup-meta "><ul class="yt-lockup-meta-info"><li>1 year ago</li><li>38,559 views</li></ul></div><div class="yt-lockup-description yt-ui-ellipsis yt-ui-ellipsis-2" dir="ltr">Game of Thrones ©HBO The Weeknd - <b>Power Is Power</b> (feat. SZA, Travis Scott) Patreon - <a href="https://www.patreon.com/mipmapp" target="_blank" title="https://www.patreon.com/mipmapp" rel="nofollow" dir="ltr" class="yt-uix-redirect-link">https://www.patreon.com/mipmapp</a>.</div><div class="yt-lockup-badges"><ul class="yt-badge-list "><li class="yt-badge-item"><span class="yt-badge " >4K</span></li></ul> </div></div></div></div></li>
+
+<li><div class="yt-lockup yt-lockup-tile yt-lockup-video vve-check clearfix" data-context-item-id="88kxtVexNok" data-visibility-tracking="CFcQ3DAYBSITCM2VlIHrrOoCFXoTtwAd5usH00CJ7cS91bbM5PMB"><div class="yt-lockup-dismissable yt-uix-tile"><div class="yt-lockup-thumbnail contains-addto"><a aria-hidden="true"  href="/watch?v=88kxtVexNok" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CFcQ3DAYBSITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA" ><div class="yt-thumb video-thumb yt-uix-mouseover-img-wrap"><span class="yt-thumb-simple">
+  <img alt="" data-mouseover-src="https://i.ytimg.com/an_webp/88kxtVexNok/mqdefault_6s.webp?du=3000&amp;sqp=CL2l8_cF&amp;rs=AOn4CLADBZhOZr7fTwI5-cEPzr526I8Owg" src="https://i.ytimg.com/vi/88kxtVexNok/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLD4iVA2V3FGVnAmvhUKYt4yLMjiqA" width="246" height="138" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+<span class="video-time" aria-hidden="true">3:33</span></span></div></a>  <span class="thumb-menu dark-overflow-action-menu video-actions">
+  </span>
+
+
+  <button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-tooltip" type="button" onclick=";return false;" role="button" title="Watch later" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="88kxtVexNok"><span class="yt-uix-button-arrow yt-sprite"></span></button>
+</div><div class="yt-lockup-content"><h3 class="yt-lockup-title "><a href="/watch?v=88kxtVexNok" class="yt-uix-tile-link yt-ui-ellipsis yt-ui-ellipsis-2 yt-uix-sessionlink      spf-link " data-sessionlink="itct=CFcQ3DAYBSITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA"  title="SZA, The Weeknd, Travis Scott - Power Is Power (8D AUDIO) Game Of Thrones Soundtrack 👑" rel="spf-prefetch" aria-describedby="description-id-856472" dir="ltr">SZA, The Weeknd, Travis Scott - Power Is Power (8D AUDIO) Game Of Thrones Soundtrack 👑</a><span class="accessible-description" id="description-id-856472"> - Duration: 3:33.</span></h3><div class="yt-lockup-byline "><a href="/channel/UCrRpYEytIHGyDgNWO6VbHlQ" class="yt-uix-sessionlink       spf-link " data-sessionlink="itct=CFcQ3DAYBSITCM2VlIHrrOoCFXoTtwAd5usH0w" >8D TUNES</a>&nbsp;<span title="Verified" class="yt-uix-tooltip yt-channel-title-icon-verified yt-sprite"></span></div><div class="yt-lockup-meta "><ul class="yt-lockup-meta-info"><li>1 year ago</li><li>271,956 views</li></ul></div><div class="yt-lockup-description yt-ui-ellipsis yt-ui-ellipsis-2" dir="ltr">Listen to 8D Music on Spotify 🎧 <a href="https://lnk.to/8dplaylist" target="_blank" title="https://lnk.to/8dplaylist" rel="nofollow" dir="ltr" class="yt-uix-redirect-link">https://lnk.to/8dplaylist</a><br /><br />If you like it please subscribe and turn on the notifications for ...</div></div></div></div></li>
+
+<li><div class="yt-lockup yt-lockup-tile yt-lockup-video vve-check clearfix" data-context-item-id="uD0dulcy2Q4" data-visibility-tracking="CFYQ3DAYBiITCM2VlIHrrOoCFXoTtwAd5usH00COssu5pbfHnrgB"><div class="yt-lockup-dismissable yt-uix-tile"><div class="yt-lockup-thumbnail contains-addto"><a aria-hidden="true"  href="/watch?v=uD0dulcy2Q4" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CFYQ3DAYBiITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA" ><div class="yt-thumb video-thumb"><span class="yt-thumb-simple">
+  <img alt="" data-thumb="https://i.ytimg.com/vi/uD0dulcy2Q4/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLDWZynweopTMLJtD6ZoQmGypJn7LA" src="/yts/img/pixel-vfl3z5WfW.gif" width="246" height="138" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+<span class="video-time" aria-hidden="true">3:33</span></span></div></a>  <span class="thumb-menu dark-overflow-action-menu video-actions">
+  </span>
+
+
+  <button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-tooltip" type="button" onclick=";return false;" role="button" title="Watch later" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="uD0dulcy2Q4"><span class="yt-uix-button-arrow yt-sprite"></span></button>
+</div><div class="yt-lockup-content"><h3 class="yt-lockup-title "><a href="/watch?v=uD0dulcy2Q4" class="yt-uix-tile-link yt-ui-ellipsis yt-ui-ellipsis-2 yt-uix-sessionlink      spf-link " data-sessionlink="itct=CFYQ3DAYBiITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA"  title="Power is Power from For The Throne Music Inspired by the HBO Series Game of Thrones (Official Audio)" rel="spf-prefetch" aria-describedby="description-id-137087" dir="ltr">Power is Power from For The Throne Music Inspired by the HBO Series Game of Thrones (Official Audio)</a><span class="accessible-description" id="description-id-137087"> - Duration: 3:33.</span></h3><div class="yt-lockup-byline "><a href="/user/columbiarecords" class="yt-uix-sessionlink       spf-link " data-sessionlink="itct=CFYQ3DAYBiITCM2VlIHrrOoCFXoTtwAd5usH0w" >Columbia Records</a></div><div class="yt-lockup-meta "><ul class="yt-lockup-meta-info"><li>1 year ago</li><li>2,965,797 views</li></ul></div><div class="yt-lockup-description yt-ui-ellipsis yt-ui-ellipsis-2" dir="ltr">Listen to “<b>Power Is Power</b>” by SZA, The Weeknd, Travis Scott everywhere: <a href="http://smarturl.it/powerispower" target="_blank" title="http://smarturl.it/powerispower" rel="nofollow" dir="ltr" class="yt-uix-redirect-link">http://smarturl.it/powerispower</a> Amazon Music: ...</div></div></div></div></li>
+
+<li><div class="feed-item-container browse-list-item-container yt-section-hover-container compact-shelf shelf-item branded-page-box vve-check clearfix " data-visibility-tracking="CEoQ3BwYByITCM2VlIHrrOoCFXoTtwAd5usH0w=="><div class="feed-item-dismissable"><div class="shelf-title-table"><div class="shelf-title-row"><h2 class="branded-page-module-title shelf-title-cell"><span class="branded-page-module-title-text">Related to your search</span></h2><div class="menu-container shelf-title-cell"></div></div></div><div class="vertical-shelf"><div class="yt-uix-expander yt-uix-expander-collapsed"><ul class="shelf-content"><li ><div class="yt-lockup yt-lockup-tile yt-lockup-video vve-check clearfix" data-context-item-id="o_v2r8rdGM8" data-visibility-tracking="CFUQ3DAYACITCM2VlIHrrOoCFXoTtwAd5usH00DPsfTW_NX9_aMB"><div class="yt-lockup-dismissable yt-uix-tile"><div class="yt-lockup-thumbnail contains-addto"><a aria-hidden="true"  href="/watch?v=o_v2r8rdGM8" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CFUQ3DAYACITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA" ><div class="yt-thumb video-thumb yt-uix-mouseover-img-wrap"><span class="yt-thumb-simple">
+  <img alt="" data-mouseover-src="https://i.ytimg.com/an_webp/o_v2r8rdGM8/mqdefault_6s.webp?du=3000&amp;sqp=CKK18_cF&amp;rs=AOn4CLC862mYE8GpnF4SM0XZrMhBIYC5Aw" data-thumb="https://i.ytimg.com/vi/o_v2r8rdGM8/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLCn5Wp7DKYXBn87g-g-Y4m6YGV7Gg" src="/yts/img/pixel-vfl3z5WfW.gif" width="246" height="138" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+<span class="video-time" aria-hidden="true">3:42</span></span></div></a>  <span class="thumb-menu dark-overflow-action-menu video-actions">
+  </span>
+
+
+  <button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-tooltip" type="button" onclick=";return false;" role="button" title="Watch later" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="o_v2r8rdGM8"><span class="yt-uix-button-arrow yt-sprite"></span></button>
+</div><div class="yt-lockup-content"><h3 class="yt-lockup-title "><a href="/watch?v=o_v2r8rdGM8" class="yt-uix-tile-link yt-ui-ellipsis yt-ui-ellipsis-2 yt-uix-sessionlink      spf-link " data-sessionlink="itct=CFUQ3DAYACITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA"  title="NAV - Price On My Head ft. The Weeknd" rel="spf-prefetch" aria-describedby="description-id-380831" dir="ltr">NAV - Price On My Head ft. The Weeknd</a><span class="accessible-description" id="description-id-380831"> - Duration: 3:42.</span></h3><div class="yt-lockup-byline "><a href="/channel/UCuI48V3qSHZvZimYgFNJYJg" class="yt-uix-sessionlink       spf-link " data-sessionlink="itct=CFUQ3DAYACITCM2VlIHrrOoCFXoTtwAd5usH0w" >NAV</a></div><div class="yt-lockup-meta "><ul class="yt-lockup-meta-info"><li>1 year ago</li><li>13,128,244 views</li></ul></div><div class="yt-lockup-description yt-ui-ellipsis yt-ui-ellipsis-2" dir="ltr">Price On My Head ft. The Weeknd (Official Video) Get Bad Habits now: <a href="https://NAV.lnk.to/bh-dlxYD" target="_blank" title="https://NAV.lnk.to/bh-dlxYD" rel="nofollow" dir="ltr" class="yt-uix-redirect-link">https://NAV.lnk.to/bh-dlxYD</a> Connect with NAV: ...</div><div class="yt-lockup-badges"><ul class="yt-badge-list "><li class="yt-badge-item"><span class="yt-badge " >Subtitles</span></li></ul> </div></div></div></div></li><li ><div class="yt-lockup yt-lockup-tile yt-lockup-video vve-check clearfix" data-context-item-id="rg_zwK_sSEY" data-visibility-tracking="CFQQ3DAYASITCM2VlIHrrOoCFXoTtwAd5usH00DGkLH_ivj8h64B"><div class="yt-lockup-dismissable yt-uix-tile"><div class="yt-lockup-thumbnail contains-addto"><a aria-hidden="true"  href="/watch?v=rg_zwK_sSEY" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CFQQ3DAYASITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA" ><div class="yt-thumb video-thumb yt-uix-mouseover-img-wrap"><span class="yt-thumb-simple">
+  <img alt="" data-mouseover-src="https://i.ytimg.com/an_webp/rg_zwK_sSEY/mqdefault_6s.webp?du=3000&amp;sqp=COrT8_cF&amp;rs=AOn4CLBEG0U_cDeBgzir-Vy92s6BRS_e8w" data-thumb="https://i.ytimg.com/vi/rg_zwK_sSEY/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLC7IusPI4QFD9gdfQGjjNeIiPAJKA" src="/yts/img/pixel-vfl3z5WfW.gif" width="246" height="138" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+<span class="video-time" aria-hidden="true">4:03</span></span></div></a>  <span class="thumb-menu dark-overflow-action-menu video-actions">
+  </span>
+
+
+  <button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-tooltip" type="button" onclick=";return false;" role="button" title="Watch later" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="rg_zwK_sSEY"><span class="yt-uix-button-arrow yt-sprite"></span></button>
+</div><div class="yt-lockup-content"><h3 class="yt-lockup-title "><a href="/watch?v=rg_zwK_sSEY" class="yt-uix-tile-link yt-ui-ellipsis yt-ui-ellipsis-2 yt-uix-sessionlink      spf-link " data-sessionlink="itct=CFQQ3DAYASITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA"  title="ZAYN, Zhavia Ward - A Whole New World (End Title) (From &quot;Aladdin&quot;)" rel="spf-prefetch" aria-describedby="description-id-83921" dir="ltr">ZAYN, Zhavia Ward - A Whole New World (End Title) (From &quot;Aladdin&quot;)</a><span class="accessible-description" id="description-id-83921"> - Duration: 4:03.</span></h3><div class="yt-lockup-byline "><a href="/user/DisneyMusicVEVO" class="yt-uix-sessionlink       spf-link " data-sessionlink="itct=CFQQ3DAYASITCM2VlIHrrOoCFXoTtwAd5usH0w" >DisneyMusicVEVO</a>&nbsp;<span title="Verified" class="yt-uix-tooltip yt-channel-title-icon-verified yt-sprite"></span></div><div class="yt-lockup-meta "><ul class="yt-lockup-meta-info"><li>1 year ago</li><li>183,127,456 views</li></ul></div><div class="yt-lockup-description yt-ui-ellipsis yt-ui-ellipsis-2" dir="ltr">Stream #Aladdin on Disney+. Disney+ is the only place to stream your favorites from Disney, Pixar, Marvel, Star Wars, National ...</div><div class="yt-lockup-badges"><ul class="yt-badge-list "><li class="yt-badge-item"><span class="yt-badge " >Subtitles</span></li></ul> </div></div></div></div></li><li ><div class="yt-lockup yt-lockup-tile yt-lockup-video vve-check clearfix" data-context-item-id="eTa1jHk1Lxc" data-visibility-tracking="CFMQ3DAYAiITCM2VlIHrrOoCFXoTtwAd5usH00CX3tTJx7Gtm3k="><div class="yt-lockup-dismissable yt-uix-tile"><div class="yt-lockup-thumbnail contains-addto"><a aria-hidden="true"  href="/watch?v=eTa1jHk1Lxc" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CFMQ3DAYAiITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA" ><div class="yt-thumb video-thumb yt-uix-mouseover-img-wrap"><span class="yt-thumb-simple">
+  <img alt="" data-mouseover-src="https://i.ytimg.com/an_webp/eTa1jHk1Lxc/mqdefault_6s.webp?du=3000&amp;sqp=COic8_cF&amp;rs=AOn4CLA9h3SCGI7PxH6nNmtELze5U7Igyg" data-thumb="https://i.ytimg.com/vi/eTa1jHk1Lxc/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLBi13Dp_iniQBwoURcxS_tOBgwQ4A" src="/yts/img/pixel-vfl3z5WfW.gif" width="246" height="138" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+<span class="video-time" aria-hidden="true">3:23</span></span></div></a>  <span class="thumb-menu dark-overflow-action-menu video-actions">
+  </span>
+
+
+  <button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-tooltip" type="button" onclick=";return false;" role="button" title="Watch later" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="eTa1jHk1Lxc"><span class="yt-uix-button-arrow yt-sprite"></span></button>
+</div><div class="yt-lockup-content"><h3 class="yt-lockup-title "><a href="/watch?v=eTa1jHk1Lxc" class="yt-uix-tile-link yt-ui-ellipsis yt-ui-ellipsis-2 yt-uix-sessionlink      spf-link " data-sessionlink="itct=CFMQ3DAYAiITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA"  title="Florence + the Machine - Jenny of Oldstones (Lyric Video) | Season 8 | Game of Thrones (HBO)" rel="spf-prefetch" aria-describedby="description-id-818656" dir="ltr">Florence + the Machine - Jenny of Oldstones (Lyric Video) | Season 8 | Game of Thrones (HBO)</a><span class="accessible-description" id="description-id-818656"> - Duration: 3:23.</span></h3><div class="yt-lockup-byline "><a href="/user/GameofThrones" class="yt-uix-sessionlink       spf-link " data-sessionlink="itct=CFMQ3DAYAiITCM2VlIHrrOoCFXoTtwAd5usH0w" >GameofThrones</a>&nbsp;<span title="Verified" class="yt-uix-tooltip yt-channel-title-icon-verified yt-sprite"></span></div><div class="yt-lockup-meta "><ul class="yt-lockup-meta-info"><li>1 year ago</li><li>26,575,237 views</li></ul></div></div></div></div></li><li class="collapsable"><div class="yt-lockup yt-lockup-tile yt-lockup-video vve-check clearfix" data-context-item-id="XR7Ev14vUh8" data-visibility-tracking="CFIQ3DAYAyITCM2VlIHrrOoCFXoTtwAd5usH00CfpL3x9Zexj10="><div class="yt-lockup-dismissable yt-uix-tile"><div class="yt-lockup-thumbnail contains-addto"><a aria-hidden="true"  href="/watch?v=XR7Ev14vUh8" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CFIQ3DAYAyITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA" ><div class="yt-thumb video-thumb yt-uix-mouseover-img-wrap"><span class="yt-thumb-simple">
+  <img alt="" data-mouseover-src="https://i.ytimg.com/an_webp/XR7Ev14vUh8/mqdefault_6s.webp?du=3000&amp;sqp=CNem8_cF&amp;rs=AOn4CLAWu3-pszhak1Lf7TCmpdTccQbgrg" data-thumb="https://i.ytimg.com/vi/XR7Ev14vUh8/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLAm5acqv2KSxmbj6y_y3653WYbdXQ" src="/yts/img/pixel-vfl3z5WfW.gif" width="246" height="138" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+<span class="video-time" aria-hidden="true">3:29</span></span></div></a>  <span class="thumb-menu dark-overflow-action-menu video-actions">
+  </span>
+
+
+  <button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-tooltip" type="button" onclick=";return false;" role="button" title="Watch later" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="XR7Ev14vUh8"><span class="yt-uix-button-arrow yt-sprite"></span></button>
+</div><div class="yt-lockup-content"><h3 class="yt-lockup-title "><a href="/watch?v=XR7Ev14vUh8" class="yt-uix-tile-link yt-ui-ellipsis yt-ui-ellipsis-2 yt-uix-sessionlink      spf-link " data-sessionlink="itct=CFIQ3DAYAyITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA"  title="The Weeknd, Kendrick Lamar - Pray For Me (Official Lyric Video)" rel="spf-prefetch" aria-describedby="description-id-582256" dir="ltr">The Weeknd, Kendrick Lamar - Pray For Me (Official Lyric Video)</a><span class="accessible-description" id="description-id-582256"> - Duration: 3:29.</span></h3><div class="yt-lockup-byline "><a href="/channel/UC0WP5P-ufpRfjbNrmOWwLBQ" class="yt-uix-sessionlink       spf-link " data-sessionlink="itct=CFIQ3DAYAyITCM2VlIHrrOoCFXoTtwAd5usH0w" >The Weeknd</a>&nbsp;<span title="Verified" class="yt-uix-tooltip yt-channel-title-icon-verified yt-sprite"></span></div><div class="yt-lockup-meta "><ul class="yt-lockup-meta-info"><li>2 years ago</li><li>171,786,134 views</li></ul></div><div class="yt-lockup-description yt-ui-ellipsis yt-ui-ellipsis-2" dir="ltr">Black Panther The Album out now <a href="http://smarturl.it/BlackPantherAlbum" target="_blank" title="http://smarturl.it/BlackPantherAlbum" rel="nofollow" dir="ltr" class="yt-uix-redirect-link">http://smarturl.it/BlackPantherAlbum</a> Music video by The Weeknd, Kendrick Lamar performing ...</div></div></div></div></li><li class="collapsable"><div class="yt-lockup yt-lockup-tile yt-lockup-video vve-check clearfix" data-context-item-id="x3bfa3DZ8JM" data-visibility-tracking="CFEQ3DAYBCITCM2VlIHrrOoCFXoTtwAd5usH00CT4eeGt-23u8cB"><div class="yt-lockup-dismissable yt-uix-tile"><div class="yt-lockup-thumbnail contains-addto"><a aria-hidden="true"  href="/watch?v=x3bfa3DZ8JM" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CFEQ3DAYBCITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA" ><div class="yt-thumb video-thumb yt-uix-mouseover-img-wrap"><span class="yt-thumb-simple">
+  <img alt="" data-mouseover-src="https://i.ytimg.com/an_webp/x3bfa3DZ8JM/mqdefault_6s.webp?du=3000&amp;sqp=CPy38_cF&amp;rs=AOn4CLCwHm_Uza3enyEpuWG1qVUagyS9qQ" data-thumb="https://i.ytimg.com/vi/x3bfa3DZ8JM/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLD3dbHVweFCP6b1CezyYxf2-WJHDQ" src="/yts/img/pixel-vfl3z5WfW.gif" width="246" height="138" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+<span class="video-time" aria-hidden="true">4:11</span></span></div></a>  <span class="thumb-menu dark-overflow-action-menu video-actions">
+  </span>
+
+
+  <button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-tooltip" type="button" onclick=";return false;" role="button" title="Watch later" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="x3bfa3DZ8JM"><span class="yt-uix-button-arrow yt-sprite"></span></button>
+</div><div class="yt-lockup-content"><h3 class="yt-lockup-title "><a href="/watch?v=x3bfa3DZ8JM" class="yt-uix-tile-link yt-ui-ellipsis yt-ui-ellipsis-2 yt-uix-sessionlink      spf-link " data-sessionlink="itct=CFEQ3DAYBCITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA"  title="Khalid - Better (Official Video)" rel="spf-prefetch" aria-describedby="description-id-192836" dir="ltr">Khalid - Better (Official Video)</a><span class="accessible-description" id="description-id-192836"> - Duration: 4:11.</span></h3><div class="yt-lockup-byline "><a href="/channel/UCkntT5Je5DDopF70YUsnuEQ" class="yt-uix-sessionlink       spf-link " data-sessionlink="itct=CFEQ3DAYBCITCM2VlIHrrOoCFXoTtwAd5usH0w" >Khalid</a></div><div class="yt-lockup-meta "><ul class="yt-lockup-meta-info"><li>1 year ago</li><li>495,757,540 views</li></ul></div><div class="yt-lockup-description yt-ui-ellipsis yt-ui-ellipsis-2" dir="ltr">Better” Official Video out now! <a href="http://smarturl.it/zBetter" target="_blank" title="http://smarturl.it/zBetter" rel="nofollow" dir="ltr" class="yt-uix-redirect-link">http://smarturl.it/zBetter</a> Follow Khalid: <a href="https://www.facebook.com/thegreatkhalid" target="_blank" title="https://www.facebook.com/thegreatkhalid" rel="nofollow" dir="ltr" class="yt-uix-redirect-link">https://www.facebook.com/thegreatkhalid</a> ...</div></div></div></div></li><li class="collapsable"><div class="yt-lockup yt-lockup-tile yt-lockup-video vve-check clearfix" data-context-item-id="k1frgt0D_f4" data-visibility-tracking="CFAQ3DAYBSITCM2VlIHrrOoCFXoTtwAd5usH00D--4_orfD6q5MB"><div class="yt-lockup-dismissable yt-uix-tile"><div class="yt-lockup-thumbnail contains-addto"><a aria-hidden="true"  href="/watch?v=k1frgt0D_f4" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CFAQ3DAYBSITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA" ><div class="yt-thumb video-thumb"><span class="yt-thumb-simple">
+  <img alt="" data-thumb="https://i.ytimg.com/vi/k1frgt0D_f4/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLBYmGUG7wKT8nxq3s14PcrFFEjNdw" src="/yts/img/pixel-vfl3z5WfW.gif" width="246" height="138" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+<span class="video-time" aria-hidden="true">8:51</span></span></div></a>  <span class="thumb-menu dark-overflow-action-menu video-actions">
+  </span>
+
+
+  <button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-tooltip" type="button" onclick=";return false;" role="button" title="Watch later" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="k1frgt0D_f4"><span class="yt-uix-button-arrow yt-sprite"></span></button>
+</div><div class="yt-lockup-content"><h3 class="yt-lockup-title "><a href="/watch?v=k1frgt0D_f4" class="yt-uix-tile-link yt-ui-ellipsis yt-ui-ellipsis-2 yt-uix-sessionlink      spf-link " data-sessionlink="itct=CFAQ3DAYBSITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA"  title="Game of Thrones S8 - The Night King - Ramin Djawadi (Official Video)" rel="spf-prefetch" aria-describedby="description-id-557577" dir="ltr">Game of Thrones S8 - The Night King - Ramin Djawadi (Official Video)</a><span class="accessible-description" id="description-id-557577"> - Duration: 8:51.</span></h3><div class="yt-lockup-byline "><a href="/user/WaterTowerWB" class="yt-uix-sessionlink       spf-link " data-sessionlink="itct=CFAQ3DAYBSITCM2VlIHrrOoCFXoTtwAd5usH0w" >WaterTower Music</a>&nbsp;<span title="Verified" class="yt-uix-tooltip yt-channel-title-icon-verified yt-sprite"></span></div><div class="yt-lockup-meta "><ul class="yt-lockup-meta-info"><li>1 year ago</li><li>24,019,159 views</li></ul></div><div class="yt-lockup-description yt-ui-ellipsis yt-ui-ellipsis-2" dir="ltr">The Night King - Ramin Djawadi - Game of Thrones S8 Episode 3 (The Long Night) Avail Now: <a href="https://lnk.to/got8_sndkID" target="_blank" title="https://lnk.to/got8_sndkID" rel="nofollow" dir="ltr" class="yt-uix-redirect-link">https://lnk.to/got8_sndkID</a> ...</div></div></div></div></li><li class="collapsable"><div class="yt-lockup yt-lockup-tile yt-lockup-video vve-check clearfix" data-context-item-id="JQbjS0_ZfJ0" data-visibility-tracking="CE8Q3DAYBiITCM2VlIHrrOoCFXoTtwAd5usH00Cd-eX-tOm4gyU="><div class="yt-lockup-dismissable yt-uix-tile"><div class="yt-lockup-thumbnail contains-addto"><a aria-hidden="true"  href="/watch?v=JQbjS0_ZfJ0" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CE8Q3DAYBiITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA" ><div class="yt-thumb video-thumb yt-uix-mouseover-img-wrap"><span class="yt-thumb-simple">
+  <img alt="" data-mouseover-src="https://i.ytimg.com/an_webp/JQbjS0_ZfJ0/mqdefault_6s.webp?du=3000&amp;sqp=CM-T8_cF&amp;rs=AOn4CLBkcTZJfmdk8T7aytuWQ57OLV_Pug" data-thumb="https://i.ytimg.com/vi/JQbjS0_ZfJ0/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLC-1GueOoX9SS4E-IV4Yp5PG09Nag" src="/yts/img/pixel-vfl3z5WfW.gif" width="246" height="138" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+<span class="video-time" aria-hidden="true">3:55</span></span></div></a>  <span class="thumb-menu dark-overflow-action-menu video-actions">
+  </span>
+
+
+  <button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-tooltip" type="button" onclick=";return false;" role="button" title="Watch later" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="JQbjS0_ZfJ0"><span class="yt-uix-button-arrow yt-sprite"></span></button>
+</div><div class="yt-lockup-content"><h3 class="yt-lockup-title "><a href="/watch?v=JQbjS0_ZfJ0" class="yt-uix-tile-link yt-ui-ellipsis yt-ui-ellipsis-2 yt-uix-sessionlink      spf-link " data-sessionlink="itct=CE8Q3DAYBiITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA"  title="Kendrick Lamar, SZA - All The Stars" rel="spf-prefetch" aria-describedby="description-id-422195" dir="ltr">Kendrick Lamar, SZA - All The Stars</a><span class="accessible-description" id="description-id-422195"> - Duration: 3:55.</span></h3><div class="yt-lockup-byline "><a href="/channel/UC3lBXcrKFnFAFkfVk5WuKcQ" class="yt-uix-sessionlink       spf-link " data-sessionlink="itct=CE8Q3DAYBiITCM2VlIHrrOoCFXoTtwAd5usH0w" >Kendrick Lamar</a>&nbsp;<span title="Verified" class="yt-uix-tooltip yt-channel-title-icon-verified yt-sprite"></span></div><div class="yt-lockup-meta "><ul class="yt-lockup-meta-info"><li>2 years ago</li><li>258,606,223 views</li></ul></div><div class="yt-lockup-description yt-ui-ellipsis yt-ui-ellipsis-2" dir="ltr">Black Panther The Album Music From And Inspired By available on all digital platforms &amp; in stores now ...</div><div class="yt-lockup-badges"><ul class="yt-badge-list "><li class="yt-badge-item"><span class="yt-badge " >Subtitles</span></li></ul> </div></div></div></div></li><li class="collapsable"><div class="yt-lockup yt-lockup-tile yt-lockup-video vve-check clearfix" data-context-item-id="wCoeSLR7KTQ" data-visibility-tracking="CE4Q3DAYByITCM2VlIHrrOoCFXoTtwAd5usH00C00uyji8mHlcAB"><div class="yt-lockup-dismissable yt-uix-tile"><div class="yt-lockup-thumbnail contains-addto"><a aria-hidden="true"  href="/watch?v=wCoeSLR7KTQ" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CE4Q3DAYByITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA" ><div class="yt-thumb video-thumb yt-uix-mouseover-img-wrap"><span class="yt-thumb-simple">
+  <img alt="" data-mouseover-src="https://i.ytimg.com/an_webp/wCoeSLR7KTQ/mqdefault_6s.webp?du=3000&amp;sqp=CMzI8_cF&amp;rs=AOn4CLCR2VqNVP1gRbkdsx9WmpASM6a-og" data-thumb="https://i.ytimg.com/vi/wCoeSLR7KTQ/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLAvfjSrqkiNzV74EdrxjehPI5tZQQ" src="/yts/img/pixel-vfl3z5WfW.gif" width="246" height="138" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+<span class="video-time" aria-hidden="true">3:36</span></span></div></a>  <span class="thumb-menu dark-overflow-action-menu video-actions">
+  </span>
+
+
+  <button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-tooltip" type="button" onclick=";return false;" role="button" title="Watch later" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="wCoeSLR7KTQ"><span class="yt-uix-button-arrow yt-sprite"></span></button>
+</div><div class="yt-lockup-content"><h3 class="yt-lockup-title "><a href="/watch?v=wCoeSLR7KTQ" class="yt-uix-tile-link yt-ui-ellipsis yt-ui-ellipsis-2 yt-uix-sessionlink      spf-link " data-sessionlink="itct=CE4Q3DAYByITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA"  title="Arya Stark = Unstoppable" rel="spf-prefetch" aria-describedby="description-id-666612" dir="ltr">Arya Stark = Unstoppable</a><span class="accessible-description" id="description-id-666612"> - Duration: 3:36.</span></h3><div class="yt-lockup-byline "><a href="/channel/UCkoSJHKY-BWi_D2QoYdHBwQ" class="yt-uix-sessionlink       spf-link " data-sessionlink="itct=CE4Q3DAYByITCM2VlIHrrOoCFXoTtwAd5usH0w" >Princess of the North</a></div><div class="yt-lockup-meta "><ul class="yt-lockup-meta-info"><li>3 years ago</li><li>3,409,111 views</li></ul></div><div class="yt-lockup-description yt-ui-ellipsis yt-ui-ellipsis-2" dir="ltr">Movie: Game of Thrones (HBO) Music: Sia - Unstoppable.</div></div></div></div></li><li class="collapsable"><div class="yt-lockup yt-lockup-tile yt-lockup-video vve-check clearfix" data-context-item-id="5OaMvxVHFs4" data-visibility-tracking="CE0Q3DAYCCITCM2VlIHrrOoCFXoTtwAd5usH00DOrZyq8Zej8-QB"><div class="yt-lockup-dismissable yt-uix-tile"><div class="yt-lockup-thumbnail contains-addto"><a aria-hidden="true"  href="/watch?v=5OaMvxVHFs4" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CE0Q3DAYCCITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA" ><div class="yt-thumb video-thumb yt-uix-mouseover-img-wrap"><span class="yt-thumb-simple">
+  <img alt="" data-mouseover-src="https://i.ytimg.com/an_webp/5OaMvxVHFs4/mqdefault_6s.webp?du=3000&amp;sqp=CKqZ8_cF&amp;rs=AOn4CLBhuKOjtghr7XrUQ00X9kB-4711ug" data-thumb="https://i.ytimg.com/vi/5OaMvxVHFs4/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLD-GqtZlONwBW7yX6fQAH6Ckmy2ng" src="/yts/img/pixel-vfl3z5WfW.gif" width="246" height="138" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+<span class="video-time" aria-hidden="true">3:32</span></span></div></a>  <span class="thumb-menu dark-overflow-action-menu video-actions">
+  </span>
+
+
+  <button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-tooltip" type="button" onclick=";return false;" role="button" title="Watch later" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="5OaMvxVHFs4"><span class="yt-uix-button-arrow yt-sprite"></span></button>
+</div><div class="yt-lockup-content"><h3 class="yt-lockup-title "><a href="/watch?v=5OaMvxVHFs4" class="yt-uix-tile-link yt-ui-ellipsis yt-ui-ellipsis-2 yt-uix-sessionlink      spf-link " data-sessionlink="itct=CE0Q3DAYCCITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA"  title="Ser Barristan Selmy Quits Like A Boss [HD]" rel="spf-prefetch" aria-describedby="description-id-596494" dir="ltr">Ser Barristan Selmy Quits Like A Boss [HD]</a><span class="accessible-description" id="description-id-596494"> - Duration: 3:32.</span></h3><div class="yt-lockup-byline "><a href="/user/Nineteen1900Hundred" class="yt-uix-sessionlink       spf-link " data-sessionlink="itct=CE0Q3DAYCCITCM2VlIHrrOoCFXoTtwAd5usH0w" >Nineteen1900Hundred</a></div><div class="yt-lockup-meta "><ul class="yt-lockup-meta-info"><li>8 years ago</li><li>10,077,173 views</li></ul></div><div class="yt-lockup-description yt-ui-ellipsis yt-ui-ellipsis-2" dir="ltr">Awesome scene where Ser Barristan quits from service after being insulted with forced retirement. &quot;A hall to die in....and men to ...</div></div></div></div></li><li class="collapsable"><div class="yt-lockup yt-lockup-tile yt-lockup-video vve-check clearfix" data-context-item-id="tk5hKomP4MA" data-visibility-tracking="CEwQ3DAYCSITCM2VlIHrrOoCFXoTtwAd5usH00DAwb_MqKWYp7YB"><div class="yt-lockup-dismissable yt-uix-tile"><div class="yt-lockup-thumbnail contains-addto"><a aria-hidden="true"  href="/watch?v=tk5hKomP4MA" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CEwQ3DAYCSITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA" ><div class="yt-thumb video-thumb yt-uix-mouseover-img-wrap"><span class="yt-thumb-simple">
+  <img alt="" data-mouseover-src="https://i.ytimg.com/an_webp/tk5hKomP4MA/mqdefault_6s.webp?du=3000&amp;sqp=CIDF8_cF&amp;rs=AOn4CLDymxCD2xu0tZggCt2s8Oz1spO94Q" data-thumb="https://i.ytimg.com/vi/tk5hKomP4MA/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLDVZKD-ZnzVtXH1f_0hY30HQhaUJA" src="/yts/img/pixel-vfl3z5WfW.gif" width="246" height="138" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+<span class="video-time" aria-hidden="true">3:27</span></span></div></a>  <span class="thumb-menu dark-overflow-action-menu video-actions">
+  </span>
+
+
+  <button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-tooltip" type="button" onclick=";return false;" role="button" title="Watch later" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="tk5hKomP4MA"><span class="yt-uix-button-arrow yt-sprite"></span></button>
+</div><div class="yt-lockup-content"><h3 class="yt-lockup-title "><a href="/watch?v=tk5hKomP4MA" class="yt-uix-tile-link yt-ui-ellipsis yt-ui-ellipsis-2 yt-uix-sessionlink      spf-link " data-sessionlink="itct=CEwQ3DAYCSITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA"  title="Game of Thrones (S03E07) - Tywin lectures his grandson Joffrey on how to rule" rel="spf-prefetch" aria-describedby="description-id-338209" dir="ltr">Game of Thrones (S03E07) - Tywin lectures his grandson Joffrey on how to rule</a><span class="accessible-description" id="description-id-338209"> - Duration: 3:27.</span></h3><div class="yt-lockup-byline "><a href="/channel/UCLl84uzDoMrU3jfcUaDIIiA" class="yt-uix-sessionlink       spf-link " data-sessionlink="itct=CEwQ3DAYCSITCM2VlIHrrOoCFXoTtwAd5usH0w" >Pate Cressen</a></div><div class="yt-lockup-meta "><ul class="yt-lockup-meta-info"><li>7 years ago</li><li>6,280,402 views</li></ul></div><div class="yt-lockup-description yt-ui-ellipsis yt-ui-ellipsis-2" dir="ltr">This scene is from Game of Thrones Season 3, Episode Seven: The Bear And The Maiden Fair. Valar Morghulis, Valar Dohaeris.</div></div></div></div></li></ul><div class="yt-uix-expander-head yt-uix-expander-collapsed-body"><button class="yt-uix-button yt-uix-button-size-default yt-uix-button-link yt-uix-button-empty yt-uix-button-has-icon no-icon-markup vertical-shelf-expander yt-uix-tooltip" type="button" onclick=";return false;" title="Show more" aria-label="Show more"></button></div></div></div></div><div class="feed-item-dismissal-notices"></div></div></li>
+
+<li><div class="yt-lockup yt-lockup-tile yt-lockup-video vve-check clearfix" data-context-item-id="zdRJybJ047I" data-visibility-tracking="CEkQ3DAYCCITCM2VlIHrrOoCFXoTtwAd5usH00Cyx9OTm7mS6s0B"><div class="yt-lockup-dismissable yt-uix-tile"><div class="yt-lockup-thumbnail contains-addto"><a aria-hidden="true"  href="/watch?v=zdRJybJ047I" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CEkQ3DAYCCITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA" ><div class="yt-thumb video-thumb yt-uix-mouseover-img-wrap"><span class="yt-thumb-simple">
+  <img alt="" data-mouseover-src="https://i.ytimg.com/an_webp/zdRJybJ047I/mqdefault_6s.webp?du=3000&amp;sqp=CJK68_cF&amp;rs=AOn4CLBEkENSeyOWH8F1V0HKuL2AcZDttw" data-thumb="https://i.ytimg.com/vi/zdRJybJ047I/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLARRbbsdTPX6T68P4lz_q_mQy8zlQ" src="/yts/img/pixel-vfl3z5WfW.gif" width="246" height="138" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+<span class="video-time" aria-hidden="true">2:43</span></span></div></a>  <span class="thumb-menu dark-overflow-action-menu video-actions">
+  </span>
+
+
+  <button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-tooltip" type="button" onclick=";return false;" role="button" title="Watch later" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="zdRJybJ047I"><span class="yt-uix-button-arrow yt-sprite"></span></button>
+</div><div class="yt-lockup-content"><h3 class="yt-lockup-title "><a href="/watch?v=zdRJybJ047I" class="yt-uix-tile-link yt-ui-ellipsis yt-ui-ellipsis-2 yt-uix-sessionlink      spf-link " data-sessionlink="itct=CEkQ3DAYCCITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA"  title="Cersei Lannister vs. Petyr &#39;Littlefinger&#39; Baelish [HD]" rel="spf-prefetch" aria-describedby="description-id-15607" dir="ltr">Cersei Lannister vs. Petyr &#39;Littlefinger&#39; Baelish [HD]</a><span class="accessible-description" id="description-id-15607"> - Duration: 2:43.</span></h3><div class="yt-lockup-byline "><a href="/user/Nineteen1900Hundred" class="yt-uix-sessionlink       spf-link " data-sessionlink="itct=CEkQ3DAYCCITCM2VlIHrrOoCFXoTtwAd5usH0w" >Nineteen1900Hundred</a></div><div class="yt-lockup-meta "><ul class="yt-lockup-meta-info"><li>8 years ago</li><li>731,909 views</li></ul></div><div class="yt-lockup-description yt-ui-ellipsis yt-ui-ellipsis-2" dir="ltr">Cersei Lannister &#39;The Queen Regent&#39; demonstrates the nature of <b>power</b> to Petyr &quot;Littlefinger&quot; Baelish Apparently this scene is not ...</div></div></div></div></li>
+
+<li><div class="yt-lockup yt-lockup-tile yt-lockup-video vve-check clearfix" data-context-item-id="J701ucIsrrk" data-visibility-tracking="CEgQ3DAYCSITCM2VlIHrrOoCFXoTtwAd5usH00C53bKRnLfN3ic="><div class="yt-lockup-dismissable yt-uix-tile"><div class="yt-lockup-thumbnail contains-addto"><a aria-hidden="true"  href="/watch?v=J701ucIsrrk" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CEgQ3DAYCSITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA" ><div class="yt-thumb video-thumb yt-uix-mouseover-img-wrap"><span class="yt-thumb-simple">
+  <img alt="" data-mouseover-src="https://i.ytimg.com/an_webp/J701ucIsrrk/mqdefault_6s.webp?du=3000&amp;sqp=CLqx8_cF&amp;rs=AOn4CLDy_Bvsc9-4y-ex2SSakLdiF7RYqA" data-thumb="https://i.ytimg.com/vi/J701ucIsrrk/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLCxSJLq2H0YfNAIrQyd5RFtNBVpwQ" src="/yts/img/pixel-vfl3z5WfW.gif" width="246" height="138" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+<span class="video-time" aria-hidden="true">2:33</span></span></div></a>  <span class="thumb-menu dark-overflow-action-menu video-actions">
+  </span>
+
+
+  <button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-tooltip" type="button" onclick=";return false;" role="button" title="Watch later" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="J701ucIsrrk"><span class="yt-uix-button-arrow yt-sprite"></span></button>
+</div><div class="yt-lockup-content"><h3 class="yt-lockup-title "><a href="/watch?v=J701ucIsrrk" class="yt-uix-tile-link yt-ui-ellipsis yt-ui-ellipsis-2 yt-uix-sessionlink      spf-link " data-sessionlink="itct=CEgQ3DAYCSITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA"  title="Hardwell &amp; KSHMR - Power (Official Lyric Video)" rel="spf-prefetch" aria-describedby="description-id-408828" dir="ltr">Hardwell &amp; KSHMR - Power (Official Lyric Video)</a><span class="accessible-description" id="description-id-408828"> - Duration: 2:33.</span></h3><div class="yt-lockup-byline "><a href="/user/SpinninRec" class="yt-uix-sessionlink       spf-link " data-sessionlink="itct=CEgQ3DAYCSITCM2VlIHrrOoCFXoTtwAd5usH0w" >Spinnin&#39; Records</a>&nbsp;<span title="Verified" class="yt-uix-tooltip yt-channel-title-icon-verified yt-sprite"></span></div><div class="yt-lockup-meta "><ul class="yt-lockup-meta-info"><li>2 years ago</li><li>11,619,487 views</li></ul></div><div class="yt-lockup-description yt-ui-ellipsis yt-ui-ellipsis-2" dir="ltr">Best of KSHMR - KSHMR MIX 2020: <a href="https://youtu.be/SKXPmV3L3Jo" target="_blank" title="https://youtu.be/SKXPmV3L3Jo" rel="nofollow" dir="ltr" class="yt-uix-redirect-link">https://youtu.be/SKXPmV3L3Jo</a> Hardwell &amp; KSHMR - <b>Power</b> is OUT NOW! Like this track?</div></div></div></div></li>
+
+<li><div class="yt-lockup yt-lockup-tile yt-lockup-video vve-check clearfix" data-context-item-id="JdQXl-3j7-M" data-visibility-tracking="CEcQ3DAYCiITCM2VlIHrrOoCFXoTtwAd5usH00Dj34_v_vKF6iU="><div class="yt-lockup-dismissable yt-uix-tile"><div class="yt-lockup-thumbnail contains-addto"><a aria-hidden="true"  href="/watch?v=JdQXl-3j7-M" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CEcQ3DAYCiITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA" ><div class="yt-thumb video-thumb yt-uix-mouseover-img-wrap"><span class="yt-thumb-simple">
+  <img alt="" data-mouseover-src="https://i.ytimg.com/an_webp/JdQXl-3j7-M/mqdefault_6s.webp?du=3000&amp;sqp=CKHA8_cF&amp;rs=AOn4CLCpmxfk7rZAedbdFZTmRQgvhsyCCQ" data-thumb="https://i.ytimg.com/vi/JdQXl-3j7-M/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLBRM86RQVlykfcNXv9XsNJjoUioqg" src="/yts/img/pixel-vfl3z5WfW.gif" width="246" height="138" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+<span class="video-time" aria-hidden="true">1:00:18</span></span></div></a>  <span class="thumb-menu dark-overflow-action-menu video-actions">
+  </span>
+
+
+  <button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-tooltip" type="button" onclick=";return false;" role="button" title="Watch later" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="JdQXl-3j7-M"><span class="yt-uix-button-arrow yt-sprite"></span></button>
+</div><div class="yt-lockup-content"><h3 class="yt-lockup-title "><a href="/watch?v=JdQXl-3j7-M" class="yt-uix-tile-link yt-ui-ellipsis yt-ui-ellipsis-2 yt-uix-sessionlink      spf-link " data-sessionlink="itct=CEcQ3DAYCiITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA"  title="SZA, The Weeknd, Travis Scott - Power Is Power (1 Hour Loop)" rel="spf-prefetch" aria-describedby="description-id-827573" dir="ltr">SZA, The Weeknd, Travis Scott - Power Is Power (1 Hour Loop)</a><span class="accessible-description" id="description-id-827573"> - Duration: 1:00:18.</span></h3><div class="yt-lockup-byline "><a href="/channel/UC1_RGZaeq8BA2FyXdIPz43A" class="yt-uix-sessionlink       spf-link " data-sessionlink="itct=CEcQ3DAYCiITCM2VlIHrrOoCFXoTtwAd5usH0w" >Ectztraxbtw YT</a></div><div class="yt-lockup-meta "><ul class="yt-lockup-meta-info"><li>1 year ago</li><li>27,899 views</li></ul></div><div class="yt-lockup-description yt-ui-ellipsis yt-ui-ellipsis-2" dir="ltr">Original video: Link: <a href="https://youtu.be/uD0dulcy2Q4" target="_blank" title="https://youtu.be/uD0dulcy2Q4" rel="nofollow" dir="ltr" class="yt-uix-redirect-link">https://youtu.be/uD0dulcy2Q4</a> Thanks you guys4 watching   Hope u ENJOYED!!!   Don&#39;t forget 2 Like☝️❤️ ...</div></div></div></div></li>
+
+<li><div class="yt-lockup yt-lockup-tile yt-lockup-video vve-check clearfix" data-context-item-id="y3jVZQuYo8A" data-visibility-tracking="CEYQ3DAYCyITCM2VlIHrrOoCFXoTtwAd5usH00DAx-Lc0Ky1vMsB"><div class="yt-lockup-dismissable yt-uix-tile"><div class="yt-lockup-thumbnail contains-addto"><a aria-hidden="true"  href="/watch?v=y3jVZQuYo8A" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CEYQ3DAYCyITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA" ><div class="yt-thumb video-thumb yt-uix-mouseover-img-wrap"><span class="yt-thumb-simple">
+  <img alt="" data-mouseover-src="https://i.ytimg.com/an_webp/y3jVZQuYo8A/mqdefault_6s.webp?du=3000&amp;sqp=CMCp8_cF&amp;rs=AOn4CLDYIX8oxaw-xVlFVUnO8dLz-X2FzA" data-thumb="https://i.ytimg.com/vi/y3jVZQuYo8A/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLAh_cYmTSB5Dn9mAQ2L8psoJg7jdQ" src="/yts/img/pixel-vfl3z5WfW.gif" width="246" height="138" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+<span class="video-time" aria-hidden="true">4:45</span></span></div></a>  <span class="thumb-menu dark-overflow-action-menu video-actions">
+  </span>
+
+
+  <button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-tooltip" type="button" onclick=";return false;" role="button" title="Watch later" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="y3jVZQuYo8A"><span class="yt-uix-button-arrow yt-sprite"></span></button>
+</div><div class="yt-lockup-content"><h3 class="yt-lockup-title "><a href="/watch?v=y3jVZQuYo8A" class="yt-uix-tile-link yt-ui-ellipsis yt-ui-ellipsis-2 yt-uix-sessionlink      spf-link " data-sessionlink="itct=CEYQ3DAYCyITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA"  title="Power Is Power | 2019 NBA Playoffs ULTIMATE Mix" rel="spf-prefetch" aria-describedby="description-id-150101" dir="ltr">Power Is Power | 2019 NBA Playoffs ULTIMATE Mix</a><span class="accessible-description" id="description-id-150101"> - Duration: 4:45.</span></h3><div class="yt-lockup-byline "><a href="/user/MaxaMillion711" class="yt-uix-sessionlink       spf-link " data-sessionlink="itct=CEYQ3DAYCyITCM2VlIHrrOoCFXoTtwAd5usH0w" >MaxaMillion711</a></div><div class="yt-lockup-meta "><ul class="yt-lockup-meta-info"><li>1 year ago</li><li>110,613 views</li></ul></div><div class="yt-lockup-description yt-ui-ellipsis yt-ui-ellipsis-2" dir="ltr"><b>Power Is Power</b> | 2019 NBA Playoffs ULTIMATE Mix Song : SZA, The Weeknd, Travis Scott - <b>Power Is Power</b> Thumbnail Artwork ...</div></div></div></div></li>
+
+<li><div class="yt-lockup yt-lockup-tile yt-lockup-video vve-check clearfix" data-context-item-id="hgDobTMnR6M" data-visibility-tracking="CEUQ3DAYDCITCM2VlIHrrOoCFXoTtwAd5usH00Cjj52Z0426gIYB"><div class="yt-lockup-dismissable yt-uix-tile"><div class="yt-lockup-thumbnail contains-addto"><a aria-hidden="true"  href="/watch?v=hgDobTMnR6M" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CEUQ3DAYDCITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA" ><div class="yt-thumb video-thumb"><span class="yt-thumb-simple">
+  <img alt="" data-thumb="https://i.ytimg.com/vi/hgDobTMnR6M/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLC_GsDx0ACCUd-rrsmDHoBoJNZNtQ" src="/yts/img/pixel-vfl3z5WfW.gif" width="246" height="138" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+<span class="video-time" aria-hidden="true">0:32</span></span></div></a>  <span class="thumb-menu dark-overflow-action-menu video-actions">
+  </span>
+
+
+  <button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-tooltip" type="button" onclick=";return false;" role="button" title="Watch later" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="hgDobTMnR6M"><span class="yt-uix-button-arrow yt-sprite"></span></button>
+</div><div class="yt-lockup-content"><h3 class="yt-lockup-title "><a href="/watch?v=hgDobTMnR6M" class="yt-uix-tile-link yt-ui-ellipsis yt-ui-ellipsis-2 yt-uix-sessionlink      spf-link " data-sessionlink="itct=CEUQ3DAYDCITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA"  title="Game of thrones | power is power |WhatsApp status video" rel="spf-prefetch" aria-describedby="description-id-25272" dir="ltr">Game of thrones | power is power |WhatsApp status video</a><span class="accessible-description" id="description-id-25272"> - Duration: 0:32.</span></h3><div class="yt-lockup-byline "><a href="/channel/UCIvxCyi3XAOh5Q87DH9H6yg" class="yt-uix-sessionlink       spf-link " data-sessionlink="itct=CEUQ3DAYDCITCM2VlIHrrOoCFXoTtwAd5usH0w" >Mr.strange ReLoad</a></div><div class="yt-lockup-meta "><ul class="yt-lockup-meta-info"><li>1 year ago</li><li>43,325 views</li></ul></div><div class="yt-lockup-description yt-ui-ellipsis yt-ui-ellipsis-2" dir="ltr"><b>Power is power</b> ..game of thrones WhatsApp status video.</div></div></div></div></li>
+
+<li><div class="yt-lockup yt-lockup-tile yt-lockup-video vve-check clearfix" data-context-item-id="VREUXxplBpA" data-visibility-tracking="CEQQ3DAYDSITCM2VlIHrrOoCFXoTtwAd5usH00CQjZTT8YvFiFU="><div class="yt-lockup-dismissable yt-uix-tile"><div class="yt-lockup-thumbnail contains-addto"><a aria-hidden="true"  href="/watch?v=VREUXxplBpA" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CEQQ3DAYDSITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA" ><div class="yt-thumb video-thumb"><span class="yt-thumb-simple">
+  <img alt="" data-thumb="https://i.ytimg.com/vi/VREUXxplBpA/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLDFple4E3sM95_O7sSIKmifO1ctGQ" src="/yts/img/pixel-vfl3z5WfW.gif" width="246" height="138" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+<span class="video-time" aria-hidden="true">3:36</span></span></div></a>  <span class="thumb-menu dark-overflow-action-menu video-actions">
+  </span>
+
+
+  <button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-tooltip" type="button" onclick=";return false;" role="button" title="Watch later" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="VREUXxplBpA"><span class="yt-uix-button-arrow yt-sprite"></span></button>
+</div><div class="yt-lockup-content"><h3 class="yt-lockup-title "><a href="/watch?v=VREUXxplBpA" class="yt-uix-tile-link yt-ui-ellipsis yt-ui-ellipsis-2 yt-uix-sessionlink      spf-link " data-sessionlink="itct=CEQQ3DAYDSITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA"  title="The Weeknd x SZA x Travis Scott - Power Is Power [Instrumental]" rel="spf-prefetch" aria-describedby="description-id-235897" dir="ltr">The Weeknd x SZA x Travis Scott - Power Is Power [Instrumental]</a><span class="accessible-description" id="description-id-235897"> - Duration: 3:36.</span></h3><div class="yt-lockup-byline "><a href="/channel/UCt9XMxa5J0Irwmv7lSUwN5A" class="yt-uix-sessionlink       spf-link " data-sessionlink="itct=CEQQ3DAYDSITCM2VlIHrrOoCFXoTtwAd5usH0w" >TheGlitchtrbl</a></div><div class="yt-lockup-meta "><ul class="yt-lockup-meta-info"><li>1 year ago</li><li>42,303 views</li></ul></div><div class="yt-lockup-description yt-ui-ellipsis yt-ui-ellipsis-2" dir="ltr">FREE DOWNLOAD (Instant Delivery &amp; Untagged) ...</div></div></div></div></li>
+
+<li><div class="search-refinements"><h3>Searches related to <b>Power is Power</b></h3><div class="search-refinement"><a href="/results?search_query=power+is+power+live" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CEMQsDoYACITCM2VlIHrrOoCFXoTtwAd5usH0w" >power is power live</a></div><div class="search-refinement"><a href="/results?search_query=power+is+power+lyrics" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CD0QsDoYBiITCM2VlIHrrOoCFXoTtwAd5usH0w" >power is power lyrics</a></div><div class="search-refinement"><a href="/results?search_query=power+is+power+reaction" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CEIQsDoYASITCM2VlIHrrOoCFXoTtwAd5usH0w" >power is power reaction</a></div><div class="search-refinement"><a href="/results?search_query=power+is+power+karaoke" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CDwQsDoYByITCM2VlIHrrOoCFXoTtwAd5usH0w" >power is power karaoke</a></div><div class="search-refinement"><a href="/results?search_query=power+is+power+cover" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CEEQsDoYAiITCM2VlIHrrOoCFXoTtwAd5usH0w" >power is power cover</a></div><div class="search-refinement"><a href="/results?search_query=%23forthethrone" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CDsQsDoYCCITCM2VlIHrrOoCFXoTtwAd5usH0w" >#forthethrone</a></div><div class="search-refinement"><a href="/results?search_query=power+is+power+remix" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CEAQsDoYAyITCM2VlIHrrOoCFXoTtwAd5usH0w" >power is power remix</a></div><div class="search-refinement"><a href="/results?search_query=power+is+power+clean" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CDoQsDoYCSITCM2VlIHrrOoCFXoTtwAd5usH0w" >power is power clean</a></div><div class="search-refinement"><a href="/results?search_query=power+is+power+instrumental" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CD8QsDoYBCITCM2VlIHrrOoCFXoTtwAd5usH0w" >power is power instrumental</a></div><div class="search-refinement"><a href="/results?search_query=power+is+power+1+hour" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CDkQsDoYCiITCM2VlIHrrOoCFXoTtwAd5usH0w" >power is power 1 hour</a></div><div class="search-refinement"><a href="/results?search_query=power+is+power+audio" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CD4QsDoYBSITCM2VlIHrrOoCFXoTtwAd5usH0w" >power is power audio</a></div><div class="search-refinement"><a href="/results?search_query=power+is+power+dance" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CDgQsDoYCyITCM2VlIHrrOoCFXoTtwAd5usH0w" >power is power dance</a></div></div></li>
+
+<li><div class="yt-lockup yt-lockup-tile yt-lockup-video vve-check clearfix" data-context-item-id="lzl8hFo5kkk" data-visibility-tracking="CDYQ3DAYDyITCM2VlIHrrOoCFXoTtwAd5usH00DJpObRxZDfnJcB"><div class="yt-lockup-dismissable yt-uix-tile"><div class="yt-lockup-thumbnail contains-addto"><a aria-hidden="true"  href="/watch?v=lzl8hFo5kkk" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CDYQ3DAYDyITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA" ><div class="yt-thumb video-thumb yt-uix-mouseover-img-wrap"><span class="yt-thumb-simple">
+  <img alt="" data-mouseover-src="https://i.ytimg.com/an_webp/lzl8hFo5kkk/mqdefault_6s.webp?du=3000&amp;sqp=CI6Y8_cF&amp;rs=AOn4CLDG-wCc9Qptbm_2RXP7cuBtYk9JLg" data-thumb="https://i.ytimg.com/vi/lzl8hFo5kkk/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLBc95CluSCG0uaPQl1Hsu9sQHwyvg" src="/yts/img/pixel-vfl3z5WfW.gif" width="246" height="138" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+<span class="video-time" aria-hidden="true">9:52</span></span></div></a>  <span class="thumb-menu dark-overflow-action-menu video-actions">
+  </span>
+
+
+  <button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-tooltip" type="button" onclick=";return false;" role="button" title="Watch later" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="lzl8hFo5kkk"><span class="yt-uix-button-arrow yt-sprite"></span></button>
+</div><div class="yt-lockup-content"><h3 class="yt-lockup-title "><a href="/watch?v=lzl8hFo5kkk" class="yt-uix-tile-link yt-ui-ellipsis yt-ui-ellipsis-2 yt-uix-sessionlink      spf-link " data-sessionlink="itct=CDYQ3DAYDyITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA"  title="THE WEEKND, TRAVIS SCOTT, SZA - Power is Power (from Game of Thrones) REACTION REVIEW" rel="spf-prefetch" aria-describedby="description-id-717954" dir="ltr">THE WEEKND, TRAVIS SCOTT, SZA - Power is Power (from Game of Thrones) REACTION REVIEW</a><span class="accessible-description" id="description-id-717954"> - Duration: 9:52.</span></h3><div class="yt-lockup-byline "><a href="/channel/UCGtcBqydj9ZqSxsIiybMooQ" class="yt-uix-sessionlink       spf-link " data-sessionlink="itct=CDYQ3DAYDyITCM2VlIHrrOoCFXoTtwAd5usH0w" >Complex Ambition</a></div><div class="yt-lockup-meta "><ul class="yt-lockup-meta-info"><li>1 year ago</li><li>63,665 views</li></ul></div><div class="yt-lockup-description yt-ui-ellipsis yt-ui-ellipsis-2" dir="ltr">#PowerIsPower #GameOfThones<br /><br />Off of the new soundtrack to GOT, is this very cinematic single by, #SZA, #TheWeeknd, and ...</div></div></div></div></li>
+
+<li><div class="yt-lockup yt-lockup-tile yt-lockup-video vve-check clearfix" data-context-item-id="3z3AR4Q7y3U" data-visibility-tracking="CDUQ3DAYECITCM2VlIHrrOoCFXoTtwAd5usH00D1lu-h-Ijwnt8B"><div class="yt-lockup-dismissable yt-uix-tile"><div class="yt-lockup-thumbnail contains-addto"><a aria-hidden="true"  href="/watch?v=3z3AR4Q7y3U" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CDUQ3DAYECITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA" ><div class="yt-thumb video-thumb yt-uix-mouseover-img-wrap"><span class="yt-thumb-simple">
+  <img alt="" data-mouseover-src="https://i.ytimg.com/an_webp/3z3AR4Q7y3U/mqdefault_6s.webp?du=3000&amp;sqp=CKO28_cF&amp;rs=AOn4CLCK71jHB-Vp75g1kXI83aMDnKIqLw" data-thumb="https://i.ytimg.com/vi/3z3AR4Q7y3U/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLDQ3L46rost9x8ZiLDOopuYkj-rQQ" src="/yts/img/pixel-vfl3z5WfW.gif" width="246" height="138" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+<span class="video-time" aria-hidden="true">4:44</span></span></div></a>  <span class="thumb-menu dark-overflow-action-menu video-actions">
+  </span>
+
+
+  <button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-tooltip" type="button" onclick=";return false;" role="button" title="Watch later" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="3z3AR4Q7y3U"><span class="yt-uix-button-arrow yt-sprite"></span></button>
+</div><div class="yt-lockup-content"><h3 class="yt-lockup-title "><a href="/watch?v=3z3AR4Q7y3U" class="yt-uix-tile-link yt-ui-ellipsis yt-ui-ellipsis-2 yt-uix-sessionlink      spf-link " data-sessionlink="itct=CDUQ3DAYECITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA"  title="SZA, The Weeknd, Travis Scott   Power Is Power (Fraze Remix)" rel="spf-prefetch" aria-describedby="description-id-901657" dir="ltr">SZA, The Weeknd, Travis Scott   Power Is Power (Fraze Remix)</a><span class="accessible-description" id="description-id-901657"> - Duration: 4:44.</span></h3><div class="yt-lockup-byline "><a href="/channel/UCqN7TVPMt7glb9KLYgwT2OQ" class="yt-uix-sessionlink       spf-link " data-sessionlink="itct=CDUQ3DAYECITCM2VlIHrrOoCFXoTtwAd5usH0w" >Chill Empire</a></div><div class="yt-lockup-meta "><ul class="yt-lockup-meta-info"><li>1 year ago</li><li>18,689 views</li></ul></div><div class="yt-lockup-description yt-ui-ellipsis yt-ui-ellipsis-2" dir="ltr">SZA, The Weeknd, Travis Scott <b>Power Is Power</b> (Fraze Remix) Support Fraze here: www.facebook.com/ItsFraze ...</div></div></div></div></li>
+
+<li><div class="yt-lockup yt-lockup-tile yt-lockup-playlist vve-check clearfix" data-visibility-tracking="CDQQuzcYESITCM2VlIHrrOoCFXoTtwAd5usH0w=="><div class="yt-lockup-dismissable yt-uix-tile"><div class="yt-lockup-thumbnail yt-pl-thumb" style="width:246px" aria-hidden="true"><a href="/watch?v=IfCuarZqJzM&amp;list=RDIfCuarZqJzM&amp;start_radio=1" class="yt-pl-thumb-link yt-uix-sessionlink      spf-link " data-sessionlink="itct=CDQQuzcYESITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNo" ><div class="yt-thumb video-thumb"><span class="yt-thumb-simple">
+  <img alt="" data-thumb="https://i.ytimg.com/vi/IfCuarZqJzM/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&amp;rs=AOn4CLA0Qz3nQ-bDaloKIVlFrk35ykO09w" src="/yts/img/pixel-vfl3z5WfW.gif" width="246" height="138" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+</span></div><div class="sidebar"><span class="yt-pl-sidebar-content yt-valign"><span class="yt-valign-container"><span class="formatted-video-count-label"><b>50+</b> videos</span><span class="yt-pl-icon yt-pl-icon-mix yt-sprite"></span></span></span></div><div class="yt-pl-thumb-overlay"><span class="yt-pl-thumb-overlay-content"><span class="play-icon yt-sprite"></span><span class="yt-pl-thumb-overlay-text">Play all</span></span></div><span class="yt-pl-watch-queue-overlay">  <span class="thumb-menu dark-overflow-action-menu video-actions">
+  </span>
+</span></a></div><div class="yt-lockup-content"><h3 class="yt-lockup-title "><a href="/watch?v=IfCuarZqJzM&amp;list=RDIfCuarZqJzM&amp;start_radio=1" class="yt-uix-tile-link yt-ui-ellipsis yt-ui-ellipsis-2 yt-uix-sessionlink      spf-link " data-sessionlink="itct=CDQQuzcYESITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNo"  title="Mix – SZA, The Weeknd, Travis Scott - Power Is Power (Official Video)" aria-describedby="description-id-444133" dir="ltr">Mix – SZA, The Weeknd, Travis Scott - Power Is Power (Official Video)</a><span class="accessible-description" id="description-id-444133"> - Playlist</span></h3><div class="yt-lockup-byline ">YouTube</div><ol class="yt-lockup-meta yt-lockup-playlist-items"><li class="yt-lockup-playlist-item clearfix"><span class="yt-lockup-playlist-item-length"><span aria-label="3 minutes, 32 seconds">3:32</span></span><a href="/watch?v=IfCuarZqJzM&amp;list=RDIfCuarZqJzM&amp;start_radio=1" class="yt-lockup-playlist-item-title yt-uix-sessionlink      spf-link " data-sessionlink="itct=CDQQuzcYESITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNo"  dir="ltr">SZA, The Weeknd, Travis Scott - Power Is Power (Official Video)</a></li><li class="yt-lockup-playlist-item clearfix"><span class="yt-lockup-playlist-item-length"><span aria-label="3 minutes, 20 seconds">3:20</span></span><a href="/watch?v=ZGDGdRIxvd0&amp;list=RDIfCuarZqJzM&amp;start_radio=1" class="yt-lockup-playlist-item-title yt-uix-sessionlink      spf-link " data-sessionlink="itct=CDQQuzcYESITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNo"  dir="ltr">Gesaffelstein &amp; The Weeknd - Lost in the Fire (Official Video)</a></li></ol></div></div></div></li>
+
+<li><div class="yt-lockup yt-lockup-tile yt-lockup-video vve-check clearfix" data-context-item-id="ycd-3ZlLaSI" data-visibility-tracking="CDMQ3DAYEiITCM2VlIHrrOoCFXoTtwAd5usH00Ci0q3K2dvf48kB"><div class="yt-lockup-dismissable yt-uix-tile"><div class="yt-lockup-thumbnail contains-addto"><a aria-hidden="true"  href="/watch?v=ycd-3ZlLaSI" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CDMQ3DAYEiITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA" ><div class="yt-thumb video-thumb yt-uix-mouseover-img-wrap"><span class="yt-thumb-simple">
+  <img alt="" data-mouseover-src="https://i.ytimg.com/an_webp/ycd-3ZlLaSI/mqdefault_6s.webp?du=3000&amp;sqp=CMTL8_cF&amp;rs=AOn4CLAef0lIFMFwPvgeCBw9K5FbivWfVg" data-thumb="https://i.ytimg.com/vi/ycd-3ZlLaSI/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLA1qkdbbva_ulTaRLhhIDxXOhX92g" src="/yts/img/pixel-vfl3z5WfW.gif" width="246" height="138" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+<span class="video-time" aria-hidden="true">4:36</span></span></div></a>  <span class="thumb-menu dark-overflow-action-menu video-actions">
+  </span>
+
+
+  <button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-tooltip" type="button" onclick=";return false;" role="button" title="Watch later" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="ycd-3ZlLaSI"><span class="yt-uix-button-arrow yt-sprite"></span></button>
+</div><div class="yt-lockup-content"><h3 class="yt-lockup-title "><a href="/watch?v=ycd-3ZlLaSI" class="yt-uix-tile-link yt-ui-ellipsis yt-ui-ellipsis-2 yt-uix-sessionlink      spf-link " data-sessionlink="itct=CDMQ3DAYEiITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA"  title="(GoT) Jon Snow | Power Is Power" rel="spf-prefetch" aria-describedby="description-id-942671" dir="ltr">(GoT) Jon Snow | Power Is Power</a><span class="accessible-description" id="description-id-942671"> - Duration: 4:36.</span></h3><div class="yt-lockup-byline "><a href="/channel/UC6FBMMpB3gSlde_0ay193CA" class="yt-uix-sessionlink       spf-link " data-sessionlink="itct=CDMQ3DAYEiITCM2VlIHrrOoCFXoTtwAd5usH0w" >JasRaj Anand</a></div><div class="yt-lockup-meta "><ul class="yt-lockup-meta-info"><li>1 year ago</li><li>4,046 views</li></ul></div><div class="yt-lockup-description yt-ui-ellipsis yt-ui-ellipsis-2" dir="ltr">SPOILERS !!! *** Game Of Thrones has finally come to an end!! Now I know a lot of you were disappointed with the way things ...</div></div></div></div></li>
+
+<li><div class="yt-lockup yt-lockup-tile yt-lockup-video vve-check clearfix" data-context-item-id="5wmrE-N3fYQ" data-visibility-tracking="CDIQ3DAYEyITCM2VlIHrrOoCFXoTtwAd5usH00CE-92bvuLqhOcB"><div class="yt-lockup-dismissable yt-uix-tile"><div class="yt-lockup-thumbnail contains-addto"><a aria-hidden="true"  href="/watch?v=5wmrE-N3fYQ" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CDIQ3DAYEyITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA" ><div class="yt-thumb video-thumb"><span class="yt-thumb-simple">
+  <img alt="" data-thumb="https://i.ytimg.com/vi/5wmrE-N3fYQ/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLBVWb2Sd3Qe9htqYnnZY8Hwkwjlbg" src="/yts/img/pixel-vfl3z5WfW.gif" width="246" height="138" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+<span class="video-time" aria-hidden="true">3:33</span></span></div></a>  <span class="thumb-menu dark-overflow-action-menu video-actions">
+  </span>
+
+
+  <button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-tooltip" type="button" onclick=";return false;" role="button" title="Watch later" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="5wmrE-N3fYQ"><span class="yt-uix-button-arrow yt-sprite"></span></button>
+</div><div class="yt-lockup-content"><h3 class="yt-lockup-title "><a href="/watch?v=5wmrE-N3fYQ" class="yt-uix-tile-link yt-ui-ellipsis yt-ui-ellipsis-2 yt-uix-sessionlink      spf-link " data-sessionlink="itct=CDIQ3DAYEyITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA"  title="Power is power || Jon &amp; Daenerys" rel="spf-prefetch" aria-describedby="description-id-903269" dir="ltr">Power is power || Jon &amp; Daenerys</a><span class="accessible-description" id="description-id-903269"> - Duration: 3:33.</span></h3><div class="yt-lockup-byline "><a href="/channel/UCw6b1JrLZ2TS4UvQj0QeAPQ" class="yt-uix-sessionlink       spf-link " data-sessionlink="itct=CDIQ3DAYEyITCM2VlIHrrOoCFXoTtwAd5usH0w" >Sophia K</a></div><div class="yt-lockup-meta "><ul class="yt-lockup-meta-info"><li>1 year ago</li><li>11,327 views</li></ul></div><div class="yt-lockup-description yt-ui-ellipsis yt-ui-ellipsis-2" dir="ltr">Nothing lasts forever, remember? So let&#39;s just relax and let these two kick our asses.</div></div></div></div></li>
+
+<li><div class="yt-lockup yt-lockup-tile yt-lockup-video vve-check clearfix" data-context-item-id="-kWWdTBEzDE" data-visibility-tracking="CDEQ3DAYFCITCM2VlIHrrOoCFXoTtwAd5usH00CxmJOC087lovoB"><div class="yt-lockup-dismissable yt-uix-tile"><div class="yt-lockup-thumbnail contains-addto"><a aria-hidden="true"  href="/watch?v=-kWWdTBEzDE" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CDEQ3DAYFCITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA" ><div class="yt-thumb video-thumb yt-uix-mouseover-img-wrap"><span class="yt-thumb-simple">
+  <img alt="" data-mouseover-src="https://i.ytimg.com/an_webp/-kWWdTBEzDE/mqdefault_6s.webp?du=3000&amp;sqp=CJm78_cF&amp;rs=AOn4CLAGVDd9igMfh_JTVy5Z_wwdd0_dAg" data-thumb="https://i.ytimg.com/vi/-kWWdTBEzDE/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLDz8XPQv9yKC-xl9VlaG4uS69258Q" src="/yts/img/pixel-vfl3z5WfW.gif" width="246" height="138" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+<span class="video-time" aria-hidden="true">3:34</span></span></div></a>  <span class="thumb-menu dark-overflow-action-menu video-actions">
+  </span>
+
+
+  <button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-tooltip" type="button" onclick=";return false;" role="button" title="Watch later" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="-kWWdTBEzDE"><span class="yt-uix-button-arrow yt-sprite"></span></button>
+</div><div class="yt-lockup-content"><h3 class="yt-lockup-title "><a href="/watch?v=-kWWdTBEzDE" class="yt-uix-tile-link yt-ui-ellipsis yt-ui-ellipsis-2 yt-uix-sessionlink      spf-link " data-sessionlink="itct=CDEQ3DAYFCITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA"  title="Avengers: Infinity War/Endgame - Power is Power" rel="spf-prefetch" aria-describedby="description-id-621665" dir="ltr">Avengers: Infinity War/Endgame - Power is Power</a><span class="accessible-description" id="description-id-621665"> - Duration: 3:34.</span></h3><div class="yt-lockup-byline "><a href="/channel/UC5Fv5kFKaaGuOmJoXiXqL3Q" class="yt-uix-sessionlink       spf-link " data-sessionlink="itct=CDEQ3DAYFCITCM2VlIHrrOoCFXoTtwAd5usH0w" >Rendy Jones</a></div><div class="yt-lockup-meta "><ul class="yt-lockup-meta-info"><li>1 year ago</li><li>4,091 views</li></ul></div><div class="yt-lockup-description yt-ui-ellipsis yt-ui-ellipsis-2" dir="ltr">For some reason the lyrics in the song &quot;<b>Power is Power</b>&quot; for the &quot;Game of Thrones Soundtrack&quot; had me thinking about Avengers ...</div></div></div></div></li>
+
+<li><div class="yt-lockup yt-lockup-tile yt-lockup-video vve-check clearfix" data-context-item-id="EWACu4ZfD8g" data-visibility-tracking="CDAQ3DAYFSITCM2VlIHrrOoCFXoTtwAd5usH00DIn_yyuNeAsBE="><div class="yt-lockup-dismissable yt-uix-tile"><div class="yt-lockup-thumbnail contains-addto"><a aria-hidden="true"  href="/watch?v=EWACu4ZfD8g" class=" yt-uix-sessionlink      spf-link " data-sessionlink="itct=CDAQ3DAYFSITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA" ><div class="yt-thumb video-thumb yt-uix-mouseover-img-wrap"><span class="yt-thumb-simple">
+  <img alt="" data-mouseover-src="https://i.ytimg.com/an_webp/EWACu4ZfD8g/mqdefault_6s.webp?du=3000&amp;sqp=CPDA8_cF&amp;rs=AOn4CLDmLfbIwQyCJZj5IBIj0B6pKekj3w" data-thumb="https://i.ytimg.com/vi/EWACu4ZfD8g/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLD9ljiNiomLEJhVZ3t6JfJtknDhzw" src="/yts/img/pixel-vfl3z5WfW.gif" width="246" height="138" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" data-ytimg="1" >
+<span class="video-time" aria-hidden="true">4:01</span></span></div></a>  <span class="thumb-menu dark-overflow-action-menu video-actions">
+  </span>
+
+
+  <button class="yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-tooltip" type="button" onclick=";return false;" role="button" title="Watch later" data-button-menu-id="shared-addto-watch-later-login" data-video-ids="EWACu4ZfD8g"><span class="yt-uix-button-arrow yt-sprite"></span></button>
+</div><div class="yt-lockup-content"><h3 class="yt-lockup-title "><a href="/watch?v=EWACu4ZfD8g" class="yt-uix-tile-link yt-ui-ellipsis yt-ui-ellipsis-2 yt-uix-sessionlink      spf-link " data-sessionlink="itct=CDAQ3DAYFSITCM2VlIHrrOoCFXoTtwAd5usH0zIGc2VhcmNoUg5Qb3dlciBpcyBQb3dlcpoBAxD0JA"  title="SZA, The Weeknd, Travis Scott - Power is power (&quot;Sup I&#39;m Bianca&quot; Cover)" rel="spf-prefetch" aria-describedby="description-id-42141" dir="ltr">SZA, The Weeknd, Travis Scott - Power is power (&quot;Sup I&#39;m Bianca&quot; Cover)</a><span class="accessible-description" id="description-id-42141"> - Duration: 4:01.</span></h3><div class="yt-lockup-byline "><a href="/user/bianca100992" class="yt-uix-sessionlink       spf-link " data-sessionlink="itct=CDAQ3DAYFSITCM2VlIHrrOoCFXoTtwAd5usH0w" >Sup I&#39;m Bianca</a>&nbsp;<span title="Verified" class="yt-uix-tooltip yt-channel-title-icon-verified yt-sprite"></span></div><div class="yt-lockup-meta "><ul class="yt-lockup-meta-info"><li>1 year ago</li><li>23,451 views</li></ul></div><div class="yt-lockup-description yt-ui-ellipsis yt-ui-ellipsis-2" dir="ltr">Welcome to my new studio! Let me know if you&#39;re vibing this setup, I&#39;m still playing around with what looks good :). So I filmed this ...</div></div></div></div></li>
+</ol>
+</li>
+</ol>
+
+  </div>
+
+
+    <div class="branded-page-box search-pager  spf-link ">
+
+
+
+
+
+
+
+
+
+
+
+
+      <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default  vve-check" type="button" onclick=";return false;" disabled="True" aria-label="Go to page 1" data-sessionlink="itct=CAwQnKQBGAAiEwjNlZSB66zqAhV6E7cAHebrB9M" data-visibility-tracking="CAwQnKQBGAAiEwjNlZSB66zqAhV6E7cAHebrB9M" data-redirect-url="/results?search_query=Power+is+Power&amp;amp;sp=SACYAQE%253D"><span class="yt-uix-button-content">1</span></button>
+ 
+
+
+
+
+
+
+
+
+
+
+
+      <a  href="/results?search_query=Power+is+Power&amp;sp=SBSYAQE%253D" class="yt-uix-button   vve-check yt-uix-sessionlink yt-uix-button-default yt-uix-button-size-default" data-sessionlink="itct=CAsQnKQBGAEiEwjNlZSB66zqAhV6E7cAHebrB9M" data-visibility-tracking="CAsQnKQBGAEiEwjNlZSB66zqAhV6E7cAHebrB9M" aria-label="Go to page 2"><span class="yt-uix-button-content">2</span></a>
+ 
+
+
+
+
+
+
+
+
+
+
+
+      <a  href="/results?search_query=Power+is+Power&amp;sp=SCiYAQE%253D" class="yt-uix-button   vve-check yt-uix-sessionlink yt-uix-button-default yt-uix-button-size-default" data-sessionlink="itct=CAoQnKQBGAIiEwjNlZSB66zqAhV6E7cAHebrB9M" data-visibility-tracking="CAoQnKQBGAIiEwjNlZSB66zqAhV6E7cAHebrB9M" aria-label="Go to page 3"><span class="yt-uix-button-content">3</span></a>
+ 
+
+
+
+
+
+
+
+
+
+
+
+      <a  href="/results?search_query=Power+is+Power&amp;sp=SDyYAQE%253D" class="yt-uix-button   vve-check yt-uix-sessionlink yt-uix-button-default yt-uix-button-size-default" data-sessionlink="itct=CAkQnKQBGAMiEwjNlZSB66zqAhV6E7cAHebrB9M" data-visibility-tracking="CAkQnKQBGAMiEwjNlZSB66zqAhV6E7cAHebrB9M" aria-label="Go to page 4"><span class="yt-uix-button-content">4</span></a>
+ 
+
+
+
+
+
+
+
+
+
+
+
+      <a  href="/results?search_query=Power+is+Power&amp;sp=SFCYAQE%253D" class="yt-uix-button   vve-check yt-uix-sessionlink yt-uix-button-default yt-uix-button-size-default" data-sessionlink="itct=CAgQnKQBGAQiEwjNlZSB66zqAhV6E7cAHebrB9M" data-visibility-tracking="CAgQnKQBGAQiEwjNlZSB66zqAhV6E7cAHebrB9M" aria-label="Go to page 5"><span class="yt-uix-button-content">5</span></a>
+ 
+
+
+
+
+
+
+
+
+
+
+
+      <a  href="/results?search_query=Power+is+Power&amp;sp=SGSYAQE%253D" class="yt-uix-button   vve-check yt-uix-sessionlink yt-uix-button-default yt-uix-button-size-default" data-sessionlink="itct=CAcQnKQBGAUiEwjNlZSB66zqAhV6E7cAHebrB9M" data-visibility-tracking="CAcQnKQBGAUiEwjNlZSB66zqAhV6E7cAHebrB9M" aria-label="Go to page 6"><span class="yt-uix-button-content">6</span></a>
+ 
+
+
+
+
+
+
+
+
+
+
+
+      <a  href="/results?search_query=Power+is+Power&amp;sp=SHiYAQE%253D" class="yt-uix-button   vve-check yt-uix-sessionlink yt-uix-button-default yt-uix-button-size-default" data-sessionlink="itct=CAYQnKQBGAYiEwjNlZSB66zqAhV6E7cAHebrB9M" data-visibility-tracking="CAYQnKQBGAYiEwjNlZSB66zqAhV6E7cAHebrB9M" aria-label="Go to page 7"><span class="yt-uix-button-content">7</span></a>
+ 
+
+
+
+
+
+
+
+
+
+
+
+      <a  href="/results?search_query=Power+is+Power&amp;sp=SBSYAQE%253D" class="yt-uix-button   vve-check yt-uix-sessionlink yt-uix-button-default yt-uix-button-size-default" data-sessionlink="itct=CAUQnKQBGAciEwjNlZSB66zqAhV6E7cAHebrB9M" data-visibility-tracking="CAUQnKQBGAciEwjNlZSB66zqAhV6E7cAHebrB9M" aria-label="Go to page 2"><span class="yt-uix-button-content">Next »</span></a>
+ </div>
+
+
+  </div>
+
+          </div>
+        </div>
+          <div class="branded-page-v2-secondary-col">
+                <div id="search-secondary-col-contents">
+      
+    </div>
+
+          </div>
+      </div>
+    </div>
+  </div>
+</div></div></div></div>  <div id="footer-container" class="yt-base-gutter force-layer"><div id="footer"><div id="footer-main"><div id="footer-logo"><a href="/" id="footer-logo-link" title="YouTube home" data-sessionlink="ei=bur8XouYH7zB3LUPtvqUkAg&amp;ved=CAIQpmEiEwiLh5OB66zqAhW8ILcAHTY9BYIo9CQ" class="yt-uix-sessionlink"><span class="footer-logo-icon yt-sprite"></span></a></div>  <ul class="pickers yt-uix-button-group" data-button-toggle-group="optional">
+      <li>
+            <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default yt-uix-button-has-icon" type="button" onclick=";return false;" id="yt-picker-language-button" data-button-menu-id="arrow-display" data-button-action="yt.www.picker.load" data-picker-key="language" data-picker-position="footer" data-button-toggle="true"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-footer-language yt-sprite"></span></span><span class="yt-uix-button-content">  <span class="yt-picker-button-label">
+Language:
+  </span>
+  English (UK)
+</span><span class="yt-uix-button-arrow yt-sprite"></span></button>
+
+
+      </li>
+      <li>
+            <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default" type="button" onclick=";return false;" id="yt-picker-country-button" data-button-menu-id="arrow-display" data-button-action="yt.www.picker.load" data-picker-key="country" data-picker-position="footer" data-button-toggle="true"><span class="yt-uix-button-content">  <span class="yt-picker-button-label">
+Location:
+  </span>
+  India
+</span><span class="yt-uix-button-arrow yt-sprite"></span></button>
+
+
+      </li>
+      <li>
+            <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default" type="button" onclick=";return false;" id="yt-picker-safetymode-button" data-button-menu-id="arrow-display" data-button-action="yt.www.picker.load" data-picker-key="safetymode" data-picker-position="footer" data-button-toggle="true"><span class="yt-uix-button-content">  <span class="yt-picker-button-label">
+Restricted Mode:
+  </span>
+Off
+</span><span class="yt-uix-button-arrow yt-sprite"></span></button>
+
+
+      </li>
+  </ul>
+<a  href="/feed/history" class="yt-uix-button  footer-history yt-uix-sessionlink yt-uix-button-default yt-uix-button-size-default yt-uix-button-has-icon" data-sessionlink="ei=bur8XouYH7zB3LUPtvqUkAg"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-footer-history yt-sprite"></span></span><span class="yt-uix-button-content">History</span></a>    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default yt-uix-button-has-icon yt-uix-button-reverse yt-google-help-link inq-no-click " type="button" onclick=";return false;" id="google-help" data-ghelp-anchor="google-help" data-ghelp-tracking-param="" data-load-chat-support="true" data-feedback-product-id="59"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-questionmark yt-sprite"></span></span><span class="yt-uix-button-content">Help
+</span></button>
+      <div id="yt-picker-language-footer" class="yt-picker" style="display: none">
+      <p class="yt-spinner ">
+        <span title="Loading icon" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+Loading...
+    </span>
+  </p>
+
+  </div>
+
+      <div id="yt-picker-country-footer" class="yt-picker" style="display: none">
+      <p class="yt-spinner ">
+        <span title="Loading icon" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+Loading...
+    </span>
+  </p>
+
+  </div>
+
+      <div id="yt-picker-safetymode-footer" class="yt-picker" style="display: none">
+      <p class="yt-spinner ">
+        <span title="Loading icon" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+Loading...
+    </span>
+  </p>
+
+  </div>
+
+</div><div id="footer-links"><ul id="footer-links-primary">  <li><a href="https://www.youtube.com/about/">About</a></li>
+  <li><a href="https://www.youtube.com/about/press/">Press</a></li>
+  <li><a href="https://www.youtube.com/about/copyright/">Copyright</a></li>
+  <li><a href="https://www.youtube.com/creators/">Creators</a></li>
+  <li><a href="https://www.youtube.com/ads/">Advertise</a></li>
+  <li><a href="https://developers.google.com/youtube">Developers</a></li>
+</ul><ul id="footer-links-secondary">  <li><a href="/t/terms">Terms</a></li>
+  <li><a href="https://www.google.co.uk/intl/en-GB/policies/privacy/">Privacy</a></li>
+  <li><a href="https://www.youtube.com/about/policies/">
+Policy and Safety
+  </a></li>
+  <li><a href="//support.google.com/youtube/?hl=en-GB" onclick="return yt.www.feedback.start(59);" class="reportbug">Send feedback</a></li>
+  <li>
+    <a href="/testtube">Test new features</a>
+  </li>
+  <li></li>
+</ul></div></div></div>
+
+      <div class="yt-dialog hid " id="feed-privacy-lb">
+    <div class="yt-dialog-base">
+      <span class="yt-dialog-align"></span>
+      <div class="yt-dialog-fg" role="dialog">
+        <div class="yt-dialog-fg-content">
+          <div class="yt-dialog-loading">
+              <div class="yt-dialog-waiting-content">
+      <p class="yt-spinner ">
+        <span title="Loading icon" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+Loading...
+    </span>
+  </p>
+
+  </div>
+
+          </div>
+          <div class="yt-dialog-content">
+              <div id="feed-privacy-dialog">
+  </div>
+
+          </div>
+          <div class="yt-dialog-working">
+              <div class="yt-dialog-working-overlay"></div>
+  <div class="yt-dialog-working-bubble">
+    <div class="yt-dialog-waiting-content">
+        <p class="yt-spinner ">
+        <span title="Loading icon" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+        Working...
+    </span>
+  </p>
+
+      </div>
+  </div>
+
+          </div>
+        </div>
+        <div class="yt-dialog-focus-trap" tabindex="0"></div>
+      </div>
+    </div>
+  </div>
+
+
+<div id="hidden-component-template-wrapper" class="hid">    <div id="shared-addto-watch-later-login" class="hid">
+      <a href="https://accounts.google.com/ServiceLogin?service=youtube&amp;uilel=3&amp;passive=true&amp;hl=en-GB&amp;continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26hl%3Den-GB%26next%3D%252Fresults%253Fsearch_query%253DPower%252Bis%252BPower%26app%3Ddesktop%26feature%3Dplaylist" class="sign-in-link">Sign in</a> to add this to Watch Later
+
+    </div>
+<div id="yt-uix-videoactionmenu-menu" class="yt-ui-menu-content">  <div class="hide-on-create-pl-panel">
+    <h3>
+Add to
+    </h3>
+  </div>
+  <div class="add-to-widget">
+      <p class="yt-spinner ">
+        <span title="Loading icon" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+        Loading playlists...
+    </span>
+  </p>
+
+  </div>
+</div></div>    <script >var ytspf = ytspf || {};ytspf.enabled = true;ytspf.config = {'reload-identifier': 'spfreload'};ytspf.config['request-headers'] = {'X-YouTube-Ad-Signals': {toString: function() {return (window['yt'] && yt['ads_'] && yt.ads_['signals_'] &&yt.ads_.signals_['getAdSignalsString']) ?yt.ads_.signals_.getAdSignalsString() :'';}},'X-YouTube-Identity-Token': null};ytspf.config['experimental-request-headers'] = ytspf.config['request-headers'];ytspf.config['cache-max'] = 50;ytspf.config['navigate-limit'] = 50;ytspf.config['navigate-lifetime'] = 64800000;</script>
+  <script src="/yts/jsbin/spf-vflAy7LrU/spf.js" type="text/javascript" name="spf/spf" ></script>
+  <script src="/yts/jsbin/www-en_US-vflZdP0bZ/base.js"  name="www/base" ></script>
+<script >spf.script.path({'www/': '/yts/jsbin/www-en_US-vflZdP0bZ/'});var ytdepmap = {"www/base": null, "www/common": "www/base", "www/angular_base": "www/common", "www/channels_accountupload": "www/common", "www/channels": "www/common", "www/dashboard": "www/common", "www/downloadreports": "www/common", "www/experiments": "www/common", "www/feed": "www/common", "www/legomap": "www/common", "www/promo_join_network": "www/common", "www/results_harlemshake": "www/common", "www/results": "www/common", "www/results_starwars": "www/common", "www/subscriptionmanager": "www/common", "www/unlimited": "www/common", "www/watch": "www/common", "www/ypc_bootstrap": "www/common", "www/ypc_core": "www/common", "www/channels_edit": "www/channels", "www/live_dashboard": "www/angular_base", "www/videomanager": "www/angular_base", "www/watch_autoplayrenderer": "www/watch", "www/watch_edit": "www/watch", "www/watch_editor": "www/watch", "www/watch_promos": "www/watch", "www/watch_speedyg": "www/watch", "www/watch_transcript": "www/watch", "www/watch_videoshelf": "www/watch", "www/ct_advancedsearch": "www/videomanager", "www/my_videos": "www/videomanager", "www/$weak$": ["www/angular_base", "www/base", "www/channels_accountupload", "www/channels_edit", "www/channels", "www/common", "www/ct_advancedsearch", "www/dashboard", "www/downloadreports", "www/experiments", "www/feed", "www/legomap", "www/live_dashboard", "www/my_videos", "www/promo_join_network", "www/results_harlemshake", "www/results", "www/results_starwars", "www/subscriptionmanager", "www/unlimited", "www/videomanager", "www/watch_autoplayrenderer", "www/watch_edit", "www/watch_editor", "www/watch", "www/watch_promos", "www/watch_speedyg", "www/watch_transcript", "www/watch_videoshelf", "www/ypc_bootstrap", "www/ypc_core"]};spf.script.declare(ytdepmap);</script>  <script src="/yts/jsbin/fetch-polyfill-vflzN6pjP/fetch-polyfill.js" type="text/javascript" name="fetch-polyfill/fetch-polyfill" ></script>
+<script >if (window.ytcsi) {window.ytcsi.tick("je", null, '');}</script>  
+
+  <script >
+        yt.setConfig({
+      'JS_PAGE_MODULES': [
+        'www/results',
+        'www/ypc_bootstrap',
+        'www/feed',
+        ''
+      ],
+
+      'TIMING_REPORT_ON_UNLOAD': true
+    });
+
+
+      yt.setConfig({
+    'GUIDED_HELP_LOCALE': "en_GB",
+    'GUIDED_HELP_ENVIRONMENT': "prod"
+  });
+
+  </script>
+  
+<script >yt.setConfig({INNERTUBE_CONTEXT_CLIENT_NAME: 1,GAPI_HINT_PARAMS: "m;\/_\/scs\/abc-static\/_\/js\/k=gapi.gapi.en.yyhByYeMTAc.O\/am=AAY\/d=1\/ct=zgms\/rs=AHpOoo-O470EQdZ-4tpWpppyTQmeOEUv-g\/m=__features__",INNERTUBE_API_KEY: "AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8",INNERTUBE_API_VERSION: "v1",INNERTUBE_CONTEXT_CLIENT_VERSION: "1.20200627.05.01",'VISITOR_DATA': "CgtweTNtbEdiNWQ2Yyju1PP3BQ%3D%3D",'DELEGATED_SESSION_ID': null,'GAPI_HOST': "https:\/\/apis.google.com",'GAPI_LOCALE': "en_GB",'INNERTUBE_CONTEXT_HL': "en-GB",'INNERTUBE_CONTEXT_GL': "IN",'XHR_APIARY_HOST': "youtubei.youtube.com"});yt.setConfig({'PAGE_NAME': "results",'LOGGED_IN': false,'SESSION_INDEX': null,'VALID_SESSION_TEMPDATA_DOMAINS': ["www.youtube.com","gaming.youtube.com"],'PARENT_TRACKING_PARAMS': "",'FORMATS_FILE_SIZE_JS': ["%s B","%s KB","%s MB","%s GB","%s TB"],'ONE_PICK_URL': "",'GOOGLEPLUS_HOST': "https:\/\/plus.google.com",'PAGEFRAME_JS': "\/yts\/jsbin\/www-pageframe-vfl_9dknw\/www-pageframe.js",'GAPI_LOADER_URL': "\/yts\/jsbin\/www-gapi-loader-vflz0bztw\/www-gapi-loader.js",'JS_COMMON_MODULE': "\/yts\/jsbin\/www-en_US-vflZdP0bZ\/common.js",'PAGE_FRAME_DELAYLOADED_CSS': "\/yts\/cssbin\/www-pageframedelayloaded-webp-vflBlK4uD.css",'EXPERIMENT_FLAGS': {"polymer_bad_build_labels":true,"log_web_meta_interval_ms":0,"use_typescript_transport":true,"consent_url_override":"","web_gel_debounce_ms":10000,"web_yt_config_context":true,"web_use_beacon_api_for_ad_click_server_pings":true,"enable_docked_chat_messages":true,"polymer_verifiy_app_state":true,"enable_device_forwarding_from_xhr_client":true,"enable_premium_voluntary_pause":true,"service_worker_push_prompt_delay_microseconds":3888000000000,"web_screen_manager_use_default_client":true,"live_chat_client_url":true,"web_api_url":true,"enable_ypc_spinners":true,"overwrite_polyfill_on_logging_lib_loaded":true,"gfeedback_for_signed_out_users_enabled":true,"enable_device_forwarding_from_polymer_network_manager":true,"service_worker_push_home_page_prompt":true,"cancel_pending_navs":true,"autoescape_tempdata_url":true,"disable_thumbnail_preloading":true,"custom_csi_timeline_use_gel":true,"enable_mixed_direction_formatted_strings":true,"disable_simple_mixed_direction_formatted_strings":true,"desktop_videowall_companion_wta_support":true,"disable_legacy_desktop_remote_queue":true,"live_chat_increased_min_height":true,"kevlar_guide_refresh":true,"log_vis_on_tab_change":true,"retry_web_logging_batches":true,"web_screen_associated_all_layers":true,"use_watch_fragments2":true,"desktop_sparkles_light_cta_button":true,"desktop_polymer_video_masthead_session_tempdata_ttl":30,"enable_ve_tracker_key":true,"csi_on_gel":true,"autoplay_pause_by_lact_sec":0,"networkless_throttle_timeout":100,"desktop_image_companion_wta_support":true,"desktop_pyv_on_watch_override_lact":true,"disable_legacy_desktop_remote_queue_watch":true,"live_chat_unicode_emoji_json_url":"https:\/\/www.gstatic.com\/youtube\/img\/emojis\/emojis-svg-4.json","desktop_action_companion_wta_support":true,"service_worker_push_enabled":true,"ignore_empty_xhr":true,"botguard_periodic_refresh":true,"desktop_notification_high_priority_ignore_push":true,"networkless_request_age_limit":30,"web_network_combined_catch":true,"mdx_enable_privacy_disclosure_ui":true,"service_worker_push_watch_page_prompt":true,"watch_next_pause_autoplay_lact_sec":4500,"enable_watch_next_pause_autoplay_lact":true,"enable_read_more_format_decoration":true,"service_worker_push_prompt_cap":-1,"autoplay_pause_by_lact_sampling_fraction":0.0,"prefetch_comments_ms_after_video":0,"web_op_continuation_type_blacklist":[],"log_window_onerror_fraction":0.1,"botguard_async_snapshot_timeout_ms":3000,"web_always_load_chat_support":true,"networkless_retry_attempts":1,"delay_gel_until_config_ready":true,"service_worker_push_force_notification_prompt_tag":"1","service_worker_push_logged_out_prompt_watches":-1,"html5_experiment_id_label":0,"app_settings_snapshot_min_time_between_snapshots_hours":24,"use_sonic_library_for_v4_support":true,"web_deprecate_service_ajax_map_dependency":true,"web_logging_max_batch":150,"should_clear_video_data_on_player_cued_unstarted":true,"web_op_signal_type_blacklist":[],"web_system_health_fraction":0.01,"use_sonic_js_library_for_v4_support":true,"web_client_counter_random_seed":true,"network_polling_interval":30000,"service_worker_scope":"\/","log_js_error_clusters":1.0,"desktop_notification_set_title_bar":true,"service_worker_enabled":true,"web_op_endpoint_blacklist":[],"pass_biscotti_id_in_header_ajax":true,"suppress_gen_204":true,"warm_load_nav_start_web":true,"desktop_shopping_companion_wta_support":true,"web_post_search":true,"web_gel_timeout_cap":true,"no_sub_count_on_sub_button":true,"desktop_pyv_on_watch_missing_params":true,"log_js_exceptions_fraction":1.0},'HIGH_CONTRAST_MODE_CSS': "\/yts\/cssbin\/www-highcontrastmode-webp-vfl2pKdoC.css",'PREFETCH_CSS_RESOURCES' : ["\/s\/player\/02c092a5\/www-player-webp.css"],'PREFETCH_JS_RESOURCES': ["\/yts\/jsbin\/www-pagead-id-vflWgaQf-\/www-pagead-id.js","\/s\/player\/02c092a5\/player_ias.vflset\/en_GB\/base.js"],'PREFETCH_LINKS': false,'PREFETCH_LINKS_MAX': 1,'PREFETCH_AUTOPLAY': false,'PREFETCH_AUTOPLAY_TIME': 0,'PREFETCH_AUTONAV': false,'PREBUFFER_MAX': 1,'PREBUFFER_LINKS': false,'PREBUFFER_AUTOPLAY': false,'PREBUFFER_AUTONAV': false,'WATCH_LATER_BUTTON': "\n\n  \u003cbutton class=\"yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-tooltip\" type=\"button\" onclick=\";return false;\" role=\"button\" title=\"Watch later\" data-button-menu-id=\"shared-addto-watch-later-login\" data-video-ids=\"__VIDEO_ID__\"\u003e\u003cspan class=\"yt-uix-button-arrow yt-sprite\"\u003e\u003c\/span\u003e\u003c\/button\u003e\n",'WATCH_QUEUE_BUTTON': "",'WATCH_QUEUE_MENU': "  \u003cspan class=\"thumb-menu dark-overflow-action-menu video-actions\"\u003e\n  \u003c\/span\u003e\n",'SAFETY_MODE_PENDING': false,'I18N_PLURAL_RULES': function(n) { return (n == 1) ? 'one' : 'other'; },'ZWIEBACK_PING_URLS': ["https:\/\/www.google.co.in\/pagead\/lvz?evtid=AKB78ciP6qUs0tWwD2Eb0EoFWKDtfEmz-Vsprc7agXEdzKtPKtbHU5BU8kaBr2DhS12DRrsCM7SHB95p9nMDfT1bjiWRcY81EA\u0026req_ts=1593633390\u0026pg=results\u0026sigh=AKFpyYXnXM2_BuYr4ype79-T7rI71KZzow","https:\/\/www.google.com\/pagead\/lvz?evtid=AKB78ch8KNdnV7IeTp-xc0Wh8WgKMZFivlfiVzlr80sYciCjQZsaYw7al3zPu5koegbz1-VFU-KQCk-_122_jjOKE-LpZRxhyQ\u0026req_ts=1593633390\u0026pg=results\u0026sigh=AKFpyYVSGhy_g5xS9tWQeUgFN_ZCDwRyEA"],'LOCAL_DATE_TIME_CONFIG': {"weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"shortWeekdays":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"weekendRange":[6,5],"firstDayOfWeek":0,"firstWeekCutoffDay":3,"months":["January","February","March","April","May","June","July","August","September","October","November","December"],"shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"amPms":null,"dateFormats":["d MMMM y 'at' HH:mm","d MMMM y","d MMM y","d MMM y"],"formatLongDate":"d MMMM y 'at' HH:mm","formatLongDateOnly":"d MMMM y","formatShortDate":"d MMM y","formatShortTime":"HH:mm","formatWeekdayShortTime":"EE HH:mm"},'PAGE_CL': 318750541,'PAGE_BUILD_LABEL': "youtube.ytfe.desktop_20200626_5_RC1",'VARIANTS_CHECKSUM': "eeb81bf1719c105bd2f56efb51835078",'CLIENT_PROTOCOL': "HTTP\/1.1",'CLIENT_TRANSPORT': "tcp",'MDX_ENABLE_CASTV2': true,'MDX_ENABLE_QUEUE': true,'FEEDBACK_BUCKET_ID': "Search",'FEEDBACK_LOCALE_LANGUAGE': "en-GB",'FEEDBACK_LOCALE_EXTRAS': {"accept_language":null,"experiments":"23700266,23701207,23701297,23701882,23709359,23709532,23710313,23710863,23718617,23722367,23725261,23725678,23736982,23744176,23746939,23755417,23755966,23762106,23767294,23768776,23782085,23785483,23785890,23789385,23790586,23790726,23793228,23794214,23794339,23797973,23802891,23804042,23804281,23810148,23811985,23816681,23820529,23828893,23832002,23834232,23834813,23836115,23837040,23837886,23839597,23839797,23841121,23841299,23841635,23842233,23842638,23842901,23853114,23853786,23854276,23854352,23854999,23856479,23856950,23857950,23857970,23858564,23859025,23859094,23859802,23860245,23860381,23860859,23861263,23861666,23861739,23861905,23862025,23862065,23862294,23862582,23863593,23864035,23864145,23865206,23865635,23868319,23869527,23869558,23871729,23872595,23874051,23874780,23874940,23874981,23876021,23876458,23879126,23880163,23880323,23880619,23881037,23881484,23882111,23882125,23882130,23882139,23882503,23882555,23882868,23883113,23884315,23884386,23884388,23884593,23884697,23884995,23885216,23885279,23885590,23885639,23885661,23886825,23887071,23887808,23888210,23888479,23889698,23890077,23890527,23890640,23890680,23890891,23891344,23891845,23892982,23893781,23894293,23894533,23894708,23895139,23895174,23895275,23895498,23895618,23895671,23896098,23896704,23897127,23897257,23897262,23897295,23897503,23897872,23898320,23898470,23898871,23899697,23899865,23900004,23900375,23900854,23901016,23901986,23902292,23902312,23902484,23903071,23903413,23903532,23903889,23903983,23904156,23904385,23904599,23905520,23906782,23906900,23906928,23907384,23907436,23907445,23907595,23908062,23908078,23908414,23908765,23909160,23909192,23909259,23909269,23909272,23909274,23909960,23910095,23910755,23910759,23910775,23911301,23911515,23911653,23912012,23912252,23912570,23912759,23913084,23913222,23913300,23913775,23914188,23914618,23914650,23914783,23914871,23915611,23915870,23915894,23915907,23915958,23915960,23916013,23916130,23916148,23916172,23916377,23916589,23916605,23916737,23916973,23917075,23917588,23917633,23917799,23917955,23918087,23918347,23918657,23918710,23918749,23919026,23919244,23919306,23919438,23919856,23921954,24500497,24590160,24650112,39320593,39320688,39320710,9449243,9459795,9473372,9473382,9473388,9479456,9487037,9489266","logged_in":false}});   yt.setConfig({
+    'GUIDED_HELP_LOCALE': "en_GB",
+    'GUIDED_HELP_ENVIRONMENT': "prod"
+  });
+yt.setConfig('SPF_SEARCH_BOX', true);yt.setMsg({'ADDTO_CREATE_NEW_PLAYLIST': "Create a new playlist\n",'ADDTO_CREATE_PLAYLIST_DYNAMIC_TITLE': "  $dynamic_title_placeholder (create new)\n",'ADDTO_WATCH_LATER': "Watch later",'ADDTO_WATCH_LATER_ADDED': "Added",'ADDTO_WATCH_LATER_ERROR': "Error",'ADDTO_WATCH_QUEUE': "Watch Queue",'ADDTO_WATCH_QUEUE_ADDED': "Added",'ADDTO_WATCH_QUEUE_ERROR': "Error",'ADDTO_TV_QUEUE': "Queue",'MASTHEAD_NOTIFICATIONS_LABEL': {"case0": "0 unread notifications.", "case1": "1 unread notification.", "other": "# unread notifications."},'MASTHEAD_NOTIFICATIONS_COUNT_99PLUS': "99+",'MDX_AUTOPLAY_OFF': 'Autoplay is off','MDX_AUTOPLAY_ON': 'Autoplay is on'});  yt.setConfig('FEED_PRIVACY_CSS_URL', "\/yts\/cssbin\/www-feedprivacydialog-webp-vfldHP2z-.css");
+  yt.setConfig('FEED_PRIVACY_LIGHTBOX_ENABLED', true);
+yt.setConfig({'SBOX_JS_URL': "\/yts\/jsbin\/www-searchbox-vflFQ8HVz\/www-searchbox.js",'SBOX_SETTINGS': {"PQ":"Power is Power","REQUEST_LANGUAGE":"en","REQUEST_DOMAIN":"in","HAS_ON_SCREEN_KEYBOARD":false},'SBOX_LABELS': {"SUGGESTION_DISMISS_LABEL":"Remove","SUGGESTION_DISMISSED_LABEL":"Suggestion removed"}});  yt.setConfig({
+    'YPC_LOADER_JS': "\/yts\/jsbin\/www-ypc-vflPAVVnz\/www-ypc.js",
+    'YPC_LOADER_CSS': "\/yts\/cssbin\/www-ypc-webp-vflXSLcHz.css",
+    'YPC_SIGNIN_URL': "https:\/\/accounts.google.com\/ServiceLogin?service=youtube\u0026uilel=3\u0026passive=true\u0026hl=en-GB\u0026continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26hl%3Den-GB%26next%3D%252F%26app%3Ddesktop",
+    'DBLCLK_ADVERTISER_ID': "2542116",
+    'DBLCLK_YPC_ACTIVITY_GROUP': "youtu444",
+    'SUBSCRIPTION_URL': "\/subscription_ajax",
+    'YPC_SWITCH_URL': "\/signin?action_handle_signin=true\u0026next=%2F\u0026feature=purchases\u0026skip_identity_prompt=True",
+    'YPC_GB_LANGUAGE': "en_GB",
+    'YPC_MB_URL': "https:\/\/payments.youtube.com\/payments\/v4\/js\/integrator.js?ss=md",
+    'YPC_TRANSACTION_URL': "\/transaction_handler",
+    'YPC_SUBSCRIPTION_URL': "\/ypc_subscription_ajax",
+    'YPC_POST_PURCHASE_URL': "\/ypc_post_purchase_ajax",
+    'YTR_FAMILY_CREATION_URL': "https:\/\/families.google.com\/webcreation?usegapi=1",
+    'YTO_GTM_DATA': {'event': 'purchased', 'purchaseStatus': 'success'},
+    'YTO_GTM_1_BUTTON_CLICK_DATA': {'event': 'landingButtonClick', 'buttonPosition': '1'},
+    'YTO_GTM_2_BUTTON_CLICK_DATA': {'event': 'landingButtonClick', 'buttonPosition': '2'}
+  });
+  yt.setMsg({
+    'YPC_OFFER_OVERLAY': "  \n",
+    'YPC_UNSUBSCRIBE_OVERLAY': "  \n"
+  });
+  yt.setConfig('GOOGLE_HELP_CONTEXT', "search_results");
+ytcsi.info('st', 286);ytcfg.set({"CSI_SERVICE_NAME":"youtube","TIMING_INFO":{"c":"WEB","cver":"1.20200627.05.01","yt_li":"0","yt_lt":"cold","yt_ad":"1","GetSearch_rid":"0x94fc8675bf453b37"}});;ytcfg.set({"CSI_VIEWPORT":true,"TIMING_ACTION":"results","TIMING_AFT_KEYS":["ol"],"TIMING_WAIT":["ol","cpt"]});;  yt.setConfig({
+      'XSRF_TOKEN': "QUFFLUhqa0M1UWxRUEJkVmp3X1lnNENEZi1ic1lPR05PZ3xBQ3Jtc0tuMTJNcE1qT1ByZkh4aDRzMWFxS2V6S0lJWkt0Z19TZEEwemVmQUJ0UXBZcVdMUWlITks0cmhLdVozcHlXV3lfa2ZGSVp1QlhtWThXYk8wNk4zOV9oSFY4LWJlM1NEdUNpdlNRZXNWSXRmOVhTMENJVElDT0VfeTVrNTMyVkVTYzBmblJlXzJIaUFIOXIwLVhWbWNpb19zcnBtdXc=",
+      'XSRF_FIELD_NAME': "session_token",
+
+      'XSRF_REDIRECT_TOKEN': "0b-iy18Mzj5IrF1ohgrKYwI9mix8MTU5MzcxOTc5MEAxNTkzNjMzMzkw"  });
+yt.setConfig('ID_TOKEN', null);yt.setConfig('INNERTUBE_CONTEXT', {"client":{"hl":"en-GB","gl":"IN","visitorData":"CgtweTNtbEdiNWQ2Yyju1PP3BQ%3D%3D","userAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36,gzip(gfe)","clientName":"WEB","clientVersion":"1.20200627.05.01","osName":"X11","browserName":"Chrome","browserVersion":"36.0.1985.143"},"request":{"sessionId":"6844603292558709322"}});window.ytcfg.set('SERVICE_WORKER_KILLSWITCH', false);  yt.setConfig('THUMB_DELAY_LOAD_BUFFER', 0);
+if (window.ytcsi) {window.ytcsi.tick("jl", null, '');}</script>
+</body></html>
+

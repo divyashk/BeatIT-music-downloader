@@ -12,7 +12,7 @@ import moviepy.editor as mp
 import re
 from slugify import slugify
 SECRET_KEY = os.urandom(32)
-
+import pdb
 app = Flask(__name__)
 app.config['SECRET_KEY'] = SECRET_KEY
 
@@ -31,18 +31,20 @@ sched.start()
 @app.route('/home', methods=['POST', 'GET'])
 def home():
     
+    
     if request.method=="POST":
+        
         if "search" in request.form:
             
-
             sortby = request.form["sortby"]
             search = request.form['search']
             
             results_dict=findVideos(generateURL(search,sortby),8)
             count = 0;
+            
             while len(results_dict) == 0:
                 count+=1;
-                if count > 5:
+                if count > 10:
                     return redirect(url_for("home"))
                 results_dict=findVideos(generateURL(search))
             
