@@ -43,6 +43,9 @@ def home():
             count = 0;
             
             while len(results_dict) == 0:
+                count+=1;	
+                if count > 10:	
+                    return redirect(url_for("home"))
                 results_dict=findVideos(generateURL(search))
             
             return render_template("home.html", title='Music Downloader', results_dict=results_dict, search=search)
