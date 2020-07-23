@@ -20,7 +20,7 @@ numpy==1.18.5
 Pillow==7.1.2
 proglog==0.1.9
 python-slugify==4.0.0
-pytube3==9.6.4
+pytube3 @ git+https://gitlab.com/obuilds/public/pytube@10c57109f87fe864d8f38bbc8d76941e695de93a
 pytz==2020.1
 requests==2.23.0
 six==1.15.0
