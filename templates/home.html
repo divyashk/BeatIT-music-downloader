@@ -71,16 +71,14 @@
                             
                             
                             <form id="send_url" action="#download" method="POST">
-                                <input type="hidden" name="thumbnail" value="{{ res_dict['img']}}">
-                                <input type="hidden" name="ctitle" value="{{ res_dict['name']}}">
-                                <input type="hidden" name="url" value="{{ res_dict['link'] }}">
+                                <input type="hidden" name="thumbnail" value="{{ res_dict['thumbnail'] }}">
+                                <input type="hidden" name="ctitle" value="{{ res_dict['title'] }}">
+                                <input type="hidden" name="url" value="{{ "https://www.youtube.com/watch?v="+res_dict['thumbnail'] }}">
                                 <button type="submit" style="border:none" class="btn btn-outline-primary">
-                                <img class="img-thumbnail" src="{{ res_dict['img']}}" alt="" >
-                                
+                                <img class="img-thumbnail" src="{{ res_dict['thumbnail']}}" alt="" >
                                 <div class="portfolio-box-caption">
-                                        
-                                    <div class="project-category text-white-50">{{ res_dict['views']}}</div>
-                                    <div class="project-name">{{ res_dict['name']}}</div>
+                                    <div class="project-category text-white-50">{{ res_dict['views'] }}</div>
+                                    <div class="project-name">{{ res_dict['title'] }}</div>
                                 </div>
                                         
                             

@@ -1,4 +1,5 @@
 from flask import Flask, flash
+import requests
 from flask import render_template, url_for, redirect, request, session, send_from_directory
 from scraping import generateURL, findVideos
 from pytube import YouTube,Stream
@@ -15,7 +16,6 @@ SECRET_KEY = os.urandom(32)
 import pdb
 app = Flask(__name__)
 app.config['SECRET_KEY'] = SECRET_KEY
-
 
 def sensor():
     try:
@@ -35,20 +35,63 @@ def home():
     if request.method=="POST":
         
         if "search" in request.form:
-            
+
+            # storing the search form data
             sortby = request.form["sortby"]
             search = request.form['search']
             
-            results_dict=findVideos(generateURL(search,sortby),8)
-            count = 0;
+            # for ordering the search results
+            if sortby == 'Relevance':
+                order = "relevance";
+            elif sortby == 'Views':
+                order = "viewCount";
+            elif sortby == 'Upload date':
+                order = "date";
+            elif sortby == 'Rating':
+                order = "rating";
+
+            # using youtube API call to find the search results
+            api_url_for_search = 'https://www.googleapis.com/youtube/v3/search'
+            search_params = {
+                'key': app.config['API_KEY'],
+                'q': search,
+                'part': 'snippet',
+                'maxResults': 9,
+                'type': 'video',
+                'order': order
+            }
+            r = requests.get(api_url_for_search, params=search_params);
             
-            while len(results_dict) == 0:
-                count+=1;	
-                if count > 10:	
-                    return redirect(url_for("home"))
-                results_dict=findVideos(generateURL(search))
+            #storing the ID's of the result           
+            video_ids = [];
+            for video in r.json()['items']:
+                video_ids.append(video['id']['videoId']);
             
-            return render_template("home.html", title='Music Downloader', results_dict=results_dict, search=search)
+            #using the search id's to find the video details with another API call
+            id_search_params = {
+                'key': app.config['API_KEY'],
+                'id': ','.join(video_ids),
+                'part': 'snippet,contentDetails,statistics',
+                'maxResults': 9
+            }
+            api_url_for_id = 'https://www.googleapis.com/youtube/v3/videos';
+            with_id = requests.get(api_url_for_id, params=id_search_params);
+            video_details = [];
+            for video in with_id.json()['items']:
+                
+                
+                
+                temp = {
+                    'id': video['id'],
+                    'title': video['snippet']['title'],
+                    'thumbnail': video['snippet']['thumbnails']['medium']['url'],
+                    'views': video['statistics']['viewCount'],
+                    
+                }
+                print(temp);
+                video_details.append(temp);
+            
+            return render_template("home.html", title='Music Downloader', results_dict=video_details, search=search)
 
 
         if "url" in request.form:
