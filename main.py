@@ -79,8 +79,6 @@ def home():
             video_details = [];
             for video in with_id.json()['items']:
                 
-                
-                
                 temp = {
                     'id': video['id'],
                     'title': video['snippet']['title'],
@@ -88,7 +86,7 @@ def home():
                     'views': video['statistics']['viewCount'],
                     
                 }
-                print(temp);
+                
                 video_details.append(temp);
             
             return render_template("home.html", title='Music Downloader', results_dict=video_details, search=search)
