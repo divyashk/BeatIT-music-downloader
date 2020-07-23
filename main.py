@@ -1,7 +1,7 @@
 from flask import Flask, flash
 import requests
 from flask import render_template, url_for, redirect, request, session, send_from_directory
-from scraping import generateURL, findVideos
+
 from pytube import YouTube,Stream
 from datetime import datetime
 import time
