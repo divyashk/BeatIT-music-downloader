@@ -96,7 +96,7 @@ def home():
             url = request.form["url"]
             video = YouTube(url)
             
-            #here ctitle is the name of the video that is independent of the pytube lib and has been scraped along with the url of the video.
+            #here ctitle is the name of the video that is independent of the pytube lib and has been fetched using Youtube API
             ctitle=request.form["ctitle"]
             stitle = slugify(ctitle)      #turned the name into file-valid name
     
@@ -105,30 +105,22 @@ def home():
 
             img=request.form["thumbnail"]
 
-            if "format" in request.form:
-                format = request.form["format"]
-            else:
-                format = "mp3";
-
+        
             # wont be using this for now
             # shutil.rmtree("static/cache", ignore_errors=True)
             
-            if format == "mp4":                
-                video.streams.filter(progressive=True).first().download("static/cache/video",stitle)
-                
-            else:
-               
-                video.streams.filter(only_audio=True).first().download("static/cache/audio",stitle)
-                
-                #convert all the downloaded mp4 files to mp3
-               
-                old = "static/cache/audio/"+stitle+".mp4"
-                new = "static/cache/audio/"+stitle+".mp3"
-                os.rename(old, new)
+                          
+            video.streams.filter(progressive=True).first().download("static/cache/video",stitle)
+            video.streams.filter(only_audio=True).first().download("static/cache/audio",stitle)
+            
+            
+            old = "static/cache/audio/"+stitle+".mp4"
+            new = "static/cache/audio/"+stitle+".mp3"
+            os.rename(old, new)
                                          
               
            
-            return render_template("home.html", title="Music Downloader",stitle=stitle,ctitle=ctitle,img=img, format=format)
+            return render_template("home.html", title="Music Downloader",stitle=stitle,ctitle=ctitle,img=img)
 
         
 

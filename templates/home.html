@@ -51,15 +51,6 @@
                         
         </div>
 
-        <div align="center">
-            <label for="fdropdown">Select the format</label>
-            <select form="send_url" style="width:auto" id="fdropdown" name="format" class="form-control"  >
-                <option value="mp3">MP3   (audio)</option>
-                <option value="mp4">MP4   (video)</option>
-            </select>
-            <br>
-        </div>
-
         <div id="portfolio">
 
 
@@ -106,11 +97,10 @@
                 <br>
                 <h2 class="mb-4">{{ ctitle }}</h2>
                 
-                {% if format=="mp4" %}
-                    <a class="btn btn-light btn-xl" href="static/cache/video/{{ stitle }}.mp4" download>Download</a>
-                {% else %} 
-                    <a class="btn btn-light btn-xl" href="static/cache/audio/{{ stitle }}.mp3" download>Download</a>
-                {% endif %}
+                <a class="btn btn-light btn-xl" href="static/cache/video/{{ stitle }}.mp4" download>Download Video</a>
+                
+                <a class="btn btn-light btn-xl" href="static/cache/audio/{{ stitle }}.mp3" download>Download Audio</a>
+                
                     
                 
                 

@@ -1,3 +1,5 @@
 pip install git+https://gitlab.com/obuilds/public/pytube@ob-v1 --upgrade
 
- 
+or replace pytube9... in requirements.txt with ->
+
+pytube3 @ git+https://gitlab.com/obuilds/public/pytube@10c57109f87fe864d8f38bbc8d76941e695de93a
