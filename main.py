@@ -1,7 +1,7 @@
 from flask import Flask, flash
 import requests
 from flask import render_template, url_for, redirect, request, session, send_from_directory
-from scraping import generateURL, findVideos
+
 from pytube import YouTube,Stream
 from datetime import datetime
 import time
@@ -16,7 +16,7 @@ SECRET_KEY = os.urandom(32)
 import pdb
 app = Flask(__name__)
 app.config['SECRET_KEY'] = SECRET_KEY
-
+app.config['API_KEY'] = os.environ.get("API_KEY")
 def sensor():
     try:
         shutil.rmtree('/static/cache',ignore_errors=True)
