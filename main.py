@@ -16,7 +16,7 @@ SECRET_KEY = os.urandom(32)
 import pdb
 app = Flask(__name__)
 app.config['SECRET_KEY'] = SECRET_KEY
-
+app.config['API_KEY'] = os.environ.get("API_KEY")
 def sensor():
     try:
         shutil.rmtree('/static/cache',ignore_errors=True)
