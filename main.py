@@ -162,7 +162,7 @@ def home():
                     'preferredquality': '192',
                 }],
             }
-            with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+            with YoutubeDL(ydl_opts) as ydl:
                 ydl.download([video]) 
             
             return render_template("home.html", title="Music Downloader",stitle=stitle,ctitle=ctitle,img=img)
