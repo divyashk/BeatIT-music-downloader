@@ -1,8 +1,6 @@
 from flask import Flask, flash
 import requests
 from flask import render_template, url_for, redirect, request, session, send_from_directory
-
-from pytube import YouTube,Stream
 from datetime import datetime
 import time
 import os
@@ -12,9 +10,17 @@ from apscheduler.schedulers.background import BackgroundScheduler
 import moviepy.editor as mp
 import re
 from slugify import slugify
-SECRET_KEY = os.urandom(32)
 import pdb
+from youtube_dl import YoutubeDL
+import os
+from moviepy.editor import *
+import validators
+
 app = Flask(__name__)
+
+
+
+SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
 app.config['API_KEY'] = os.environ.get("API_KEY")
 def sensor():
@@ -36,94 +42,122 @@ def home():
         
         if "search" in request.form:
 
-            # storing the search form data
+            # storing the search form-data
             sortby = request.form["sortby"]
             search = request.form['search']
             
-            # for ordering the search results
-            if sortby == 'Relevance':
-                order = "relevance";
-            elif sortby == 'Views':
-                order = "viewCount";
-            elif sortby == 'Upload date':
-                order = "date";
-            elif sortby == 'Rating':
-                order = "rating";
-
-            # using youtube API call to find the search results
-            api_url_for_search = 'https://www.googleapis.com/youtube/v3/search'
-            search_params = {
-                'key': app.config['API_KEY'],
-                'q': search,
-                'part': 'snippet',
-                'maxResults': 9,
-                'type': 'video',
-                'order': order
-            }
-            r = requests.get(api_url_for_search, params=search_params);
-            
-            #storing the ID's of the result           
-            video_ids = [];
-            for video in r.json()['items']:
-                video_ids.append(video['id']['videoId']);
-            
-            #using the search id's to find the video details with another API call
-            id_search_params = {
-                'key': app.config['API_KEY'],
-                'id': ','.join(video_ids),
-                'part': 'snippet,contentDetails,statistics',
-                'maxResults': 9
-            }
-            api_url_for_id = 'https://www.googleapis.com/youtube/v3/videos';
-            with_id = requests.get(api_url_for_id, params=id_search_params);
-            video_details = [];
-            for video in with_id.json()['items']:
+            valid=validators.url(search)
+            if search[:32] == "https://www.youtube.com/watch?v=":
+                video = True
+            if valid==True and video:
+                # if the search-input is a valid URL and points to a youtube video
+                url = search
+                ind = url.find("?v=");
+                id = url[ind+3:]            #extracting the id of the video from the url
                 
-                temp = {
-                    'id': video['id'],
-                    'title': video['snippet']['title'],
-                    'thumbnail': video['snippet']['thumbnails']['medium']['url'],
-                    'views': video['statistics']['viewCount'],
-                    
+                #using youtube API call to find the details of the video using the `id   
+                video_ids = []
+                video_ids.append(id)
+                id_search_params = {
+                    'key': app.config['API_KEY'],
+                    'id': ','.join(video_ids),
+                    'part': 'snippet,contentDetails,statistics',
+                    'maxResults': 9
                 }
-                
-                video_details.append(temp);
+                api_url_for_id = 'https://www.googleapis.com/youtube/v3/videos';
+                with_id = requests.get(api_url_for_id, params=id_search_params);
+                video_details = [];
+                for video in with_id.json()['items']:
+                    
+                    temp = {
+                        'id': video['id'],
+                        'title': video['snippet']['title'],
+                        'thumbnail': video['snippet']['thumbnails']['medium']['url'],
+                        'views': video['statistics']['viewCount'],
+                        
+                    }
+                    
+                    video_details.append(temp);
             
-            return render_template("home.html", title='Music Downloader', results_dict=video_details, search=search)
+                return render_template("home.html", title='Music Downloader', results_dict=video_details, search=search)
 
+            else:
+                # if the input is not an URL                
+                if sortby == 'Relevance':
+                    order = "relevance";
+                elif sortby == 'Views':
+                    order = "viewCount";
+                elif sortby == 'Upload date':
+                    order = "date";
+                elif sortby == 'Rating':
+                    order = "rating";
+
+
+                # using youtube API call to find the search results
+                api_url_for_search = 'https://www.googleapis.com/youtube/v3/search'
+                search_params = {
+                    'key': app.config['API_KEY'],
+                    'q': search,
+                    'part': 'snippet',
+                    'maxResults': 9,
+                    'type': 'video',
+                    'order': order
+                }
+                r = requests.get(api_url_for_search, params=search_params);
+
+
+                #storing the ID's of the result           
+                video_ids = [];
+                for video in r.json()['items']:
+                    video_ids.append(video['id']['videoId']);
+
+
+                #using the search id's to find the video details with another API call
+                id_search_params = {
+                    'key': app.config['API_KEY'],
+                    'id': ','.join(video_ids),
+                    'part': 'snippet,contentDetails,statistics',
+                    'maxResults': 9
+                }
+                api_url_for_id = 'https://www.googleapis.com/youtube/v3/videos';
+                with_id = requests.get(api_url_for_id, params=id_search_params);
+                video_details = [];
+                for video in with_id.json()['items']:
+                    temp = {
+                        'id': video['id'],
+                        'title': video['snippet']['title'],
+                        'thumbnail': video['snippet']['thumbnails']['medium']['url'],
+                        'views': video['statistics']['viewCount'],
+                    }
+                    video_details.append(temp);
+                return render_template("home.html", title='Music Downloader', results_dict=video_details, search=search)
 
         if "url" in request.form:
             url = request.form["url"]
-            video = YouTube(url)
+            img=request.form["thumbnail"]
+            
             
             #here ctitle is the name of the video that is independent of the pytube lib and has been fetched using Youtube API
             ctitle=request.form["ctitle"]
             stitle = slugify(ctitle)      #turned the name into file-valid name
     
-            #here ytitle is the name of the video according to the pytube library
-            ytitle=video.streams.first().default_filename
-
-            img=request.form["thumbnail"]
-
-        
-            # wont be using this for now
-            # shutil.rmtree("static/cache", ignore_errors=True)
             
-                          
-            video.streams.filter(progressive=True).first().download("static/cache/video",stitle)
-            video.streams.filter(only_audio=True).first().download("static/cache/audio",stitle)
+            #using youtube-dl for download the video
+            ydl_opts = {
+            'format': 'worst',      #this site isn't meant for commercial applications, therefore minimum quality would suffice
+            'outtmpl': 'static/cache/video/'+stitle+'.mp4',
+            'noplaylist': True,
+            'extract-audio': True,
+            }
+            video = url
+            with YoutubeDL(ydl_opts) as ydl:
+                info_dict = ydl.extract_info(video, download=True)
             
+            # making a copy for downloading as audio
+            video = VideoFileClip(os.path.join("static/cache/video",stitle+".mp4"))
+            video.audio.write_audiofile(os.path.join("static/cache/audio",stitle+".mp3"))            
             
-            old = "static/cache/audio/"+stitle+".mp4"
-            new = "static/cache/audio/"+stitle+".mp3"
-            os.rename(old, new)
-                                         
-              
-           
             return render_template("home.html", title="Music Downloader",stitle=stitle,ctitle=ctitle,img=img)
-
-        
-
 
     return render_template('home.html', title='Music Downloader')
 
