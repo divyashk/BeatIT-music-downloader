@@ -141,29 +141,20 @@ def home():
             ctitle=request.form["ctitle"]
             stitle = slugify(ctitle)      #turned the name into file-valid name
     
+            
+            #using youtube-dl for download the video
             ydl_opts = {
-            'format': 'best',      #this site isn't meant for commercial applications, therefore minimum quality would suffice
-            'outtmpl': 'static/cache/video/'+stitle+'.mp4',
+            'format': 'bestaudio',      #this site isn't meant for commercial applications, therefore minimum quality would suffice
+            'outtmpl': 'static/cache/audio/'+stitle+'.mp3',
             'noplaylist': True,
             'extract-audio': True,
             }
             video = url
             with YoutubeDL(ydl_opts) as ydl:
                 info_dict = ydl.extract_info(video, download=True)
-             
-            #using youtube-dl for download the video
-            
-            ydl_opts = {
-                'format': 'bestaudio/best',
-                'outtmpl': 'static/cache/video/'+stitle+'.mp3',
-                'postprocessors': [{
-                    'key': 'FFmpegExtractAudio',
-                    'preferredcodec': 'mp3',
-                    'preferredquality': '192',
-                }],
-            }
-            with youtube_dl.YoutubeDL(ydl_opts) as ydl:
-                ydl.download([video]) 
+               
+            # making a copy for downloading as audio
+
             
             return render_template("home.html", title="Music Downloader",stitle=stitle,ctitle=ctitle,img=img)
 
