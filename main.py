@@ -144,17 +144,18 @@ def home():
             
             #using youtube-dl for download the video
             ydl_opts = {
-            'format': 'bestaudio',      #this site isn't meant for commercial applications, therefore minimum quality would suffice
-            'outtmpl': 'static/cache/audio/'+stitle+'.mp3',
+            'format': 'worst',      #this site isn't meant for commercial applications, therefore minimum quality would suffice
+            'outtmpl': 'static/cache/video/'+stitle+'.mp4',
             'noplaylist': True,
             'extract-audio': True,
             }
             video = url
             with YoutubeDL(ydl_opts) as ydl:
                 info_dict = ydl.extract_info(video, download=True)
-               
+            
             # making a copy for downloading as audio
-
+            video = VideoFileClip(os.path.join("static/cache/video",stitle+".mp4"))
+            video.audio.write_audiofile(os.path.join("static/cache/audio",stitle+".mp3"))            
             
             return render_template("home.html", title="Music Downloader",stitle=stitle,ctitle=ctitle,img=img)
 
