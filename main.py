@@ -15,7 +15,6 @@ from youtube_dl import YoutubeDL
 import os
 from moviepy.editor import *
 import validators
-import pafy
 
 app = Flask(__name__)
 
@@ -141,42 +140,32 @@ def home():
             #here ctitle is the name of the video that is independent of the pytube lib and has been fetched using Youtube API
             ctitle=request.form["ctitle"]
             stitle = slugify(ctitle)      #turned the name into file-valid name
-
-            video = pafy.new(url)
-            best = video.getbest()
-            video_file = best.download(filepath='static/cache/video/'+stitle+"."+best.extension)
-            mp4 = best.extension
-            besta = video.getbestaudio()
-            mp3 = besta.extension
-            audio_file = besta.download(filepath='static/cache/audio/'+stitle+"."+besta.extension)
-            # ydl_opts = {
-            # 'format': 'best',      #this site isn't meant for commercial applications, therefore minimum quality would suffice
-            # 'outtmpl': 'static/cache/video/'+stitle+'.mp4',
-            # 'noplaylist': True,
-            # 'extract-audio': True,
-            # }
-            # video = url
-            # with YoutubeDL(ydl_opts) as ydl:
-            #     info_dict = ydl.extract_info(video, download=True)
+    
+            ydl_opts = {
+            'format': 'best',      #this site isn't meant for commercial applications, therefore minimum quality would suffice
+            'outtmpl': 'static/cache/video/'+stitle+'.mp4',
+            'noplaylist': True,
+            'extract-audio': True,
+            }
+            video = url
+            with YoutubeDL(ydl_opts) as ydl:
+                info_dict = ydl.extract_info(video, download=True)
              
-            # #using youtube-dl for download the video
+            #using youtube-dl for download the video
             
-            # ydl_opts = {
-            #     'format': 'bestaudio/best',
-            #     'outtmpl': 'static/cache/video/'+stitle+'.mp3',
-            #     'postprocessors': [{
-            #         'key': 'FFmpegExtractAudio',
-            #         'preferredcodec': 'mp3',
-            #         'preferredquality': '192',
-            #     }],
-            # }
-            # with YoutubeDL(ydl_opts) as ydl:
-            #     ydl.download([video]) 
+            ydl_opts = {
+                'format': 'bestaudio/best',
+                'outtmpl': 'static/cache/video/'+stitle+'.mp3',
+                'postprocessors': [{
+                    'key': 'FFmpegExtractAudio',
+                    'preferredcodec': 'mp3',
+                    'preferredquality': '192',
+                }],
+            }
+            with YoutubeDL(ydl_opts) as ydl:
+                ydl.download([video]) 
             
-
-
-
-            return render_template("home.html", title="Music Downloader",stitle=stitle,ctitle=ctitle,img=img, mp3=mp3, mp4=mp4)
+            return render_template("home.html", title="Music Downloader",stitle=stitle,ctitle=ctitle,img=img)
 
     return render_template('home.html', title='Music Downloader')
 
