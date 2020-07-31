@@ -1,6 +1,12 @@
 # BeatIT-music-downloader
 
 This web-application allows you to download both audio and video from youtube. You can use either the link of the video or search through manually.
+
+## Deployed on heroku at
+
+[Beat-app](http://beatit-app.herokuapp.com)
+
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -55,10 +61,6 @@ python main.py
 ```
 The site is now active on your local host server.
 
-## Deployed on heroku at
-```
-http://beatit-app.herokuapp.com
-```
 
 ## Author
 
