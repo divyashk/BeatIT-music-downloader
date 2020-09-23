@@ -2,7 +2,8 @@
 
 This web-application allows you to download both audio and video from youtube. You can use either the link of the video or search through manually.
 
-## hosted on music.divyasheel.com
+## hosted on [music.divyasheel.com](http://music.divyasheel.com)
+
 
 
 ## Getting Started
