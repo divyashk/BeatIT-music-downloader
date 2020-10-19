@@ -614,6 +614,9 @@ pre code {
   margin-right: -15px;
   margin-left: -15px;
 }
+.row.search-results {
+  justify-content: center;
+}
 
 .no-gutters {
   margin-right: 0;
