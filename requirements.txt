@@ -19,7 +19,7 @@ lxml==4.5.2
 MarkupSafe==1.1.1
 moviepy==1.0.3
 numpy==1.18.5
-Pillow==7.1.2
+Pillow==8.1.1
 proglog==0.1.9
 python-slugify==4.0.0
 pytube3 @ git+https://gitlab.com/obuilds/public/pytube@10c57109f87fe864d8f38bbc8d76941e695de93a
